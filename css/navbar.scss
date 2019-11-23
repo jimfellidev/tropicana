@@ -1,0 +1,387 @@
+nav {
+    height: 65px;
+    color: black;
+    width: 100%;
+    position: fixed;
+    max-width: 1365px;
+}
+
+.navbar {
+    z-index: 20;
+    @media only screen and (min-width: 768px) {
+        display: none;
+      }
+}
+.nav__flex--container {
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    background-color:rgb(225, 47, 55);
+}
+
+.nav {
+    
+    &__flex--item {
+        height: 65px;
+        text-align: center;
+
+        &-1 {
+            width: 21%;
+
+        }
+        &-2 {
+            width: 53%;
+            border-left: solid #e7595f 1px;
+            border-right: solid #e7595f 1px;
+        }
+        &-3 {
+            width: 24%;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.book_now {
+    color: white;
+    font-size: 11px;
+    display: block;
+    padding-left: 8px;
+    padding-top: 25px;
+    & a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.troplogo {
+
+    height: 50px;
+    top: 7px;
+    position: relative;
+}
+
+
+
+// hamburger
+
+
+
+
+
+
+
+// DROPBOX MOBILE
+
+.nav__dropbtn--content {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    margin-top: 2.7px;
+    transition: 0.5s transform, 0.5s -webkit-transform;
+    top: -338px;
+    z-index: -1;
+    // display: none;
+    
+}
+
+.nav__dropbtn--item {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    font-size: 12px;
+    text-decoration: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+
+.nav__dropbtn--item-1 {
+    border-bottom: .5px #d0d3d6 solid;
+    text-decoration: none;
+    // padding-top: 5px;
+    // padding-bottom: 5px;
+    color: black; 
+    text-align: left;
+    padding-left: 16px;
+    // float: left;
+    &:hover {
+        opacity: .8;
+        padding-left: 21px;
+    }
+}
+
+.nav__dropbtn--item-2 {
+    background-color: rgb(53, 57, 58);
+    // padding-top: 5px;
+    // padding-bottom: 5px;
+    border-bottom: .5px #d0d3d6 solid;
+    color: white;
+    // z-index: 10;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+
+.marqueeLogo {
+    height: 46px;
+    &__wrapper {
+        padding: 0;
+        margin: 0;
+        
+    }
+}
+
+
+// toggle
+
+.toggle-active {
+    // display: block;
+    transform: translatey(400px);
+    
+    
+}
+
+
+
+// LG MQ > 768px 
+
+#navbarLg {
+    @media only screen and (max-width: 767px) {
+        display: none;
+      }   
+      
+}
+
+.navbarLg {
+    position: fixed;
+    z-index: 10;
+    @media only screen and (max-width: 768) {
+      display: block;
+    }
+    @media only screen and (min-width: 768) {
+        display: none;
+  }
+}
+.nav__flex--container-lg {
+    background-color: rgb(53, 57, 58);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    flex-wrap: nowrap;
+    list-style-type: none;
+
+}
+ .nav__flex--item-lg {
+    //  list-style: none;
+     font-size: 9.5px;
+     border-right: solid 1px rgb(98, 105, 106);
+     color: white;
+     padding: 0;
+     text-align: center;
+     font-family: 'Lato', sans-serif;
+     &-1 {
+         width: 30%;
+         @media only screen and (min-width: 768) {
+            width: 35%;
+         }
+
+     }
+     &-2 {
+        width: 15%;
+        padding-top: 18px;
+
+    }
+    &-3 {
+        width: 20%;
+        padding-top: 18px;
+    }
+    &-4 {
+        width: 9%;
+        @media only screen and (min-width: 768) {
+        }
+        width: 14%;
+    }
+    &-5 {
+        width: 7%;
+        color: rgb(83, 205, 235);
+        padding-top: 18px;
+    }
+    &-6 {
+        width: 7%;
+        color: rgb(83, 205, 235);
+        padding-top: 18px;
+    }
+    &-7 {
+        width: 7%;
+        border-right: none;
+        
+    }
+ }
+
+ .navbarLg2{
+    position: fixed;
+    z-index: 10;
+    text-align: center;
+    
+  
+}
+ .nav__flex--container-lg-2 {
+    
+    background-color: white;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    font-size: 12px;  
+    text-align: center;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+ }
+
+ .nav__flex--item-lg2 {
+    font-size: 12px;
+    text-align: center;
+    color: black;
+    & a {
+        color: black;
+    }
+    
+    &-1 {
+        width: 25%;
+        padding-top: 0;
+        & a {
+            text-decoration: none;
+            color: black;
+            &:link {
+                color: black;
+            }
+        }
+    }
+    &-2 {
+        width: 8.5%;
+        padding-top: 38px;
+        & a {
+            text-decoration: none;
+            color: black;
+            &:link {
+                color: black;
+            }
+        }
+    }
+    &-3 {
+        width: 8.5%;
+        padding-top: 38px;
+        & a {
+            text-decoration: none;
+            color: black;
+            &:link {
+                color: black;
+            }
+        }
+    }
+    &-4 {
+        width: 8.5%;
+        padding-top: 38px;
+        & a {
+            text-decoration: none;
+            color: black;
+            &:link {
+                color: black;
+            }
+        }
+    }
+    &-5 {
+        width: 8.5%;
+        padding-top: 38px;
+        & a {
+            text-decoration: none;
+            color: black;
+            &:link {
+                color: black;
+            }
+        }
+    }
+    &-6 {
+        width: 8.5%;
+        padding-top: 38px;
+        & a {
+            text-decoration: none;
+            color: black;
+            &:link {
+                color: black;
+            }
+        }
+    }
+    &-7 {
+        width: 10%;
+        padding-top: 38px;
+        & a {
+            text-decoration: none;
+            color: black;
+            &:link {
+                color: black;
+            }
+        }
+    }
+    &-8 {
+        width: 8.5%;
+        padding-top: 38px;
+        & a {
+            text-decoration: none;
+            color: black;
+            &:link {
+                color: black;
+            }
+        }
+    }
+    &-9 {
+        & a {
+            text-decoration: none;
+            color: rgb(225, 47, 55);
+            &:link {
+                color: rgb(225, 47, 55);
+            }
+        }
+        color:  rgb(225, 47, 55);
+        width: 12%;
+        padding-top: 38px;
+        border-left: solid 1px #c6dde1;
+        border-right: solid 1px rgb(198, 221, 225);
+        font-weight: bold;
+    }
+    &-10 {
+        // padding-top: 38px;
+        width: 2%;
+        & a {
+            text-decoration: none;
+            color: black;
+            &:link {
+                color: black;
+            }
+        }
+    }
+
+ }
+ .troplogo-nav-img {
+     width: 160px;
+    background-color: rgb(225, 47, 55);
+    padding: 20px 5px 20px 5px;
+ }
+
+
+
+
+
+
+
+
+
+
+

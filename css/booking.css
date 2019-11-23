@@ -1,0 +1,465 @@
+.booking-container-1 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .booking-container-1 {
+    width: 100%;
+    height: 220px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: -20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .booking-flexbox-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: white;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-shadow: 0.2px 0.2px 19px -5.9px grey;
+            box-shadow: 0.2px 0.2px 19px -5.9px grey;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .booking-flexbox-1 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1070px) {
+  .booking-flexbox-1 {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flexbox-vert-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style-type: none;
+    border-right: 0.9px solid rgba(61, 58, 58, 0.3);
+    width: 13%;
+    min-width: 100px;
+  }
+  .flexbox-vert-links-item {
+    height: 73px;
+    text-align: center;
+    padding-top: 25px;
+    border-bottom: 0.9px solid rgba(61, 58, 58, 0.3);
+    height: 73px;
+    text-align: center;
+    padding-top: 25px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    border-bottom: 0.9px solid rgba(61, 58, 58, 0.3);
+    color: gray;
+  }
+}
+
+@media screen and (min-width: 1070px) {
+  .flexbox-vert-links-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.show-link-lg {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 768px) {
+  .flexbox-check-in {
+    list-style-type: none;
+    width: 11%;
+    height: 100%;
+    min-width: 100px;
+    margin: 0 auto;
+  }
+  .flexbox-check-in-2:after {
+    content: '';
+    border-right: solid 1px #c6dde1;
+    height: 140px;
+    position: absolute;
+    top: 36px;
+    right: 67.5%;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 820px) {
+  .flexbox-check-in-2:after {
+    right: 52.1%;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 820px) and (max-width: 866px) {
+  .flexbox-check-in-2:after {
+    right: 52%;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 866px) and (max-width: 975px) {
+  .flexbox-check-in-2:after {
+    right: 51.8%;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 871px) and (max-width: 1070px) {
+  .flexbox-check-in-2:after {
+    right: 51.7%;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1070px) {
+  .flexbox-check-in-2:after {
+    right: 66.8%;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1071px) and (max-width: 1107px) {
+  .flexbox-check-in-2:after {
+    right: 66.9%;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1107px) and (max-width: 1149px) {
+  .flexbox-check-in-2:after {
+    right: 67%;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1149px) and (max-width: 1175px) {
+  .flexbox-check-in-2:after {
+    right: 67.1%;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1175px) and (max-width: 1240px) {
+  .flexbox-check-in-2:after {
+    right: 67.35%;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1240px) {
+  .flexbox-check-in-2:after {
+    right: 67.5%;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1070px) {
+  .flexbox-check-in {
+    list-style-type: none;
+    width: 14%;
+    height: 100%;
+    min-width: 99px;
+    margin: 0 auto;
+  }
+  .flexbox-check-in-1 {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .datepicker-month-4, .datepicker-month-5, .datepicker-month-6, .datepicker-month-7 {
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    padding-top: 11px;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    border: none;
+    font-weight: bold;
+    cursor: default;
+    color: transparent;
+    text-shadow: 0 0 0 black;
+    font-family: 'Lato', sans-serif;
+  }
+  .datepicker-month-4::-webkit-input-placeholder, .datepicker-month-5::-webkit-input-placeholder, .datepicker-month-6::-webkit-input-placeholder, .datepicker-month-7::-webkit-input-placeholder {
+    color: black;
+    opacity: 1;
+  }
+  .datepicker-month-4:-ms-input-placeholder, .datepicker-month-5:-ms-input-placeholder, .datepicker-month-6:-ms-input-placeholder, .datepicker-month-7:-ms-input-placeholder {
+    color: black;
+    opacity: 1;
+  }
+  .datepicker-month-4::-ms-input-placeholder, .datepicker-month-5::-ms-input-placeholder, .datepicker-month-6::-ms-input-placeholder, .datepicker-month-7::-ms-input-placeholder {
+    color: black;
+    opacity: 1;
+  }
+  .datepicker-month-4::placeholder, .datepicker-month-5::placeholder, .datepicker-month-6::placeholder, .datepicker-month-7::placeholder {
+    color: black;
+    opacity: 1;
+  }
+  .datepicker-month-4:focus, .datepicker-month-5:focus, .datepicker-month-6:focus, .datepicker-month-7:focus {
+    outline: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #datepicker-4, #datepicker-5, #datepicker-6, #datepicker-7 {
+    text-align: center;
+    width: 100%;
+    font-size: 44px;
+    background: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    color: transparent;
+    text-shadow: 0 0 0 #e12f37;
+    -webkit-transform: translate(-1%);
+            transform: translate(-1%);
+  }
+  #datepicker-4::-webkit-input-placeholder, #datepicker-5::-webkit-input-placeholder, #datepicker-6::-webkit-input-placeholder, #datepicker-7::-webkit-input-placeholder {
+    color: #e12f37;
+    opacity: 1;
+  }
+  #datepicker-4:-ms-input-placeholder, #datepicker-5:-ms-input-placeholder, #datepicker-6:-ms-input-placeholder, #datepicker-7:-ms-input-placeholder {
+    color: #e12f37;
+    opacity: 1;
+  }
+  #datepicker-4::-ms-input-placeholder, #datepicker-5::-ms-input-placeholder, #datepicker-6::-ms-input-placeholder, #datepicker-7::-ms-input-placeholder {
+    color: #e12f37;
+    opacity: 1;
+  }
+  #datepicker-4::placeholder, #datepicker-5::placeholder, #datepicker-6::placeholder, #datepicker-7::placeholder {
+    color: #e12f37;
+    opacity: 1;
+  }
+  #datepicker-4:focus, #datepicker-5:focus, #datepicker-6:focus, #datepicker-7:focus {
+    outline: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .datepicker-title {
+    text-align: center;
+    padding-top: 39px;
+    padding-bottom: 10px;
+    font-style: italic;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .datepicker__wrapper {
+    border: solid 1px black;
+    height: 93px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .select__wrapper {
+    border: solid 1px black;
+    height: 93px;
+  }
+}
+
+.select__numbers {
+  -webkit-transform: translate(34%);
+          transform: translate(34%);
+}
+
+.booknow-button {
+  font-size: 13px;
+  color: white;
+  width: 90px;
+  height: 44px;
+  background-color: #e32f2d;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.button-container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 68px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-container-1 {
+    padding-left: 15px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (min-width: 804px) {
+  .button-container-1 {
+    padding-left: 13px;
+    padding-right: 27px;
+  }
+}
+
+@media screen and (min-width: 876px) {
+  .button-container-1 {
+    padding-left: 10px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (min-width: 923px) {
+  .button-container-1 {
+    padding-left: 8px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 966px) {
+  .button-container-1 {
+    padding-left: 3px;
+    padding-right: 37px;
+  }
+}
+
+@media screen and (min-width: 966px) {
+  .button-container-1 {
+    padding-left: 3px;
+    padding-right: 37px;
+  }
+}
+
+@media screen and (min-width: 1070px) {
+  .button-container-1 {
+    padding-left: 17px;
+    padding-right: 23px;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+  .button-container-1 {
+    padding-left: 15px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (min-width: 1166px) {
+  .button-container-1 {
+    padding-left: 13px;
+    padding-right: 27px;
+  }
+}
+
+@media screen and (min-width: 1192px) {
+  .button-container-1 {
+    padding-left: 11px;
+    padding-right: 29px;
+  }
+}
+
+@media screen and (min-width: 1251px) {
+  .button-container-1 {
+    padding-left: 9px;
+    padding-right: 31px;
+  }
+}
+
+@media screen and (min-width: 1305px) {
+  .button-container-1 {
+    padding-left: 7px;
+    padding-right: 33px;
+  }
+}
+
+.button-container-text {
+  font-size: 10px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding-top: 19px;
+}
+
+.bridgeLg {
+  scale: 1.2;
+  background-image: url(../images/promo2.jpg);
+  height: 221px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin: 0 auto;
+}
+
+.bridgeLg-wrapper {
+  width: 34%;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 1069px) {
+  .bridgeLg-wrapper {
+    display: none;
+  }
+}
+
+.bridgeLg__content--wrapper {
+  z-index: 2;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: -135px;
+  text-transform: uppercase;
+}
+
+.bridgeLg__content--wrapper-darken {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: .4;
+}
+
+.bridgeLg__content--1 {
+  font-size: 25px;
+}
+
+.bridgeLg__content--2 {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .booking__containerLg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.dining__containerLg, .booking__containerLg, .show__containerLg {
+  display: none;
+}
+
+.active__containerLg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .active__button {
+    color: black;
+  }
+}
+/*# sourceMappingURL=booking.css.map */

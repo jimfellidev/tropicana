@@ -1,0 +1,405 @@
+nav {
+  height: 65px;
+  color: black;
+  width: 100%;
+  position: fixed;
+  max-width: 1365px;
+}
+
+.navbar {
+  z-index: 20;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
+
+.nav__flex--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: 10;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  list-style-type: none;
+  background-color: #e12f37;
+}
+
+.nav__flex--item {
+  height: 65px;
+  text-align: center;
+}
+
+.nav__flex--item-1 {
+  width: 21%;
+}
+
+.nav__flex--item-2 {
+  width: 53%;
+  border-left: solid #e7595f 1px;
+  border-right: solid #e7595f 1px;
+}
+
+.nav__flex--item-3 {
+  width: 24%;
+  color: white;
+  text-transform: uppercase;
+}
+
+.book_now {
+  color: white;
+  font-size: 11px;
+  display: block;
+  padding-left: 8px;
+  padding-top: 25px;
+}
+
+.book_now a {
+  text-decoration: none;
+  color: white;
+}
+
+.troplogo {
+  height: 50px;
+  top: 7px;
+  position: relative;
+}
+
+.nav__dropbtn--content {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  margin-top: 2.7px;
+  transition: 0.5s transform, 0.5s -webkit-transform;
+  top: -338px;
+  z-index: -1;
+}
+
+.nav__dropbtn--item {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  font-size: 12px;
+  text-decoration: none;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.nav__dropbtn--item-1 {
+  border-bottom: .5px #d0d3d6 solid;
+  text-decoration: none;
+  color: black;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.nav__dropbtn--item-1:hover {
+  opacity: .8;
+  padding-left: 21px;
+}
+
+.nav__dropbtn--item-2 {
+  background-color: #35393a;
+  border-bottom: .5px #d0d3d6 solid;
+  color: white;
+}
+
+.nav__dropbtn--item-2:hover {
+  opacity: .8;
+}
+
+.marqueeLogo {
+  height: 46px;
+}
+
+.marqueeLogo__wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.toggle-active {
+  -webkit-transform: translatey(400px);
+          transform: translatey(400px);
+}
+
+@media only screen and (max-width: 767px) {
+  #navbarLg {
+    display: none;
+  }
+}
+
+.navbarLg {
+  position: fixed;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 768) {
+  .navbarLg {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768) {
+  .navbarLg {
+    display: none;
+  }
+}
+
+.nav__flex--container-lg {
+  background-color: #35393a;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: 10;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  list-style-type: none;
+}
+
+.nav__flex--item-lg {
+  font-size: 9.5px;
+  border-right: solid 1px #62696a;
+  color: white;
+  padding: 0;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.nav__flex--item-lg-1 {
+  width: 30%;
+}
+
+@media only screen and (min-width: 768) {
+  .nav__flex--item-lg-1 {
+    width: 35%;
+  }
+}
+
+.nav__flex--item-lg-2 {
+  width: 15%;
+  padding-top: 18px;
+}
+
+.nav__flex--item-lg-3 {
+  width: 20%;
+  padding-top: 18px;
+}
+
+.nav__flex--item-lg-4 {
+  width: 9%;
+  width: 14%;
+}
+
+.nav__flex--item-lg-5 {
+  width: 7%;
+  color: #53cdeb;
+  padding-top: 18px;
+}
+
+.nav__flex--item-lg-6 {
+  width: 7%;
+  color: #53cdeb;
+  padding-top: 18px;
+}
+
+.nav__flex--item-lg-7 {
+  width: 7%;
+  border-right: none;
+}
+
+.navbarLg2 {
+  position: fixed;
+  z-index: 10;
+  text-align: center;
+}
+
+.nav__flex--container-lg-2 {
+  background-color: white;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: 10;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  list-style-type: none;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.nav__flex--item-lg2 {
+  font-size: 12px;
+  text-align: center;
+  color: black;
+}
+
+.nav__flex--item-lg2 a {
+  color: black;
+}
+
+.nav__flex--item-lg2-1 {
+  width: 25%;
+  padding-top: 0;
+}
+
+.nav__flex--item-lg2-1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav__flex--item-lg2-1 a:link {
+  color: black;
+}
+
+.nav__flex--item-lg2-2 {
+  width: 8.5%;
+  padding-top: 38px;
+}
+
+.nav__flex--item-lg2-2 a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav__flex--item-lg2-2 a:link {
+  color: black;
+}
+
+.nav__flex--item-lg2-3 {
+  width: 8.5%;
+  padding-top: 38px;
+}
+
+.nav__flex--item-lg2-3 a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav__flex--item-lg2-3 a:link {
+  color: black;
+}
+
+.nav__flex--item-lg2-4 {
+  width: 8.5%;
+  padding-top: 38px;
+}
+
+.nav__flex--item-lg2-4 a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav__flex--item-lg2-4 a:link {
+  color: black;
+}
+
+.nav__flex--item-lg2-5 {
+  width: 8.5%;
+  padding-top: 38px;
+}
+
+.nav__flex--item-lg2-5 a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav__flex--item-lg2-5 a:link {
+  color: black;
+}
+
+.nav__flex--item-lg2-6 {
+  width: 8.5%;
+  padding-top: 38px;
+}
+
+.nav__flex--item-lg2-6 a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav__flex--item-lg2-6 a:link {
+  color: black;
+}
+
+.nav__flex--item-lg2-7 {
+  width: 10%;
+  padding-top: 38px;
+}
+
+.nav__flex--item-lg2-7 a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav__flex--item-lg2-7 a:link {
+  color: black;
+}
+
+.nav__flex--item-lg2-8 {
+  width: 8.5%;
+  padding-top: 38px;
+}
+
+.nav__flex--item-lg2-8 a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav__flex--item-lg2-8 a:link {
+  color: black;
+}
+
+.nav__flex--item-lg2-9 {
+  color: #e12f37;
+  width: 12%;
+  padding-top: 38px;
+  border-left: solid 1px #c6dde1;
+  border-right: solid 1px #c6dde1;
+  font-weight: bold;
+}
+
+.nav__flex--item-lg2-9 a {
+  text-decoration: none;
+  color: #e12f37;
+}
+
+.nav__flex--item-lg2-9 a:link {
+  color: #e12f37;
+}
+
+.nav__flex--item-lg2-10 {
+  width: 2%;
+}
+
+.nav__flex--item-lg2-10 a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav__flex--item-lg2-10 a:link {
+  color: black;
+}
+
+.troplogo-nav-img {
+  width: 160px;
+  background-color: #e12f37;
+  padding: 20px 5px 20px 5px;
+}
+/*# sourceMappingURL=navbar.css.map */

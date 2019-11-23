@@ -1,0 +1,683 @@
+.dining__title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    position: relative;
+    @media only screen and (min-width: 768px) {
+    padding-left: 50%;
+    transform: translate(-25%);
+    }
+}
+
+.dining__header--wrap {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    @media only screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.dining__header {
+    position: relative;
+    text-align: center;
+    border: solid 1px rgb(198, 221, 225);
+    color: rgb(225, 47, 55);
+    padding: 15px 70px;
+    font-weight: 700;
+    font-size: 14px;
+    @media only screen and (min-width: 768px) {
+        display: none;
+    }
+
+}
+
+.dining__image--title {
+    padding-bottom: 8px;
+}
+
+
+
+
+
+// Flexbox option buttons
+.dining {
+    // min-height: 600px;
+    &__wrapper {
+        width: 100%;
+        z-index: 3;
+        /* top: -80px; */
+        position: relative;
+        margin: 0 auto;
+        background-color: rgb(250,250,250);
+        border-top: solid 1px rgb(198, 211, 225);
+        border-bottom: solid 1px rgb(208,227,230 );
+        padding-bottom: 30px;
+
+        @media only screen and (min-width: 768px) {
+            border-top: none;
+            padding-bottom: 0px;
+            height: 550px;
+            width: 90%;
+            background-color: white;
+            border-bottom: none;
+        }
+        @media only screen and (min-width: 1124px) {
+            padding-bottom: 30px;
+            height: 626px;
+        }
+
+    }
+    &__flexbox--container {
+        display: flex;
+        margin: 0 auto;
+        min-height: 45px;
+        @media only screen and (min-width: 768px) {
+            flex-direction: column;
+            width: 40%;
+            max-width: 381px;
+            margin-left: 0px;
+            border: solid 1px rgb(198, 211, 225);
+            background-color: white;
+            &:before {
+                @media only screen and (min-width: 768px) {
+                    position: absolute;
+                    content: '';
+                    height: 25px;
+                    width: 91px;
+                    opacity: .7;
+                    background: #53cdeb;
+                    left: -5.5%;
+                    z-index: -1;
+                    top: 216px;
+                }
+                @media only screen and (min-width: 1124px) {
+                    top: 0px;
+                }
+            }    
+            // &:after {
+            //     position: absolute;
+            //     content: '';
+            //     height: 25px;
+            //     width: 91px;
+            //     opacity: .7;
+            //     background: #53cdeb;
+            //     right: 10px;;
+            //     z-index: 1;
+            //     top: 0px;
+            // }
+        }
+    }
+    &__flexbox {
+        display: block;
+        width: 33.33333%; 
+        @media only screen and (min-width: 768px) {
+            display: none;
+        }
+        &-lg {
+            @media only screen and (min-width: 768px) {
+                display: block;
+                width: 100%; 
+                border-bottom: solid 1px rgb(208,227,230 );
+            }        
+        }
+        
+        &--item {
+            height: 100%;
+            width: 100%;
+            display: block;
+            text-align: center;
+            position: relative;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            @media only screen and (min-width: 768px) {
+                text-align: left;
+                height: 51px;
+                font-size: 16px;
+                // font-family: "InterstatePro";
+                color: rgb(53, 57, 56);
+                line-height: 2.25;
+                padding-left: 25px;
+            }
+            &-lg {
+                @media only screen and (max-width: 767px) {
+                    display: none;
+                }
+            }
+            // ^^^ adjust to center content vertically  //
+            &-center {
+                border-left: .9px solid rgba(61, 58, 58, .3);
+                border-right: .9px solid rgba(61, 58, 58, .3);
+                // border-bottom: 0.9px solid rgba(61, 58, 58, 0.3);
+                @media only screen and (min-width: 768px) {
+                    border-left: none;
+                    border-right: none;
+                }
+            }
+        }
+    } 
+}
+
+
+// Check in / reservation nav bar for Js use / active
+
+// .booking__container {
+//     display: none;
+    
+// }
+
+// .dining__container {
+//     display: none;
+// }
+
+// .show__container {
+//   display: none;
+// }
+
+// .active__container {
+//     display: block;
+// }
+
+.active__dining--button {
+    opacity: 1;
+    border-bottom: solid 3px rgb(83, 205, 235);
+    background-color: rgb(238, 241,242);
+
+    @media only screen and (min-width: 768px) {
+        border-bottom: none;
+        border-left: solid 3px #53cdeb;
+    }
+}
+
+
+.dining__container {
+        
+
+    &--1 {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/irvine3.jpg);
+        height: 220px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        overflow: visible;
+        z-index: 2;
+        &:after {
+            position: absolute;
+            content: '';
+            height: 38px;
+            left: 0;
+            width: 90%;
+            z-index: 4;
+            background: #4bc9e8;
+            opacity: .4;
+            top: 265px;
+        }
+        @media only screen and (min-width: 420px) {
+            width: 90%;
+            margin: 0 auto;
+        }
+        @media only screen and (min-width: 600px) {
+            width: 85%;
+        }
+        @media only screen and (min-width: 700px) {
+            width: 80%;
+        }
+
+        @media only screen and (min-width: 768px) {
+            height: 400px;
+            width: 60%;
+            left: 40%;
+            bottom: 224px; 
+            position: relative;
+            margin: 0;
+            &:after {
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 1124px) {
+            width: 50%;
+            z-index: 2;
+            top: -80px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    
+
+    }
+    &--2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cafe3.jpg);
+        height: 220px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        overflow: visible;
+        z-index: 2;
+        &:after {
+            position: absolute;
+            content: '';
+            height: 38px;
+            left: 0;
+            width: 90%;
+            z-index: 4;
+            background: #4bc9e8;
+            opacity: .4;
+            top: 265px;
+        }
+        @media only screen and (min-width: 420px) {
+            width: 90%;
+            margin: 0 auto;
+        }
+        @media only screen and (min-width: 600px) {
+            width: 85%;
+        }
+        @media only screen and (min-width: 700px) {
+            width: 80%;
+        }
+        @media only screen and (min-width: 768px) {
+            height: 400px;
+            width: 60%;
+            left: 40%;
+            bottom: 224px; 
+            position: relative;
+            margin: 0;
+            &:after {
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 1124px) {
+            width: 50%;
+            z-index: 2;
+            top: -80px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+    }
+    &--3 {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/rest4.jpg);
+        height: 220px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        overflow: visible;
+        z-index: 2;
+        &:after {
+            position: absolute;
+            content: '';
+            height: 38px;
+            left: 0;
+            width: 90%;
+            z-index: 4;
+            background: #4bc9e8;
+            opacity: .4;
+            top: 265px;
+        }
+        @media only screen and (min-width: 420px) {
+            width: 90%;
+            margin: 0 auto;
+        }
+        @media only screen and (min-width: 600px) {
+            width: 85%;
+        }
+        @media only screen and (min-width: 700px) {
+            width: 80%;
+        }
+        @media only screen and (min-width: 768px) {
+            height: 400px;
+            width: 60%;
+            position: relative;
+            z-index: 2;
+            left: 40%;
+            bottom: 224px; 
+            margin: 0;
+            &:after {
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 1124px) {
+            height: 400px;
+            width: 50%;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            overflow: visible;
+            z-index: 2;
+            position: relative;
+            top: -80px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+    }
+}
+
+.dining__image {
+    
+    &--1 {
+        background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../images/irvinemeal1.jpg);
+        width: 70%;
+        height: 155px;
+        position: relative;
+        bottom: -130px;
+        right: -30%;
+        opacity: .9;
+        z-index: 3;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: visible;
+        background-position: center;
+
+        @media only screen and (min-width: 420px) {
+            right: -32%;
+        }
+        @media only screen and (min-width: 600px) {
+            right: -44%;
+            width: 60%;
+        }
+        @media only screen and (min-width: 600px) {
+            right: -53%;
+            width: 50%;
+        }
+
+        @media only screen and (min-width: 768px) {
+            width: 70%;
+            height: 215px;
+            bottom: -273px;
+            right: 50%;
+            opacity: 1;
+            z-index: 3;
+        }
+        @media only screen and (min-width: 1124px) {
+            width: 60%;
+            height: 215px;
+            bottom: 146px;
+            right: -90.05%;
+        }
+    }
+
+    &--2 {
+        background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../images/cafemeal.jpg);
+        width: 70%;
+        height: 155px;
+        position: relative;
+        bottom: -130px;
+        right: -30%;
+        opacity: .9;
+        z-index: 3;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: visible;
+        background-position: center;
+        @media only screen and (min-width: 420px) {
+            right: -32%;
+        }
+        @media only screen and (min-width: 600px) {
+            right: -44%;
+            width: 60%;
+        }
+        @media only screen and (min-width: 600px) {
+            right: -53%;
+            width: 50%;
+        }
+        @media only screen and (min-width: 768px) {
+            width: 70%;
+            height: 215px;
+            bottom: -273px;
+            right: 50%;
+            opacity: 1;
+            z-index: 3;
+        }
+        @media only screen and (min-width: 1124px) {
+            width: 60%;
+            height: 215px;
+            bottom: 146px;
+            right: -90.05%;
+        }
+    }
+
+    &--3 {
+        background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../images/southbeachfood.jpg);
+        width: 70%;
+        height: 155px;
+        position: relative;
+        bottom: -130px;
+        right: -30%;
+        opacity: .9;
+        z-index: 3;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: visible;
+        background-position: center;
+        @media only screen and (min-width: 420px) {
+            right: -32%;
+        }
+        @media only screen and (min-width: 600px) {
+            right: -44%;
+            width: 60%;
+        }
+        @media only screen and (min-width: 600px) {
+            right: -53%;
+            width: 50%;
+        }
+        @media only screen and (min-width: 768px) {
+            width: 70%;
+            height: 215px;
+            bottom: -273px;
+            right: 50%;
+            opacity: 1;
+            z-index: 3;
+        }
+        @media only screen and (min-width: 1124px) {
+            width: 60%;
+            height: 215px;
+            bottom: 146px;
+            right: -90.05%;
+        }
+    }
+
+}
+
+.dining__description {
+    &-1 {
+        padding-top: 90px;
+        width: 90%;
+        margin: auto;
+        position: relative;
+        @media only screen and (min-width: 768px) { 
+            display: none;
+        }
+        &-lg {
+            display: none;
+            @media only screen and (min-width: 768px) { 
+                display: block;
+                padding-top: 0px;
+            } 
+        }
+    
+    }
+    &-par {
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        @media only screen and (min-width: 768px) { 
+            color: white;
+            padding-bottom: 40px;
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            top: -41px;
+        } 
+        @media only screen and (min-width: 768px) { 
+            text-align: left;
+            padding-bottom: 25px;
+            width: 70%;
+            letter-spacing: 1.2px;
+            margin: 0;
+        }
+    }
+}
+
+.dining__button {
+    
+    margin-top: 20px;
+    margin: auto;
+    text-align: center;
+    overflow: auto;
+    font-weight: bold;
+    &:focus{
+        outline: 0;
+    }
+    &:active {
+        opacity: .7;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+    
+
+
+    &--reserve {
+        color: white;
+        background-color: rgb(225, 47, 55);
+        border: none;
+        padding: 12px 32px;
+        @media only screen and (min-width: 768px) { 
+            background-color: rgba(0,0,0,0);
+            border: solid 1px white;
+            display: inline-block; 
+        }
+    }
+
+    &--view {
+        background-color: white;
+        color: rgb(225, 47, 55);
+        border: none;
+        text-align: left;
+        padding: 12px 10px;
+        margin-left: 2px;
+        @media only screen and (min-width: 768px) { 
+            display: none;
+        }
+        &-lg {
+            @media only screen and (min-width: 768px) { 
+            background-color: rgba(0,0,0,0);
+            border: solid 1px white;
+            display: inline-block;
+            color: white;
+            margin-left: 10px;
+            }
+        }
+    }
+
+}
+
+.dining__button--container {
+    padding-top: 15px;
+    display: block;
+    padding-bottom: 20px;
+    text-align: center;
+    @media only screen and (min-width: 768px) { 
+        text-align: right;
+    }
+    @media only screen and (min-width: 1124px) { 
+        text-align: left;
+    }
+    // &-lg {
+    //     @media only screen and (min-width: 768px) { 
+    //         display: block;
+    //     } 
+    // }
+    // @media only screen and (max-width: 767px) { 
+    //     display: none;
+    // }
+
+}
+
+
+// picture active for JS
+.dining__irvine--wrapper {
+    display: none;
+}
+.dining__cafe--wrapper {
+    display: none;
+}
+.dining__court--wrapper {
+    display: none;
+}
+
+
+.active__dining--image {
+    display: block;
+}
+
+
+.cafe__logo {
+    font-family: 'Monoton', cursive;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    padding: 20px 0 0 20px;
+}
+.irvine__logo {
+    font-family: 'Bungee Inline', cursive;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    padding: 20px 0 0 20px;
+}
+
+.foodCourt__logo {
+    color: white;
+    font-size: 30px;
+    font-family: 'Sail', cursive;
+    position: absolute;
+    padding: 20px 0 0 20px;
+}
+
+
+
+
+
+// LG
+
+.dining__header-lg {
+    position: relative;
+    text-align: left;
+    color: rgb(225, 47, 55);
+    font-weight: 700;
+    font-size: 14px;
+    height: 67px;
+    padding-left: 25px;
+    font-size: 20px;
+    line-height: 3.4; 
+    z-index: 3;
+    &:after {
+        @media only screen and (min-width: 1124px) {
+        position: absolute;
+        content: '';
+        height: 25px;
+        width: 167%;
+        opacity: .7;
+        background: #53cdeb;
+        left: 100%;
+        z-index: 4;
+        top: -1px;
+        }
+    }
+    &:hover {
+        background-color: white;
+        cursor: default;
+    }
+
+
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
+
+
+}
