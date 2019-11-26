@@ -73,6 +73,7 @@
    height: 100%;
    min-width: 100px;
    margin: 0 auto;
+    }
     &-2:after {
         content: '';
         border-right: solid 1px #c6dde1;
@@ -124,7 +125,7 @@
             }
          }
     }
-}
+
 
 .datepicker-month-4, .datepicker-month-5, .datepicker-month-6, .datepicker-month-7 {
     @media screen and (min-width: 768px) {
@@ -197,10 +198,57 @@
     }
 }
 
-.select__numbers {
-    transform: translate(34%);
+.select__numbers, .select__numbers-guest, .select__numbers-sm, .select__numbers-guest-dining, .select__numbers-guest-show {
+    text-align: center;
+    padding-top: 19px;
+}
+.select__time, .select__time-dining {
+    text-align: center;
+    padding-top: 25px;
 }
 
+.select__word, .select__word-show {
+    text-align: center;
+    padding-top: 28px;
+}
+// #booking__options, #booking__options-guest {
+//     display: none;
+// }
+
+
+.booking__options, .booking__options-guest, .booking__options-time, .booking__options-guest-dining, .booking__options-guest-show, .booking__options-time-dining, .booking__options-word, .booking__options-word-show  {
+    display: none;
+    list-style-type: none;
+    border: solid 1px black;
+    background-color: white;
+    z-index: 5;
+    margin-top: -10px;
+    width: 120px;
+    margin-left: -11px;
+    &--single {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px;
+        border-bottom: solid 1px black;
+        padding: 6px;
+        &:hover {
+            background-color: #eef1f9;            
+            cursor: pointer;
+        }
+    }
+    &--4 {
+        border-bottom: none;
+    }
+    &--active {
+        display: block !important;
+    }
+}
+
+.booking__options-word, .booking__options-word-show {
+    &--single {
+        font-size: 16px;
+    }
+}
 .booknow-button {
     font-size: 13px;
     color: white;

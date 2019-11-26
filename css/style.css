@@ -548,7 +548,7 @@ body {
   height: 100%;
 }
 
-.select__words {
+.select__word, .select__word-show, .select__word-sm, .select__word-show-sm {
   font-size: 100%;
   width: 100%;
   height: 100%;
@@ -562,31 +562,31 @@ body {
   -webkit-appearance: none;
 }
 
-.select__words::-webkit-input-placeholder {
+.select__word::-webkit-input-placeholder, .select__word-show::-webkit-input-placeholder, .select__word-sm::-webkit-input-placeholder, .select__word-show-sm::-webkit-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__words:-ms-input-placeholder {
+.select__word:-ms-input-placeholder, .select__word-show:-ms-input-placeholder, .select__word-sm:-ms-input-placeholder, .select__word-show-sm:-ms-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__words::-ms-input-placeholder {
+.select__word::-ms-input-placeholder, .select__word-show::-ms-input-placeholder, .select__word-sm::-ms-input-placeholder, .select__word-show-sm::-ms-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__words::placeholder {
+.select__word::placeholder, .select__word-show::placeholder, .select__word-sm::placeholder, .select__word-show-sm::placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__words:focus {
+.select__word:focus, .select__word-show:focus, .select__word-sm:focus, .select__word-show-sm:focus {
   outline: none;
 }
 
-.select__time {
+.select__time, .select__time-dining {
   font-size: 35px;
   /* text-align: center; */
   width: 100%;
@@ -603,31 +603,31 @@ body {
   text-align-last: center;
 }
 
-.select__time::-webkit-input-placeholder {
+.select__time::-webkit-input-placeholder, .select__time-dining::-webkit-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__time:-ms-input-placeholder {
+.select__time:-ms-input-placeholder, .select__time-dining:-ms-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__time::-ms-input-placeholder {
+.select__time::-ms-input-placeholder, .select__time-dining::-ms-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__time::placeholder {
+.select__time::placeholder, .select__time-dining::placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__time:focus {
+.select__time:focus, .select__time-dining:focus {
   outline: none;
 }
 
-.select__numbers {
+.select__numbers, .select__numbers-guest-dining, .select__numbers-guest-show {
   font-size: 45px;
   width: 100%;
   height: 100%;
@@ -637,33 +637,30 @@ body {
   cursor: pointer;
   color: transparent;
   text-shadow: 0 0 0 black;
-  -webkit-transform: translate(39%);
-          transform: translate(39%);
   background: transparent;
-  -webkit-appearance: none;
 }
 
-.select__numbers::-webkit-input-placeholder {
+.select__numbers::-webkit-input-placeholder, .select__numbers-guest-dining::-webkit-input-placeholder, .select__numbers-guest-show::-webkit-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__numbers:-ms-input-placeholder {
+.select__numbers:-ms-input-placeholder, .select__numbers-guest-dining:-ms-input-placeholder, .select__numbers-guest-show:-ms-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__numbers::-ms-input-placeholder {
+.select__numbers::-ms-input-placeholder, .select__numbers-guest-dining::-ms-input-placeholder, .select__numbers-guest-show::-ms-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__numbers::placeholder {
+.select__numbers::placeholder, .select__numbers-guest-dining::placeholder, .select__numbers-guest-show::placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__numbers:focus {
+.select__numbers:focus, .select__numbers-guest-dining:focus, .select__numbers-guest-show:focus {
   outline: none;
 }
 

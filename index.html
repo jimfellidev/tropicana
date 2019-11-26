@@ -135,24 +135,33 @@
             <ul class="flexbox-check-in flexbox-check-in-3">
                 <li class="datepicker-title">Room</li>    
                     <li class="select__wrapper">
-                        <select class="select__numbers">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
+                        <div class="select__numbers" id="select__numbers">
+                            <span class="select__numbers--answer">1</span>
+                            <span class="select__numbers--answer-click"></span>
+                        </div>
+                        <ul class="booking__options booking__options--rooms booking__options--off" id="booking__options">
+                            <li class="booking__options--single booking__options--1">1</li>
+                            <li class="booking__options--single booking__options--2">2</li>
+                            <li class="booking__options--single booking__options--3">3</li>
+                            <li class="booking__options--single booking__options--4">4</li>
+                        </ul>
+                        
                     </li>
                 </li>
             </ul>
             <ul class="flexbox-check-in flexbox-check-in-4">
                 <li class="datepicker-title">Guests</li>
                 <li class="select__wrapper">
-                    <select class="select__numbers">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
+                    <div class="select__numbers" id="select__numbers-guest">
+                            <span class="select__numbers--answer-guest">1</span>
+                            <span class="select__numbers--answer-click"></span>
+                        </div>
+                        <ul class="booking__options booking__options--rooms booking__options-guest booking__options--off" id="booking__options-guest">
+                            <li class="booking__options-guest--single booking__options-guest--1">1</li>
+                            <li class="booking__options-guest--single booking__options-guest--2">2</li>
+                            <li class="booking__options-guest--single booking__options-guest--3">3</li>
+                            <li class="booking__options-guest--single booking__options-guest--4">4</li>
+                        </ul>
                 </li>
             </ul>
         </div>
@@ -170,40 +179,47 @@
             <ul class="flexbox-check-in flexbox-check-in-2">
                 <li class="datepicker-title">Restaurants</li>
                 <li class="select__wrapper">    
-                    <select class="select__words ddList centerSelect">
-                        <option class="lt" value="Irvine">Irvine</option>
-                        <option class="lt" value="Ipsum">Ipsum</option>
-                        <option class="lt" value="Ipsum-2">Ipsum-2</option>
-                        <option class="lt" value="Ipsum-3">Ipsum-3</option>
-                    </select>
+                    <div class="select__word" id="select__word">
+                        <span class="select__word--answer">ROBERT IRVINE</span>
+                        <span class="select__word--answer-click"></span>
+                    </div>
+                    <ul class="booking__options booking__options-word booking__options--off" id="booking__options-word">
+                        <li class="booking__options-word--single booking__options-word--1">ROBERT IRVINE</li>
+                        <li class="booking__options-word--single booking__options-word--2">SOUTH BEACH</li>
+                        <li class="booking__options-word--single booking__options-word--3">TROPICANA CAFE</li>
+                    </ul>
                 </li>
             </ul>
 
             <ul class="flexbox-check-in flexbox-check-in-3">
                 <li class="datepicker-title">Time</li>    
                     <li class="select__wrapper">
-                        <select class="select__time">
-                            <option value="8:00">8:00</option>
-                            <option value="8:30">8:30</option>
-                            <option value="9:00">9:00</option>
-                            <option value="9:30">9:30</option>
-                            <option value="10:00">10:00</option>
-                            <option value="10:30">10:30</option>
-                            <option value="11:00">11:00</option>
-                            <option value="11:30">11:30</option>
-                        </select>
+                        <div class="select__time-dining" id="select__time-dining">
+                            <span class="select__time--answer">8:00</span>
+                            <span class="select__time--answer-click"></span>
+                        </div>
+                        <ul class="booking__options booking__options-time-dining booking__options--off" id="booking__options-time-dining">
+                            <li class="booking__options-time--single booking__options-time--1">8:00</li>
+                            <li class="booking__options-time--single booking__options-time--2">8:30</li>
+                            <li class="booking__options-time--single booking__options-time--3">9:00</li>
+                            <li class="booking__options-time--single booking__options-time--4">10:00</li>
+                        </ul>
                     </li>
                 </li>
             </ul>
             <ul class="flexbox-check-in flexbox-check-in-4">
                 <li class="datepicker-title">Guests</li>
                 <li class="select__wrapper">
-                    <select class="select__numbers">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
+                    <div class="select__numbers-guest-dining" id="select__numbers-guest-dining">
+                        <span class="select__numbers--answer-guest">1</span>
+                        <span class="select__numbers--answer-click"></span>
+                    </div>
+                    <ul class="booking__options booking__options--rooms booking__options-guest-dining booking__options--off" id="booking__options-guest-dining">
+                        <li class="booking__options-guest--single booking__options-guest--1">1</li>
+                        <li class="booking__options-guest--single booking__options-guest--2">2</li>
+                        <li class="booking__options-guest--single booking__options-guest--3">3</li>
+                        <li class="booking__options-guest--single booking__options-guest--4">4</li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -222,36 +238,47 @@
             <ul class="flexbox-check-in flexbox-check-in-2">
                 <li class="datepicker-title">Show</li>
                 <li class="select__wrapper">    
-                    <select class="select__words ddList centerSelect">
-                        <option class="lt" value="Irvine">Show</option>
-                        <option class="lt" value="Ipsum">Ipsum</option>
-                        <option class="lt" value="Ipsum-2">Ipsum-2</option>
-                        <option class="lt" value="Ipsum-3">Ipsum-3</option>
-                    </select>
+                    <div class="select__word-show" id="select__word-show">
+                        <span class="select__word-show--answer">THE LATIN KINGS</span>
+                        <span class="select__word-show--answer-click"></span>
+                    </div>
+                    <ul class="booking__options booking__options-word-show booking__options--off" id="booking__options-word-show">
+                        <li class="booking__options-word-show--single booking__options-word-show--1">THE LATIN KINGS</li>
+                        <li class="booking__options-word-show--single booking__options-word-show--2">SARAH EVANS</li>
+                        <li class="booking__options-word-show--single booking__options-word-show--3">THE BAND OF MAGICIANS</li>
+                    </ul>
                 </li>
             </ul>
 
             <ul class="flexbox-check-in flexbox-check-in-3">
                 <li class="datepicker-title">Time</li>    
                     <li class="select__wrapper">
-                        <select class="select__time">
-                            <option value="8:00">8:00</option>
-                            <option value="9:00">9:00</option>
-                            <option value="10:00">10:00</option>
-                            <option value="11:00">11:00</option>
-                        </select>
+                        <div class="select__time" id="select__time-show">
+                            <span class="select__time--answer">8:00</span>
+                            <span class="select__time--answer-click"></span>
+                        </div>
+                        <ul class="booking__options booking__options-time booking__options--off" id="booking__options-time-show">
+                            <li class="booking__options-time--single booking__options-time--1">8:00</li>
+                            <li class="booking__options-time--single booking__options-time--2">8:30</li>
+                            <li class="booking__options-time--single booking__options-time--3">9:00</li>
+                            <li class="booking__options-time--single booking__options-time--4">10:00</li>
+                        </ul>
                     </li>
                 </li>
             </ul>
             <ul class="flexbox-check-in flexbox-check-in-4">
                 <li class="datepicker-title">Tickets</li>
                 <li class="select__wrapper">
-                    <select class="select__numbers">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
+                    <div class="select__numbers-guest-show" id="select__numbers-guest-show">
+                        <span class="select__numbers--answer-guest">1</span>
+                        <span class="select__numbers--answer-click"></span>
+                    </div>
+                    <ul class="booking__options booking__options--rooms booking__options-guest-show booking__options--off" id="booking__options-guest-show">
+                        <li class="booking__options-guest--single booking__options-guest--1">1</li>
+                        <li class="booking__options-guest--single booking__options-guest--2">2</li>
+                        <li class="booking__options-guest--single booking__options-guest--3">3</li>
+                        <li class="booking__options-guest--single booking__options-guest--4">4</li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -326,12 +353,16 @@
                             <div class="room__flexbox--item room__flexbox--item-1">
                                 <!-- Room / Guest selector Booking Section -->
                                 <div class="select__wrapper">
-                                    <select class="select__numbers">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                    </select>
+                                    <!-- <div class="select__numbers" id="select__numbers">
+                                            <span class="select__numbers--answer">1</span>
+                                            <span class="select__numbers--answer-click"></span>
+                                        </div>
+                                        <ul class="booking__options-sm booking__options booking__options--rooms booking__options--off" id="booking__options">
+                                            <li class="booking__options--single booking__options--1">1</li>
+                                            <li class="booking__options--single booking__options--2">2</li>
+                                            <li class="booking__options--single booking__options--3">3</li>
+                                            <li class="booking__options--single booking__options--4">4</li>
+                                        </ul> -->
                                 </div>
                             </div>
                             <div class="room__flexbox--item room__flexbox--item-2">
@@ -920,6 +951,7 @@
 <!-- <script src="datepicker.min.js"></script> -->
 <script src="scripts/jquery-ui.min.js"></script>
 <!-- <script src="datepicker.min.js"></script> -->
+<script src="scripts/booking_app.js"></script>
 <script src="scripts/script.js"></script>
 </body>
 </html>

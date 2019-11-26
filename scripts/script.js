@@ -144,6 +144,7 @@ $("body").click(function() {
   });
 
 
+  
 
 //   dining
 
@@ -222,7 +223,6 @@ var swiper = new Swiper('.swiper-container', {
 
 //   Copyright current year
 const currentYear = new Date().getFullYear();
-
 document.getElementById('copyright').innerText = currentYear;
 
 
@@ -231,19 +231,13 @@ document.getElementById('copyright').innerText = currentYear;
 
 
 
-// SMOOTH SCROLL AND fixing the header
-
-
-function widthLarge() {
-    return $('.booking').is(':none');
-}
-
-function widthSmall() {
-    return $('.booking').is(':block');
-}
 
 
 
+
+
+
+// SMOOTH SCROLL AND HEADER ADJUSTMENT ON NAV CLICK
 // if (widthLarge()) {
 
 (function(document, history, location) {

@@ -93,77 +93,78 @@
     min-width: 100px;
     margin: 0 auto;
   }
-  .flexbox-check-in-2:after {
-    content: '';
-    border-right: solid 1px #c6dde1;
-    height: 140px;
-    position: absolute;
-    top: 36px;
-    right: 67.5%;
-  }
 }
 
-@media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 820px) {
+.flexbox-check-in-2:after {
+  content: '';
+  border-right: solid 1px #c6dde1;
+  height: 140px;
+  position: absolute;
+  top: 36px;
+  right: 67.5%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
   .flexbox-check-in-2:after {
     right: 52.1%;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 820px) and (max-width: 866px) {
+@media screen and (min-width: 820px) and (max-width: 866px) {
   .flexbox-check-in-2:after {
     right: 52%;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 866px) and (max-width: 975px) {
+@media screen and (min-width: 866px) and (max-width: 975px) {
   .flexbox-check-in-2:after {
     right: 51.8%;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 871px) and (max-width: 1070px) {
+@media screen and (min-width: 871px) and (max-width: 1070px) {
   .flexbox-check-in-2:after {
     right: 51.7%;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1070px) {
+@media screen and (min-width: 1070px) {
   .flexbox-check-in-2:after {
     right: 66.8%;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1071px) and (max-width: 1107px) {
+@media screen and (min-width: 1071px) and (max-width: 1107px) {
   .flexbox-check-in-2:after {
     right: 66.9%;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1107px) and (max-width: 1149px) {
+@media screen and (min-width: 1107px) and (max-width: 1149px) {
   .flexbox-check-in-2:after {
     right: 67%;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1149px) and (max-width: 1175px) {
+@media screen and (min-width: 1149px) and (max-width: 1175px) {
   .flexbox-check-in-2:after {
     right: 67.1%;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1175px) and (max-width: 1240px) {
+@media screen and (min-width: 1175px) and (max-width: 1240px) {
   .flexbox-check-in-2:after {
     right: 67.35%;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1240px) {
+@media screen and (min-width: 1240px) {
   .flexbox-check-in-2:after {
     right: 67.5%;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1070px) {
+@media screen and (min-width: 1070px) {
   .flexbox-check-in {
     list-style-type: none;
     width: 14%;
@@ -270,9 +271,55 @@
   }
 }
 
-.select__numbers {
-  -webkit-transform: translate(34%);
-          transform: translate(34%);
+.select__numbers, .select__numbers-guest, .select__numbers-sm, .select__numbers-guest-dining, .select__numbers-guest-show {
+  text-align: center;
+  padding-top: 19px;
+}
+
+.select__time, .select__time-dining {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.select__word, .select__word-show {
+  text-align: center;
+  padding-top: 28px;
+}
+
+.booking__options, .booking__options-guest, .booking__options-time, .booking__options-guest-dining, .booking__options-guest-show, .booking__options-time-dining, .booking__options-word, .booking__options-word-show {
+  display: none;
+  list-style-type: none;
+  border: solid 1px black;
+  background-color: white;
+  z-index: 5;
+  margin-top: -10px;
+  width: 120px;
+  margin-left: -11px;
+}
+
+.booking__options--single, .booking__options-guest--single, .booking__options-time--single, .booking__options-guest-dining--single, .booking__options-guest-show--single, .booking__options-time-dining--single, .booking__options-word--single, .booking__options-word-show--single {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  border-bottom: solid 1px black;
+  padding: 6px;
+}
+
+.booking__options--single:hover, .booking__options-guest--single:hover, .booking__options-time--single:hover, .booking__options-guest-dining--single:hover, .booking__options-guest-show--single:hover, .booking__options-time-dining--single:hover, .booking__options-word--single:hover, .booking__options-word-show--single:hover {
+  background-color: #eef1f9;
+  cursor: pointer;
+}
+
+.booking__options--4, .booking__options-guest--4, .booking__options-time--4, .booking__options-guest-dining--4, .booking__options-guest-show--4, .booking__options-time-dining--4, .booking__options-word--4, .booking__options-word-show--4 {
+  border-bottom: none;
+}
+
+.booking__options--active, .booking__options-guest--active, .booking__options-time--active, .booking__options-guest-dining--active, .booking__options-guest-show--active, .booking__options-time-dining--active, .booking__options-word--active, .booking__options-word-show--active {
+  display: block !important;
+}
+
+.booking__options-word--single, .booking__options-word-show--single {
+  font-size: 16px;
 }
 
 .booknow-button {

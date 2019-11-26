@@ -495,7 +495,7 @@ body {
     height: 100%;
 }
 
-.select__words {
+.select__word, .select__word-show, .select__word-sm, .select__word-show-sm {
     // text-align-last: center;
     // transform: translate(25%);
     font-size: 100%;
@@ -522,7 +522,7 @@ body {
     }
 }
 
-.select__time {
+.select__time, .select__time-dining {
     font-size: 35px;
     /* text-align: center; */
     width: 100%;
@@ -548,7 +548,7 @@ body {
     }
 }
 
-.select__numbers {
+.select__numbers, .select__numbers-guest-dining, .select__numbers-guest-show {
     font-size: 45px;
     // text-align: center;
     width: 100%;
@@ -560,11 +560,10 @@ body {
     cursor: pointer;
     color: transparent;
     text-shadow: 0 0 0 black;
-    // margin-left: 50%;
-    transform: translate(39%);
+    
     background: transparent;
     // text-align-last: center;
-    -webkit-appearance:none;
+    
     &::placeholder {
         color: black;
         opacity: 1;
