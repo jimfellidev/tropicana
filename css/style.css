@@ -221,6 +221,7 @@ body {
 }
 
 .booking__container--button, .show__container--button, .dining__container--button {
+  z-index: -1;
   font-size: 16px;
   color: white;
   width: 240px;
@@ -586,7 +587,7 @@ body {
   outline: none;
 }
 
-.select__time, .select__time-dining {
+.select__time, .select__time-sm, .select__time-dining, .select__time-dining-sm {
   font-size: 35px;
   /* text-align: center; */
   width: 100%;
@@ -603,31 +604,31 @@ body {
   text-align-last: center;
 }
 
-.select__time::-webkit-input-placeholder, .select__time-dining::-webkit-input-placeholder {
+.select__time::-webkit-input-placeholder, .select__time-sm::-webkit-input-placeholder, .select__time-dining::-webkit-input-placeholder, .select__time-dining-sm::-webkit-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__time:-ms-input-placeholder, .select__time-dining:-ms-input-placeholder {
+.select__time:-ms-input-placeholder, .select__time-sm:-ms-input-placeholder, .select__time-dining:-ms-input-placeholder, .select__time-dining-sm:-ms-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__time::-ms-input-placeholder, .select__time-dining::-ms-input-placeholder {
+.select__time::-ms-input-placeholder, .select__time-sm::-ms-input-placeholder, .select__time-dining::-ms-input-placeholder, .select__time-dining-sm::-ms-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__time::placeholder, .select__time-dining::placeholder {
+.select__time::placeholder, .select__time-sm::placeholder, .select__time-dining::placeholder, .select__time-dining-sm::placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__time:focus, .select__time-dining:focus {
+.select__time:focus, .select__time-sm:focus, .select__time-dining:focus, .select__time-dining-sm:focus {
   outline: none;
 }
 
-.select__numbers, .select__numbers-guest-dining, .select__numbers-guest-show {
+.select__numbers, .select__numbers-sm, .select__numbers-guest-dining, .select__numbers-guest-dining-sm, .select__numbers-guest-show, .select__numbers-guest-show-sm {
   font-size: 45px;
   width: 100%;
   height: 100%;
@@ -640,27 +641,27 @@ body {
   background: transparent;
 }
 
-.select__numbers::-webkit-input-placeholder, .select__numbers-guest-dining::-webkit-input-placeholder, .select__numbers-guest-show::-webkit-input-placeholder {
+.select__numbers::-webkit-input-placeholder, .select__numbers-sm::-webkit-input-placeholder, .select__numbers-guest-dining::-webkit-input-placeholder, .select__numbers-guest-dining-sm::-webkit-input-placeholder, .select__numbers-guest-show::-webkit-input-placeholder, .select__numbers-guest-show-sm::-webkit-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__numbers:-ms-input-placeholder, .select__numbers-guest-dining:-ms-input-placeholder, .select__numbers-guest-show:-ms-input-placeholder {
+.select__numbers:-ms-input-placeholder, .select__numbers-sm:-ms-input-placeholder, .select__numbers-guest-dining:-ms-input-placeholder, .select__numbers-guest-dining-sm:-ms-input-placeholder, .select__numbers-guest-show:-ms-input-placeholder, .select__numbers-guest-show-sm:-ms-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__numbers::-ms-input-placeholder, .select__numbers-guest-dining::-ms-input-placeholder, .select__numbers-guest-show::-ms-input-placeholder {
+.select__numbers::-ms-input-placeholder, .select__numbers-sm::-ms-input-placeholder, .select__numbers-guest-dining::-ms-input-placeholder, .select__numbers-guest-dining-sm::-ms-input-placeholder, .select__numbers-guest-show::-ms-input-placeholder, .select__numbers-guest-show-sm::-ms-input-placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__numbers::placeholder, .select__numbers-guest-dining::placeholder, .select__numbers-guest-show::placeholder {
+.select__numbers::placeholder, .select__numbers-sm::placeholder, .select__numbers-guest-dining::placeholder, .select__numbers-guest-dining-sm::placeholder, .select__numbers-guest-show::placeholder, .select__numbers-guest-show-sm::placeholder {
   color: black;
   opacity: 1;
 }
 
-.select__numbers:focus, .select__numbers-guest-dining:focus, .select__numbers-guest-show:focus {
+.select__numbers:focus, .select__numbers-sm:focus, .select__numbers-guest-dining:focus, .select__numbers-guest-dining-sm:focus, .select__numbers-guest-show:focus, .select__numbers-guest-show-sm:focus {
   outline: none;
 }
 

@@ -271,7 +271,7 @@
   }
 }
 
-.select__numbers, .select__numbers-guest, .select__numbers-sm, .select__numbers-guest-dining, .select__numbers-guest-show {
+.select__numbers, .select__numbers-guest, .select__numbers-guest-sm, .select__numbers-sm, .select__numbers-guest-dining, .select__numbers-guest-dining-sm, .select__numbers-guest-show, .select__numbers-guest-show-sm, .select__numbers-sm {
   text-align: center;
   padding-top: 19px;
 }
@@ -281,12 +281,22 @@
   padding-top: 25px;
 }
 
+.select__time-sm, .select__time-dining-sm {
+  padding-top: 29px;
+  text-align: center;
+}
+
 .select__word, .select__word-show {
   text-align: center;
   padding-top: 28px;
 }
 
-.booking__options, .booking__options-guest, .booking__options-time, .booking__options-guest-dining, .booking__options-guest-show, .booking__options-time-dining, .booking__options-word, .booking__options-word-show {
+.select__word-sm, .select__word-show-sm {
+  text-align: center;
+  padding-top: 34px;
+}
+
+.booking__options, .booking__options-sm, .booking__options-guest, .booking__options-guest-sm, .booking__options-time, .booking__options-time-sm, .booking__options-guest-dining, .booking__options-guest-dining-sm, .booking__options-guest-show, .booking__options-guest-show-sm, .booking__options-time-dining, .booking__options-time-dining-sm, .booking__options-word, .booking__options-word-sm, .booking__options-word-show, .booking__options-word-show-sm {
   display: none;
   list-style-type: none;
   border: solid 1px black;
@@ -297,29 +307,44 @@
   margin-left: -11px;
 }
 
-.booking__options--single, .booking__options-guest--single, .booking__options-time--single, .booking__options-guest-dining--single, .booking__options-guest-show--single, .booking__options-time-dining--single, .booking__options-word--single, .booking__options-word-show--single {
+.booking__options--single, .booking__options-sm--single, .booking__options-guest--single, .booking__options-guest-sm--single, .booking__options-time--single, .booking__options-time-sm--single, .booking__options-guest-dining--single, .booking__options-guest-dining-sm--single, .booking__options-guest-show--single, .booking__options-guest-show-sm--single, .booking__options-time-dining--single, .booking__options-time-dining-sm--single, .booking__options-word--single, .booking__options-word-sm--single, .booking__options-word-show--single, .booking__options-word-show-sm--single {
   margin: 0 auto;
   text-align: center;
   font-size: 20px;
   border-bottom: solid 1px black;
   padding: 6px;
+  position: relative;
+  z-index: 10;
+  background-color: white;
 }
 
-.booking__options--single:hover, .booking__options-guest--single:hover, .booking__options-time--single:hover, .booking__options-guest-dining--single:hover, .booking__options-guest-show--single:hover, .booking__options-time-dining--single:hover, .booking__options-word--single:hover, .booking__options-word-show--single:hover {
+.booking__options--single:hover, .booking__options-sm--single:hover, .booking__options-guest--single:hover, .booking__options-guest-sm--single:hover, .booking__options-time--single:hover, .booking__options-time-sm--single:hover, .booking__options-guest-dining--single:hover, .booking__options-guest-dining-sm--single:hover, .booking__options-guest-show--single:hover, .booking__options-guest-show-sm--single:hover, .booking__options-time-dining--single:hover, .booking__options-time-dining-sm--single:hover, .booking__options-word--single:hover, .booking__options-word-sm--single:hover, .booking__options-word-show--single:hover, .booking__options-word-show-sm--single:hover {
   background-color: #eef1f9;
   cursor: pointer;
 }
 
-.booking__options--4, .booking__options-guest--4, .booking__options-time--4, .booking__options-guest-dining--4, .booking__options-guest-show--4, .booking__options-time-dining--4, .booking__options-word--4, .booking__options-word-show--4 {
+.booking__options--4, .booking__options-sm--4, .booking__options-guest--4, .booking__options-guest-sm--4, .booking__options-time--4, .booking__options-time-sm--4, .booking__options-guest-dining--4, .booking__options-guest-dining-sm--4, .booking__options-guest-show--4, .booking__options-guest-show-sm--4, .booking__options-time-dining--4, .booking__options-time-dining-sm--4, .booking__options-word--4, .booking__options-word-sm--4, .booking__options-word-show--4, .booking__options-word-show-sm--4 {
   border-bottom: none;
 }
 
-.booking__options--active, .booking__options-guest--active, .booking__options-time--active, .booking__options-guest-dining--active, .booking__options-guest-show--active, .booking__options-time-dining--active, .booking__options-word--active, .booking__options-word-show--active {
+.booking__options--4-sm, .booking__options-sm--4-sm, .booking__options-guest--4-sm, .booking__options-guest-sm--4-sm, .booking__options-time--4-sm, .booking__options-time-sm--4-sm, .booking__options-guest-dining--4-sm, .booking__options-guest-dining-sm--4-sm, .booking__options-guest-show--4-sm, .booking__options-guest-show-sm--4-sm, .booking__options-time-dining--4-sm, .booking__options-time-dining-sm--4-sm, .booking__options-word--4-sm, .booking__options-word-sm--4-sm, .booking__options-word-show--4-sm, .booking__options-word-show-sm--4-sm {
+  border-bottom: none;
+}
+
+.booking__options--active, .booking__options-sm--active, .booking__options-guest--active, .booking__options-guest-sm--active, .booking__options-time--active, .booking__options-time-sm--active, .booking__options-guest-dining--active, .booking__options-guest-dining-sm--active, .booking__options-guest-show--active, .booking__options-guest-show-sm--active, .booking__options-time-dining--active, .booking__options-time-dining-sm--active, .booking__options-word--active, .booking__options-word-sm--active, .booking__options-word-show--active, .booking__options-word-show-sm--active {
   display: block !important;
+}
+
+.booking__options-sm {
+  margin-left: -5px;
 }
 
 .booking__options-word--single, .booking__options-word-show--single {
   font-size: 16px;
+}
+
+.booking__options-word--3, .booking__options-word-show--3 {
+  border-bottom: none;
 }
 
 .booknow-button {

@@ -191,14 +191,41 @@ nav {
   padding-top: 18px;
 }
 
+.nav__flex--item-lg-2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav__flex--item-lg-2 a:hover {
+  opacity: .7;
+}
+
 .nav__flex--item-lg-3 {
   width: 20%;
   padding-top: 18px;
 }
 
+.nav__flex--item-lg-3 a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav__flex--item-lg-3 a:hover {
+  opacity: .7;
+}
+
 .nav__flex--item-lg-4 {
   width: 9%;
   width: 14%;
+}
+
+.nav__flex--item-lg-4 a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav__flex--item-lg-4 a:hover {
+  opacity: .7;
 }
 
 .nav__flex--item-lg-5 {
@@ -207,10 +234,28 @@ nav {
   padding-top: 18px;
 }
 
+.nav__flex--item-lg-5 a {
+  text-decoration: none;
+  color: #53cdeb;
+}
+
+.nav__flex--item-lg-5 a:hover {
+  opacity: .7;
+}
+
 .nav__flex--item-lg-6 {
   width: 7%;
   color: #53cdeb;
   padding-top: 18px;
+}
+
+.nav__flex--item-lg-6 a {
+  text-decoration: none;
+  color: #53cdeb;
+}
+
+.nav__flex--item-lg-6 a:hover {
+  opacity: .7;
 }
 
 .nav__flex--item-lg-7 {

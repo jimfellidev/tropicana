@@ -112,7 +112,7 @@ $(".show__click").click(function(){
     $(".booking__click").removeClass("active__button");
     $(".show__container").addClass("active__container");
     $(".booking__container").removeClass("active__container");
-    $(".dining__containerLg").removeClass("active__container");
+    $(".dining__container").removeClass("active__container");
     });    
 
 

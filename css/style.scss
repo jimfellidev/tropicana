@@ -213,6 +213,7 @@ body {
     margin: 0 auto;
     // display: none;
     &--button {
+        z-index: -1;
         font-size: 16px;
         color: white;
         width: 240px;
@@ -522,7 +523,7 @@ body {
     }
 }
 
-.select__time, .select__time-dining {
+.select__time, .select__time-sm, .select__time-dining, .select__time-dining-sm  {
     font-size: 35px;
     /* text-align: center; */
     width: 100%;
@@ -548,7 +549,7 @@ body {
     }
 }
 
-.select__numbers, .select__numbers-guest-dining, .select__numbers-guest-show {
+.select__numbers, .select__numbers-sm, .select__numbers-guest-dining, .select__numbers-guest-dining-sm, .select__numbers-guest-show, .select__numbers-guest-show-sm {
     font-size: 45px;
     // text-align: center;
     width: 100%;
