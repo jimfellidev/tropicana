@@ -152,6 +152,15 @@
             }
         &:hover {
             opacity: .9;
+            @media only screen and (min-width: 768px) {
+                opacity: 1;
+            }
+        }
+        &:active {
+            opacity: 1;
+            }
+        & a {
+            text-decoration: none;
         }
     }
 
@@ -199,7 +208,6 @@
         padding-left: 20px;
         font-weight: 500;
         font-family: 'Lato', sans-serif;
-        
         &--wrapper {
             position: relative;
             display: block;
@@ -215,6 +223,15 @@
         width: 100%;
         &:hover {
             opacity: .9;
+            @media only screen and (min-width: 768px) {
+                opacity: 1;
+            }
+        }
+        &:active {
+            opacity: 1;
+            }
+        & a {
+            text-decoration: none;
         }
     }
 
@@ -279,7 +296,17 @@
         margin-bottom: -30px;
         &:hover {
             opacity: .9;
+            @media only screen and (min-width: 768px) {
+                opacity: 1;
+            }
         }
+        &:active {
+            opacity: 1;
+            }
+        & a {
+            text-decoration: none;
+        }
+        
     }
 
     &__image {

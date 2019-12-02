@@ -149,6 +149,10 @@
   cursor: pointer;
 }
 
+.dining__flexbox--item:hover {
+  opacity: 1;
+}
+
 @media only screen and (min-width: 768px) {
   .dining__flexbox--item {
     text-align: left;
@@ -648,6 +652,14 @@
   padding: 12px 32px;
 }
 
+.dining__button--reserve:hover {
+  background-color: #d71f27;
+}
+
+.dining__button--reserve:active {
+  background-color: #e4454c;
+}
+
 @media only screen and (min-width: 768px) {
   .dining__button--reserve {
     background-color: rgba(0, 0, 0, 0);
@@ -665,6 +677,14 @@
   margin-left: 2px;
 }
 
+.dining__button--view:hover {
+  color: #c11c23;
+}
+
+.dining__button--view:active {
+  color: #e4454c;
+}
+
 @media only screen and (min-width: 768px) {
   .dining__button--view {
     display: none;
@@ -678,6 +698,14 @@
     display: inline-block;
     color: white;
     margin-left: 10px;
+  }
+  .dining__button--view-lg:hover {
+    background-color: #d71f27;
+    color: white;
+  }
+  .dining__button--view-lg:active {
+    background-color: #e4454c;
+    color: white;
   }
 }
 

@@ -53,6 +53,9 @@ nav {
     & a {
         text-decoration: none;
         color: white;
+        &:hover {
+            opacity: .8;
+        }
     }
 }
 
@@ -306,6 +309,9 @@ nav {
             &:link {
                 color: black;
             }
+            &:hover {
+                opacity: .7;
+            }
         }
     }
     &-3 {
@@ -316,6 +322,9 @@ nav {
             color: black;
             &:link {
                 color: black;
+            }
+            &:hover {
+                opacity: .7;
             }
         }
     }
@@ -328,6 +337,9 @@ nav {
             &:link {
                 color: black;
             }
+            &:hover {
+                opacity: .7;
+            }
         }
     }
     &-5 {
@@ -338,6 +350,9 @@ nav {
             color: black;
             &:link {
                 color: black;
+            }
+            &:hover {
+                opacity: .7;
             }
         }
     }
@@ -350,6 +365,9 @@ nav {
             &:link {
                 color: black;
             }
+            &:hover {
+                opacity: .7;
+            }
         }
     }
     &-7 {
@@ -360,6 +378,9 @@ nav {
             color: black;
             &:link {
                 color: black;
+            }
+            &:hover {
+                opacity: .7;
             }
         }
     }
@@ -372,6 +393,9 @@ nav {
             &:link {
                 color: black;
             }
+            &:hover {
+                opacity: .7;
+            }
         }
     }
     &-9 {
@@ -380,6 +404,9 @@ nav {
             color: rgb(225, 47, 55);
             &:link {
                 color: rgb(225, 47, 55);
+            }
+            &:hover {
+                opacity: .7;
             }
         }
         color:  rgb(225, 47, 55);
@@ -406,6 +433,9 @@ nav {
      width: 160px;
     background-color: rgb(225, 47, 55);
     padding: 20px 5px 20px 5px;
+    &:hover {
+        background-color: lighten(#e12f37, 5%);
+    }
  }
 
 

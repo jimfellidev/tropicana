@@ -52,6 +52,9 @@
         cursor: pointer;
         border-bottom: 0.9px solid rgba(61, 58, 58, 0.3);
         color: gray;
+        &:hover {
+            color: black;
+            }
         }
     }
     @media screen and (min-width: 1070px) {
@@ -285,6 +288,15 @@
     border: none;
     position: relative;
     cursor: pointer;   
+    // -webkit-transition: border-radius 1.5s;
+    // transition: border-radius 1.5s;
+    &:hover {
+        // border-radius: 30px;
+        background-color: darken(#e32f2d, 5%);
+    }
+    &:active {
+        background-color: lighten(#e32f2d, 5% );
+    }
 }
 
 .button-container-1 {

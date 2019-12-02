@@ -72,6 +72,9 @@
     border-bottom: 0.9px solid rgba(61, 58, 58, 0.3);
     color: gray;
   }
+  .flexbox-vert-links-item:hover {
+    color: black;
+  }
 }
 
 @media screen and (min-width: 1070px) {
@@ -356,6 +359,14 @@
   border: none;
   position: relative;
   cursor: pointer;
+}
+
+.booknow-button:hover {
+  background-color: #da1f1d;
+}
+
+.booknow-button:active {
+  background-color: #e64544;
 }
 
 .button-container-1 {

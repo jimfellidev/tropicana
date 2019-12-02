@@ -133,6 +133,9 @@
             font-size: 12px;
             font-weight: bold;
             cursor: pointer;
+            &:hover {
+                opacity: 1;
+                }
             @media only screen and (min-width: 768px) {
                 text-align: left;
                 height: 51px;
@@ -547,6 +550,12 @@
         background-color: rgb(225, 47, 55);
         border: none;
         padding: 12px 32px;
+        &:hover {
+            background-color: darken(rgb(225, 47, 55), 5%);
+            }
+        &:active {
+            background-color: lighten(rgb(225, 47, 55), 5%);
+            }
         @media only screen and (min-width: 768px) { 
             background-color: rgba(0,0,0,0);
             border: solid 1px white;
@@ -561,6 +570,12 @@
         text-align: left;
         padding: 12px 10px;
         margin-left: 2px;
+        &:hover {
+            color: darken(rgb(225, 47, 55), 10%);
+            }
+        &:active {
+            color: lighten(rgb(225, 47, 55), 5%);
+            }
         @media only screen and (min-width: 768px) { 
             display: none;
         }
@@ -571,6 +586,14 @@
             display: inline-block;
             color: white;
             margin-left: 10px;
+            &:hover {
+                background-color: darken(rgb(225, 47, 55), 5%);
+                color: white;
+                }
+            &:active {
+                background-color: lighten(rgb(225, 47, 55), 5%);
+                color: white;
+                }
             }
         }
     }

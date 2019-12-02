@@ -65,6 +65,10 @@ nav {
   color: white;
 }
 
+.book_now a:hover {
+  opacity: .8;
+}
+
 .troplogo {
   height: 50px;
   top: 7px;
@@ -327,6 +331,10 @@ nav {
   color: black;
 }
 
+.nav__flex--item-lg2-2 a:hover {
+  opacity: .7;
+}
+
 .nav__flex--item-lg2-3 {
   width: 8.5%;
   padding-top: 38px;
@@ -339,6 +347,10 @@ nav {
 
 .nav__flex--item-lg2-3 a:link {
   color: black;
+}
+
+.nav__flex--item-lg2-3 a:hover {
+  opacity: .7;
 }
 
 .nav__flex--item-lg2-4 {
@@ -355,6 +367,10 @@ nav {
   color: black;
 }
 
+.nav__flex--item-lg2-4 a:hover {
+  opacity: .7;
+}
+
 .nav__flex--item-lg2-5 {
   width: 8.5%;
   padding-top: 38px;
@@ -367,6 +383,10 @@ nav {
 
 .nav__flex--item-lg2-5 a:link {
   color: black;
+}
+
+.nav__flex--item-lg2-5 a:hover {
+  opacity: .7;
 }
 
 .nav__flex--item-lg2-6 {
@@ -383,6 +403,10 @@ nav {
   color: black;
 }
 
+.nav__flex--item-lg2-6 a:hover {
+  opacity: .7;
+}
+
 .nav__flex--item-lg2-7 {
   width: 10%;
   padding-top: 38px;
@@ -397,6 +421,10 @@ nav {
   color: black;
 }
 
+.nav__flex--item-lg2-7 a:hover {
+  opacity: .7;
+}
+
 .nav__flex--item-lg2-8 {
   width: 8.5%;
   padding-top: 38px;
@@ -409,6 +437,10 @@ nav {
 
 .nav__flex--item-lg2-8 a:link {
   color: black;
+}
+
+.nav__flex--item-lg2-8 a:hover {
+  opacity: .7;
 }
 
 .nav__flex--item-lg2-9 {
@@ -429,6 +461,10 @@ nav {
   color: #e12f37;
 }
 
+.nav__flex--item-lg2-9 a:hover {
+  opacity: .7;
+}
+
 .nav__flex--item-lg2-10 {
   width: 2%;
 }
@@ -446,5 +482,9 @@ nav {
   width: 160px;
   background-color: #e12f37;
   padding: 20px 5px 20px 5px;
+}
+
+.troplogo-nav-img:hover {
+  background-color: #e4454c;
 }
 /*# sourceMappingURL=navbar.css.map */

@@ -204,6 +204,10 @@ body {
   cursor: pointer;
 }
 
+.booking__flexbox--item:hover {
+  opacity: 1;
+}
+
 @media only screen and (min-width: 768px) {
   .booking__flexbox--item {
     border-left: 0.9px solid rgba(61, 58, 58, 0.3);
@@ -221,7 +225,7 @@ body {
 }
 
 .booking__container--button, .show__container--button, .dining__container--button {
-  z-index: -1;
+  z-index: 1;
   font-size: 16px;
   color: white;
   width: 240px;
@@ -235,6 +239,8 @@ body {
           transform: translatex(-50%);
   position: relative;
   cursor: pointer;
+  -webkit-transition: border-radius 1s;
+  transition: border-radius 1s;
 }
 
 @media only screen and (min-width: 768px) {
@@ -251,6 +257,15 @@ body {
     top: -147px;
     left: 410px;
   }
+}
+
+.booking__container--button:hover, .show__container--button:hover, .dining__container--button:hover {
+  border-radius: 30px;
+  background-color: #da1f1d;
+}
+
+.booking__container--button:active, .show__container--button:active, .dining__container--button:active {
+  background-color: #e64544;
 }
 
 .booking__container--button-content, .show__container--button-content, .dining__container--button-content {
@@ -731,5 +746,12 @@ body {
     width: 100%;
     margin: 0 auto;
   }
+}
+
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */

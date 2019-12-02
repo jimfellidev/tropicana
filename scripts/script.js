@@ -318,3 +318,63 @@ document.getElementById('copyright').innerText = currentYear;
 })(window.document, window.history, window.location);
     
    
+
+
+
+
+// REMOVE BLUE RING ON BUTTONS, BUT KEEP FOR TAB CLICKS
+function handleFirstTab(e) {
+    if (e.keyCode === 9) {
+      document.body.classList.add('user-is-tabbing');
+      
+      window.removeEventListener('keydown', handleFirstTab);
+      window.addEventListener('mousedown', handleMouseDownOnce);
+    }
+  }
+  
+  function handleMouseDownOnce() {
+    document.body.classList.remove('user-is-tabbing');
+    
+    window.removeEventListener('mousedown', handleMouseDownOnce);
+    window.addEventListener('keydown', handleFirstTab);
+  }
+  
+  window.addEventListener('keydown', handleFirstTab);
+
+
+
+
+
+
+
+//   EXPERIENCE SECTION HOVER ATTRIBUTES
+
+
+
+$(document).ready(function(){
+    $(".pool__wrapper").mouseover(function(){
+      $(".pool__content").css("background-color", "#e12f37");
+    });
+    $(".pool__wrapper").mouseout(function(){
+      $(".pool__content").css("background-color", "#272a2b");
+    });
+  });
+  
+
+  $(document).ready(function(){
+    $(".casino__wrapper").mouseover(function(){
+      $(".casino__content").css("background-color", "#e12f37");
+    });
+    $(".casino__wrapper").mouseout(function(){
+      $(".casino__content").css("background-color", "#272a2b");
+    });
+  });
+
+  $(document).ready(function(){
+    $(".spa__wrapper").mouseover(function(){
+      $(".spa__content").css("background-color", "#e12f37");
+    });
+    $(".spa__wrapper").mouseout(function(){
+      $(".spa__content").css("background-color", "#272a2b");
+    });
+  });

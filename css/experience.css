@@ -179,6 +179,20 @@
   opacity: .9;
 }
 
+@media only screen and (min-width: 768px) {
+  .pool__wrapper:hover {
+    opacity: 1;
+  }
+}
+
+.pool__wrapper:active {
+  opacity: 1;
+}
+
+.pool__wrapper a {
+  text-decoration: none;
+}
+
 .pool__image {
   height: 200px;
   width: 100%;
@@ -268,6 +282,20 @@
 
 .casino__wrapper:hover {
   opacity: .9;
+}
+
+@media only screen and (min-width: 768px) {
+  .casino__wrapper:hover {
+    opacity: 1;
+  }
+}
+
+.casino__wrapper:active {
+  opacity: 1;
+}
+
+.casino__wrapper a {
+  text-decoration: none;
 }
 
 .casino__image {
@@ -360,6 +388,20 @@
 
 .spa__wrapper:hover {
   opacity: .9;
+}
+
+@media only screen and (min-width: 768px) {
+  .spa__wrapper:hover {
+    opacity: 1;
+  }
+}
+
+.spa__wrapper:active {
+  opacity: 1;
+}
+
+.spa__wrapper a {
+  text-decoration: none;
 }
 
 .spa__image {
