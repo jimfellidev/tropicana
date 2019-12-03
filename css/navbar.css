@@ -69,6 +69,10 @@ nav {
   opacity: .8;
 }
 
+.book_now a:active {
+  opacity: 1;
+}
+
 .troplogo {
   height: 50px;
   top: 7px;
@@ -119,6 +123,10 @@ nav {
 
 .nav__dropbtn--item-2:hover {
   opacity: .8;
+}
+
+.nav__dropbtn--item-2:active {
+  opacity: 1;
 }
 
 .marqueeLogo {
@@ -207,6 +215,10 @@ nav {
   opacity: .7;
 }
 
+.nav__flex--item-lg-2 a:active {
+  opacity: 1;
+}
+
 .nav__flex--item-lg-3 {
   width: 20%;
   padding-top: 18px;
@@ -221,6 +233,10 @@ nav {
   opacity: .7;
 }
 
+.nav__flex--item-lg-3 a:active {
+  opacity: 1;
+}
+
 .nav__flex--item-lg-4 {
   width: 9%;
   width: 14%;
@@ -233,6 +249,10 @@ nav {
 
 .nav__flex--item-lg-4 a:hover {
   opacity: .7;
+}
+
+.nav__flex--item-lg-4 a:active {
+  opacity: 1;
 }
 
 .nav__flex--item-lg-5 {
@@ -250,6 +270,10 @@ nav {
   opacity: .7;
 }
 
+.nav__flex--item-lg-5 a:active {
+  opacity: 1;
+}
+
 .nav__flex--item-lg-6 {
   width: 7%;
   color: #53cdeb;
@@ -263,6 +287,10 @@ nav {
 
 .nav__flex--item-lg-6 a:hover {
   opacity: .7;
+}
+
+.nav__flex--item-lg-6 a:active {
+  opacity: 1;
 }
 
 .nav__flex--item-lg-7 {
@@ -338,6 +366,10 @@ nav {
   opacity: .7;
 }
 
+.nav__flex--item-lg2-2 a:active {
+  opacity: 1;
+}
+
 .nav__flex--item-lg2-3 {
   width: 8.5%;
   padding-top: 38px;
@@ -354,6 +386,10 @@ nav {
 
 .nav__flex--item-lg2-3 a:hover {
   opacity: .7;
+}
+
+.nav__flex--item-lg2-3 a:active {
+  opacity: 1;
 }
 
 .nav__flex--item-lg2-4 {
@@ -374,6 +410,10 @@ nav {
   opacity: .7;
 }
 
+.nav__flex--item-lg2-4 a:active {
+  opacity: 1;
+}
+
 .nav__flex--item-lg2-5 {
   width: 8.5%;
   padding-top: 38px;
@@ -390,6 +430,10 @@ nav {
 
 .nav__flex--item-lg2-5 a:hover {
   opacity: .7;
+}
+
+.nav__flex--item-lg2-5 a:active {
+  opacity: 1;
 }
 
 .nav__flex--item-lg2-6 {
@@ -410,6 +454,10 @@ nav {
   opacity: .7;
 }
 
+.nav__flex--item-lg2-6 a:active {
+  opacity: 1;
+}
+
 .nav__flex--item-lg2-7 {
   width: 10%;
   padding-top: 38px;
@@ -428,6 +476,10 @@ nav {
   opacity: .7;
 }
 
+.nav__flex--item-lg2-7 a:active {
+  opacity: 1;
+}
+
 .nav__flex--item-lg2-8 {
   width: 8.5%;
   padding-top: 38px;
@@ -444,6 +496,10 @@ nav {
 
 .nav__flex--item-lg2-8 a:hover {
   opacity: .7;
+}
+
+.nav__flex--item-lg2-8 a:active {
+  opacity: 1;
 }
 
 .nav__flex--item-lg2-9 {
@@ -468,6 +524,10 @@ nav {
   opacity: .7;
 }
 
+.nav__flex--item-lg2-9 a:active {
+  opacity: 1;
+}
+
 .nav__flex--item-lg2-10 {
   width: 2%;
 }
@@ -489,5 +549,9 @@ nav {
 
 .troplogo-nav-img:hover {
   background-color: #e4454c;
+}
+
+.troplogo-nav-img:active {
+  background-color: #d71f27;
 }
 /*# sourceMappingURL=navbar.css.map */
