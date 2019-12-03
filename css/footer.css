@@ -35,7 +35,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 15%;
+    width: 180px;
   }
 }
 
@@ -61,6 +61,14 @@
   .footer__flex--item img {
     padding-top: 32px;
   }
+}
+
+.footer__flex--item img:hover {
+  opacity: .7;
+}
+
+.footer__flex--item img:active {
+  opacity: 1;
 }
 
 .footer__content {

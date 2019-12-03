@@ -38,7 +38,7 @@
 }
 
 .closer__link {
-  font-family: 'Literata', serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .closer__fancy {
@@ -51,6 +51,11 @@
   font-style: italic;
   line-height: 24px;
   border-bottom: solid 1px #4c5252;
+}
+
+.closer__no-link a:hover {
+  opacity: 1 !important;
+  cursor: default;
 }
 
 .closer-ul {
@@ -174,6 +179,19 @@
 
 .closer__text-design {
   color: white;
+}
+
+.closer__text-design a {
+  text-decoration: none;
+  color: white;
+}
+
+.closer__text-design a:hover {
+  color: #c4c7c5;
+}
+
+.closer__text-design a:active {
+  color: #9da29e;
 }
 
 .closer__dot-design {

@@ -104,8 +104,11 @@ nav {
 }
 
 .nav__dropbtn--item-1:hover {
-  opacity: .8;
-  padding-left: 21px;
+  color: #9da29e;
+}
+
+.nav__dropbtn--item-1:active {
+  color: #454845;
 }
 
 .nav__dropbtn--item-2 {

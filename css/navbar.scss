@@ -110,9 +110,11 @@ nav {
     text-align: left;
     padding-left: 16px;
     // float: left;
-    &:hover {
-        opacity: .8;
-        padding-left: 21px;
+    &:hover {            
+        color: lighten(#838984, 10%);
+    }
+    &:active {
+        color: darken(#838984, 25%);
     }
 }
 

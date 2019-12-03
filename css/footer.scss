@@ -16,8 +16,14 @@
             display: none;
             @media only screen and (min-width: 768px) {
                 display: flex;
-                width: 15%;
+                width: 180px;
             }
+            // @media only screen and (min-width: 1000px) {
+            //     width: 18%;
+            // }
+            // @media only screen and (min-width: 1300px) {
+            //     width: 16%;
+            // }
         }
         
     }
@@ -43,6 +49,12 @@
     &__flex--item img {
         @media only screen and (min-width: 768px) {
             padding-top: 32px;
+        }
+        &:hover {
+            opacity: .7;
+        }
+        &:active {
+            opacity: 1;
         }
     }
 

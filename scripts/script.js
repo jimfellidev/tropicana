@@ -142,6 +142,11 @@ $("body").click(function() {
         $("#myDropdown").removeClass("toggle-active");
     }
   });
+// close dropbox when link is closed
+$("#myDropdown").click(function() {
+    $("#hamburger").removeClass("is-active");
+    $("#myDropdown").removeClass("toggle-active");
+});
 
 
   
@@ -378,3 +383,10 @@ $(document).ready(function(){
       $(".spa__content").css("background-color", "#272a2b");
     });
   });
+
+
+
+  // Click listener to take make all non-functioning links do nothing
+  $(".do-nothing").click(function(e) {
+    e.preventDefault();
+});
