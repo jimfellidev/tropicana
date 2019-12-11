@@ -79,40 +79,40 @@
 
             // event listener to scroll through sections
             
-$(".booking__click").click(function(){
-    $(".booking__container").addClass("active__container");
-    $(".dining__container").removeClass("active__container");
-    $(".show__container").removeClass("active__container");
-    $(".booking__click").addClass("active__button");
-    $(".dining__click").removeClass("active__button");
-    $(".show__click").removeClass("active__button");
-    $(".booking__containerLg").addClass("active__containerLg");
-    $(".dining__containerLg").removeClass("active__containerLg");
-    $(".show__containerLg").removeClass("active__containerLg");
+$(".booking__link--booking").click(function(){
+    $(".booking-form").addClass("active-form");
+    $(".dining-form").removeClass("active-form");
+    $(".show-form").removeClass("active-form");
+    $(".booking__link--booking").addClass("booking__button-tab--active");
+    $(".booking__link--dining").removeClass("booking__button-tab--active");
+    $(".booking__link--show").removeClass("booking__button-tab--active");
+    $(".booking-formLg").addClass("active__containerLg");
+    $(".dining-formLg").removeClass("active__containerLg");
+    $(".show-formLg").removeClass("active__containerLg");
     });
 
-$(".dining__click").click(function(){
-    $(".dining__containerLg").addClass("active__containerLg");
-    $(".booking__containerLg").removeClass("active__containerLg");
-    $(".show__containerLg").removeClass("active__containerLg");
-    $(".dining__click").addClass("active__button");
-    $(".booking__click").removeClass("active__button");
-    $(".show__click").removeClass("active__button");
-    $(".dining__container").addClass("active__container");
-    $(".booking__container").removeClass("active__container");
-    $(".show__container").removeClass("active__container");
+$(".booking__link--dining").click(function(){
+    $(".dining-formLg").addClass("active__containerLg");
+    $(".booking-formLg").removeClass("active__containerLg");
+    $(".show-formLg").removeClass("active__containerLg");
+    $(".booking__link--dining").addClass("booking__button-tab--active");
+    $(".booking__link--booking").removeClass("booking__button-tab--active");
+    $(".booking__link--show").removeClass("booking__button-tab--active");
+    $(".dining-form").addClass("active-form");
+    $(".booking-form").removeClass("active-form");
+    $(".show-form").removeClass("active-form");
     });    
 
-$(".show__click").click(function(){
-    $(".show__containerLg").addClass("active__containerLg");
-    $(".booking__containerLg").removeClass("active__containerLg");
-    $(".dining__containerLg").removeClass("active__containerLg");
-    $(".show__click").addClass("active__button");
-    $(".dining__click").removeClass("active__button");
-    $(".booking__click").removeClass("active__button");
-    $(".show__container").addClass("active__container");
-    $(".booking__container").removeClass("active__container");
-    $(".dining__container").removeClass("active__container");
+$(".booking__link--show").click(function(){
+    $(".show-formLg").addClass("active__containerLg");
+    $(".booking-formLg").removeClass("active__containerLg");
+    $(".dining-formLg").removeClass("active__containerLg");
+    $(".booking__link--show").addClass("booking__button-tab--active");
+    $(".booking__link--dining").removeClass("booking__button-tab--active");
+    $(".booking__link--booking").removeClass("booking__button-tab--active");
+    $(".show-form").addClass("active-form");
+    $(".booking-form").removeClass("active-form");
+    $(".dining-form").removeClass("active-form");
     });    
 
 
@@ -153,37 +153,37 @@ $("#myDropdown").click(function() {
 
 //   dining
 
-$(".cafe__click").click(function(){
-    $(".dining__cafe--wrapper").addClass("active__dining--image");
-    $(".dining__irvine--wrapper").removeClass("active__dining--image");
-    $(".dining__court--wrapper").removeClass("active__dining--image");
-    $(".cafe__click").addClass("active__dining--button");
-    $(".irvine__click").removeClass("active__dining--button");
-    $(".food-court__click").removeClass("active__dining--button");
+$(".dining__cafe--click").click(function(){
+    $(".cafe").addClass("dining__container--active");
+    $(".irvine").removeClass("dining__container--active");
+    $(".foodcourt").removeClass("dining__container--active");
+    $(".dining__cafe--click").addClass("dining__button--active");
+    $(".dining__irvine--click").removeClass("dining__button--active");
+    $(".dining__food-court--click").removeClass("dining__button--active");
     });
 
-$(".irvine__click").click(function(){
-    $(".dining__irvine--wrapper").addClass("active__dining--image");
-    $(".dining__cafe--wrapper").removeClass("active__dining--image");
-    $(".dining__court--wrapper").removeClass("active__dining--image");
-    $(".cafe__click").removeClass("active__dining--button");
-    $(".irvine__click").addClass("active__dining--button");
-    $(".food-court__click").removeClass("active__dining--button");
+$(".dining__irvine--click").click(function(){
+    $(".irvine").addClass("dining__container--active");
+    $(".cafe").removeClass("dining__container--active");
+    $(".foodcourt").removeClass("dining__container--active");
+    $(".dining__cafe--click").removeClass("dining__button--active");
+    $(".dining__irvine--click").addClass("dining__button--active");
+    $(".dining__food-court--click").removeClass("dining__button--active");
     });
 
-$(".food-court__click").click(function(){
-    $(".dining__court--wrapper").addClass("active__dining--image");
-    $(".dining__irvine--wrapper").removeClass("active__dining--image");
-    $(".dining__cafe--wrapper").removeClass("active__dining--image");
-    $(".cafe__click").removeClass("active__dining--button");
-    $(".irvine__click").removeClass("active__dining--button");
-    $(".food-court__click").addClass("active__dining--button");
+$(".dining__food-court--click").click(function(){
+    $(".foodcourt").addClass("dining__container--active");
+    $(".irvine").removeClass("dining__container--active");
+    $(".cafe").removeClass("dining__container--active");
+    $(".dining__cafe--click").removeClass("dining__button--active");
+    $(".dining__irvine--click").removeClass("dining__button--active");
+    $(".dining__food-court--click").addClass("dining__button--active");
     });
 
-    // irvine__click
+    // dining__irvine--click
     // cafe__click
-    // food-court__click
-    // active__dining--button 
+    // dining__food-court--click
+    // dining__button--active 
 
 
 
@@ -358,29 +358,29 @@ function handleFirstTab(e) {
 
 $(document).ready(function(){
     $(".pool__wrapper").mouseover(function(){
-      $(".pool__content").css("background-color", "#e12f37");
+      $(".pool__title").css("background-color", "#e12f37");
     });
     $(".pool__wrapper").mouseout(function(){
-      $(".pool__content").css("background-color", "#272a2b");
+      $(".pool__title").css("background-color", "#272a2b");
     });
   });
   
 
   $(document).ready(function(){
     $(".casino__wrapper").mouseover(function(){
-      $(".casino__content").css("background-color", "#e12f37");
+      $(".casino__title").css("background-color", "#e12f37");
     });
     $(".casino__wrapper").mouseout(function(){
-      $(".casino__content").css("background-color", "#272a2b");
+      $(".casino__title").css("background-color", "#272a2b");
     });
   });
 
   $(document).ready(function(){
     $(".spa__wrapper").mouseover(function(){
-      $(".spa__content").css("background-color", "#e12f37");
+      $(".spa__title").css("background-color", "#e12f37");
     });
     $(".spa__wrapper").mouseout(function(){
-      $(".spa__content").css("background-color", "#272a2b");
+      $(".spa__title").css("background-color", "#272a2b");
     });
   });
 

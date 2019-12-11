@@ -2,9 +2,10 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-new.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
-    <link href="css/dining.css" rel="stylesheet">
+    <link href="css/a-top.css" rel="stylesheet">
+    <link href="css/dining-new.css" rel="stylesheet">
     <link href="jquery-ui.min.css" rel="stylesheet">
     <link href="jquery-ui.structure.min.css" rel="stylesheet">
     <link href="jquery-ui.theme.min.css" rel="stylesheet">
@@ -12,10 +13,10 @@
     <link href="datepicker.min.css" rel="stylesheet">
     <link href="css/hamburgers.min.css" rel="stylesheet">
     <link href="css/swiper.min.css" rel="stylesheet">
-    <link href="css/entertain.css" rel="stylesheet">
-    <link href="css/experience.css" rel="stylesheet">
-    <link href="css/closer.css" rel="stylesheet">
-    <link href="css/booking.css" rel="stylesheet">
+    <link href="css/entertainment-new.css" rel="stylesheet">
+    <link href="css/experience-new.css" rel="stylesheet">
+    <link href="css/closer-new.css" rel="stylesheet">
+    <link href="css/booking-new.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Monoton|Sail&display=swap" rel="stylesheet">
     
@@ -29,32 +30,31 @@
 
     
     <header id="home">
-
         <nav class="navbar">
-            <ul class="nav__container nav__flex--container">
-                <li class="hamburger-container nav__flex--item nav__flex--item-1">
+            <ul class="navbar__links">
+                <li class="hamburger-container navbar__item navbar__item-1">
                     <button id="hamburger" class="hamburger hamburger--collapse " type="button">
                         <span class="hamburger-box">
                             <span class="hamburger-inner"></span>
                         </span>
                     </button>
-                    <ul id="myDropdown" class="nav__dropbtn--content">
-                            <li><a class="nav__dropbtn--item nav__dropbtn--item-1" href="#stay">STAY</a></li>
-                            <li><a class="nav__dropbtn--item nav__dropbtn--item-1" href="#experience">AMENITIES</a></li>
-                            <li><a class="nav__dropbtn--item nav__dropbtn--item-1" href="#entertain">SHOWS</a></li>
-                            <li><a class="nav__dropbtn--item nav__dropbtn--item-1" href="#dining">DINING</a></li>
-                            <li><a class="nav__dropbtn--item nav__dropbtn--item-1 do-nothing" href="#">CASINO</a></li>
-                            <li><a class="nav__dropbtn--item nav__dropbtn--item-1 do-nothing" href="#">MEETINGS & GROUPS</a></li>
-                            <li><a class="nav__dropbtn--item nav__dropbtn--item-1 do-nothing" href="#">DEALS</a></li>
-                            <li><a class="nav__dropbtn--item nav__dropbtn--item-2 do-nothing" href="#">PLAY FOR FUN</a></li>
-                            <li><a class="nav__dropbtn--item nav__dropbtn--item-2 do-nothing" href="#">MARQUEE REWARDS LOCATIONS</a></li>
-                            <li><a class="nav__dropbtn--item nav__dropbtn--item-2 marqueeLogo__wrapper do-nothing" href="#"><img src="images/marquee1.png" alt="tropicana marquee logo" class="marqueeLogo"></a></li>
+                    <ul id="myDropdown" class="dropdown">
+                            <li><a class="dropdown__item dropdown__item-1" href="#stay">STAY</a></li>
+                            <li><a class="dropdown__item dropdown__item-1" href="#experience">AMENITIES</a></li>
+                            <li><a class="dropdown__item dropdown__item-1" href="#entertain">SHOWS</a></li>
+                            <li><a class="dropdown__item dropdown__item-1" href="#dining">DINING</a></li>
+                            <li><a class="dropdown__item dropdown__item-1 do-nothing" href="#">CASINO</a></li>
+                            <li><a class="dropdown__item dropdown__item-1 do-nothing" href="#">MEETINGS & GROUPS</a></li>
+                            <li><a class="dropdown__item dropdown__item-1 do-nothing" href="#">DEALS</a></li>
+                            <li><a class="dropdown__item dropdown__item-2 do-nothing" href="#">PLAY FOR FUN</a></li>
+                            <li><a class="dropdown__item dropdown__item-2 do-nothing" href="#">MARQUEE REWARDS LOCATIONS</a></li>
+                            <li><a class="dropdown__item dropdown__item-2 marqueeLogo__wrapper do-nothing" href="#"><img src="images/marquee1.png" alt="tropicana marquee logo" class="marqueeLogo"></a></li>
                         </ul>
                 </li>
-                <li class="home nav__flex--item nav__flex--item-2">
+                <li class="home  navbar__item item navbar__item-2">
                         <a href="#home"><img class="troplogo" src="images/troplogo.png" alt="tropicana logo"></a>
                 </li>
-                <li class="book-now nav__flex--item nav__flex--item-3">
+                <li class="book-now navbar__item item navbar__item-3">
                     <h1 class="book_now"><a href="#stay">book now</a></h1>
                 </li>
 
@@ -62,60 +62,55 @@
             </ul>
             
         </nav>
-        <nav class="navbarLg" id="navbarLg">
-            <ul class="nav__flex--container-lg">
-                    <li class="nav__flex--item-lg nav__flex--item-lg-1"></li>
-                    <li class="nav__flex--item-lg nav__flex--item-lg-2 do-nothing"><a href="#">PLAY FOR FUN</a></li>
-                    <li class="nav__flex--item-lg nav__flex--item-lg-3 do-nothing"><a href="#">MARQUEE REWARDS LOCATIONS</a></li>
-                    <li class="nav__flex--item-lg nav__flex--item-lg-4 do-nothing"><a href="#"><img src="images/marquee1.png"></a></li>
-                    <li class="nav__flex--item-lg nav__flex--item-lg-5 do-nothing"><a href="#">LOGIN</a></li>
-                    <li class="nav__flex--item-lg nav__flex--item-lg-6 do-nothing"><a href="#">JOIN</a></li>
-                    <li class="nav__flex--item-lg nav__flex--item-lg-7 do-nothing"></li>
+        <nav class="navbarLg" id="navbarLg"> 
+            <ul class="navbarLg__links">
+                    <li class="navbarLg__item navbarLg__item-1"></li>
+                    <li class="navbarLg__item navbarLg__item-play do-nothing"><a href="#">PLAY FOR FUN</a></li>
+                    <li class="navbarLg__item navbarLg__item-3 do-nothing"><a href="#">MARQUEE REWARDS LOCATIONS</a></li>
+                    <li class="navbarLg__item navbarLg__item-4 do-nothing"><a href="#"><img src="images/marquee1.png"></a></li>
+                    <li class="navbarLg__item navbarLg__item-5 do-nothing"><a href="#">LOGIN</a></li>
+                    <li class="navbarLg__item navbarLg__item-6 do-nothing"><a href="#">JOIN</a></li>
+                    <li class="navbarLg__item navbarLg__item-7 do-nothing"></li>
                 </ul>
-                <ul class="nav__flex--container-lg-2">
-                    <li class="nav__flex--item-lg2 nav__flex--item-lg2-1"><a href="#home"><img src="images/troplogo.png" class="troplogo-nav-img"></a></li>
-                    <li class="nav__flex--item-lg2 nav__flex--item-lg2-2"><a href="#stay">STAY</a></li>
-                    <li class="nav__flex--item-lg2 nav__flex--item-lg2-3"><a href="#experience-lg">AMENITIES</a></li>
-                    <li class="nav__flex--item-lg2 nav__flex--item-lg2-4"><a href="#entertain">SHOWS</a></li>
-                    <li class="nav__flex--item-lg2 nav__flex--item-lg2-5"><a href="#dining">DINING</a></li>
-                    <li class="nav__flex--item-lg2 nav__flex--item-lg2-6 do-nothing"><a href="#">CASINO </a></li>
-                    <li class="nav__flex--item-lg2 nav__flex--item-lg2-7 do-nothing"><a href="#">MEETINGS & GROUPS</a></li>
-                    <li class="nav__flex--item-lg2 nav__flex--item-lg2-8 do-nothing"><a href="#">DEALS</a></li>
-                    <li class="nav__flex--item-lg2 nav__flex--item-lg2-9"><a href="#stay">BOOK NOW</a></li>
-                    <li class="nav__flex--item-lg2 nav__flex--item-lg2-10"></li>
+                <ul class="navbarLg__links-2">
+                    <li class="navbarLg__item-2 navbarLg__item-2-1"><a href="#home"><img src="images/troplogo.png" class="navbarLg__logo"></a></li>
+                    <li class="navbarLg__item-2 navbarLg__item-2-2"><a href="#stay">STAY</a></li>
+                    <li class="navbarLg__item-2 navbarLg__item-2-3"><a href="#experience-lg">AMENITIES</a></li>
+                    <li class="navbarLg__item-2 navbarLg__item-2-4"><a href="#entertain">SHOWS</a></li>
+                    <li class="navbarLg__item-2 navbarLg__item-2-5"><a href="#dining">DINING</a></li>
+                    <li class="navbarLg__item-2 navbarLg__item-2-6 do-nothing"><a href="#">CASINO </a></li>
+                    <li class="navbarLg__item-2 navbarLg__item-2-7 do-nothing"><a href="#">MEETINGS & GROUPS</a></li>
+                    <li class="navbarLg__item-2 navbarLg__item-2-8 do-nothing"><a href="#">DEALS</a></li>
+                    <li class="navbarLg__item-2 navbarLg__item-2-9"><a href="#stay">BOOK NOW</a></li>
+                    <li class="navbarLg__item-2 navbarLg__item-2-10"></li>
                 </ul>
-        </nav>        
+        </nav>         
             
-        <!-- <div class="home__container">
-            <h1 class="home__header home__header--1">viva la</h1>
-            <h1 class="home__header home__header--2">tropicana</h1>
-        </div> -->
         
     </header>
 
     <body>
-<div class="wrapper">
-    <div class="home__container">
-        <h1 id="stay" class="home__header home__header--1">viva la</h1>
-        <h1 class="home__header home__header--2">tropicana</h1>
+<div class="site-container">
+    <div class="a-top">
+        <h1 id="stay" class="a-top__header a-top__header--top">viva la</h1>
+        <h1 class="a-top__header a-top__header--bottom">tropicana</h1>
     </div>
 
-<div class="site-container">
+<div class="body">
 
 
 <!-- BOOKING LARGE -->
 
-<div  class="booking-container-1">
-    <div class="booking-flexbox-1"> 
-        <ul class="flexbox-vert-links">
-            <li class="flexbox-vert-links-item booking__click active__button">Booking</li>
-            <li class="flexbox-vert-links-item dining__click">Dining</li>
-            <li class="flexbox-vert-links-item show__click show-link-lg">Show</li>
+<div  class="bookingLg">
+    <div class="bookingLg__wrapper"> 
+        <ul class="bookingLg__tabs">
+            <li class="bookingLg__tab-link booking__link--booking booking__button-tab--active">Booking</li>
+            <li class="bookingLg__tab-link booking__link--dining">Dining</li>
+            <li class="bookingLg__tab-link booking__link--show bookingLg__tab-link--lg">Show</li>
         </ul>
-        <div class="booking__containerLg active__containerLg">
-            <ul class="flexbox-check-in flexbox-check-in-1">
-                <li class="datepicker-title">Check-In</li>
-                
+        <div class="active__containerLg booking-formLg">
+            <ul class="booking-formLg__selector booking-formLg__selector--1">
+                <li class="booking-formLg__title">Check-In</li>
                 <li class="datepicker__wrapper">    
                     <input type="text" class="datepicker-month-4" autocomplete="off" placeholder="May">
                     <input type="text" id="datepicker-4" autocomplete="off" placeholder="10">
@@ -123,8 +118,8 @@
                 </li>
             </ul>
         
-            <ul class="flexbox-check-in flexbox-check-in-2">
-                <li class="datepicker-title">Check-Out</li>
+            <ul class="booking-formLg__selector booking-formLg__selector--2">
+                <li class="booking-formLg__title">Check-Out</li>
                 <li class="datepicker__wrapper">    
                     <input type="text" class="datepicker-month-5" autocomplete="off" placeholder="May">
                     <input type="text" id="datepicker-5" autocomplete="off" placeholder="10">
@@ -132,42 +127,44 @@
                 </li>
             </ul>
 
-            <ul class="flexbox-check-in flexbox-check-in-3">
-                <li class="datepicker-title">Room</li>    
-                    <li class="select__wrapper">
+            <ul class="booking-formLg__selector booking-formLg__selector--3">
+                <li class="booking-formLg__title">Room</li>    
+                    <div class="select">
+                        
                         <div class="select__numbers" id="select__numbers">
-                            <span class="select__numbers--answer">1</span>
-                            <span class="select__numbers--answer-click"></span>
+                            <span class="select__numbers-answer">1</span>
+                            <span class="select__numbers-click"></span>
                         </div>
-                        <ul class="booking__options booking__options--rooms booking__options--off" id="booking__options">
-                            <li class="booking__options--single booking__options--1">1</li>
-                            <li class="booking__options--single booking__options--2">2</li>
-                            <li class="booking__options--single booking__options--3">3</li>
-                            <li class="booking__options--single booking__options--4">4</li>
+                        <ul class="select__options select__options--rooms select__options--off    select__options select__options--off  " id="select__options">
+                            <li class="select__li select__li--1">1</li>
+                            <li class="select__li select__li--2">2</li>
+                            <li class="select__li select__li--3">3</li>
+                            <li class="select__li select__li--4">4</li>
                         </ul>
                         
-                    </li>
+                    </div>
                 </li>
             </ul>
-            <ul class="flexbox-check-in flexbox-check-in-4">
-                <li class="datepicker-title">Guests</li>
-                <li class="select__wrapper">
+            <ul class="booking-formLg__selector booking-formLg__selector--4">
+                <li class="booking-formLg__title">Guests</li>
+                <li class="select">
                     <div class="select__numbers" id="select__numbers-guest">
-                        <span class="select__numbers--answer-guest">1</span>
-                        <span class="select__numbers--answer-click"></span>
+                        <span class="select__numbers-answer-guest">1</span>
+                        <!-- <span class="select__numbers-click"></span> -->
                     </div>
-                    <ul class="booking__options booking__options--rooms booking__options-guest booking__options--off" id="booking__options-guest">
-                        <li class="booking__options-guest--single booking__options-guest--1">1</li>
-                        <li class="booking__options-guest--single booking__options-guest--2">2</li>
-                        <li class="booking__options-guest--single booking__options-guest--3">3</li>
-                        <li class="booking__options-guest--single booking__options-guest--4">4</li>
+                    <ul class="select__options  select__options-guest select__options--off" id="select__options-guest">
+                        <li class="select__li-guest select__li-guest--1">1</li>
+                        <li class="select__li-guest select__li-guest--2">2</li>
+                        <li class="select__li-guest select__li-guest--3">3</li>
+                        <li class="select__li-guest select__li-guest--4">4</li>
                     </ul>
                 </li>
             </ul>
         </div>
-        <div class="dining__containerLg">
-            <ul class="flexbox-check-in flexbox-check-in-1">
-                <li class="datepicker-title">Check-In</li>
+
+        <div class="dining-formLg">
+            <ul class="dining-formLg__selector dining-formLg__selector--1">
+                <li class="dining-formLg__title ">Check-In</li>
                 
                 <li class="datepicker__wrapper">    
                     <input type="text" class="datepicker-month-6" autocomplete="off" placeholder="May">
@@ -176,57 +173,57 @@
                 </li>
             </ul>
         
-            <ul class="flexbox-check-in flexbox-check-in-2">
-                <li class="datepicker-title">Restaurants</li>
-                <li class="select__wrapper">    
+            <ul class="dining-formLg__selector dining-formLg__selector--2">
+                <li class="dining-formLg__title">Restaurants</li>
+                <li class="select">    
                     <div class="select__word" id="select__word">
                         <span class="select__word--answer">ROBERT IRVINE</span>
-                        <span class="select__word--answer-click"></span>
+                        <!-- <span class="select__word--answer-click"></span> -->
                     </div>
-                    <ul class="booking__options booking__options-word booking__options--off" id="booking__options-word">
-                        <li class="booking__options-word--single booking__options-word--1">ROBERT IRVINE</li>
-                        <li class="booking__options-word--single booking__options-word--2">SOUTH BEACH</li>
-                        <li class="booking__options-word--single booking__options-word--3">TROPICANA CAFE</li>
+                    <ul class="select__options select__options-word select__options--off" id="select__options-word">
+                        <li class="select__li-word select__li-word--1">ROBERT IRVINE</li>
+                        <li class="select__li-word select__li-word--2">SOUTH BEACH</li>
+                        <li class="select__li-word select__li-word--3">TROPICANA CAFE</li>
                     </ul>
                 </li>
             </ul>
 
-            <ul class="flexbox-check-in flexbox-check-in-3">
-                <li class="datepicker-title">Time</li>    
-                    <li class="select__wrapper">
+            <ul class="dining-formLg__selector dining-formLg__selector--3">
+                <li class="dining-formLg__title">Time</li>    
+                    <li class="select">
                         <div class="select__time-dining" id="select__time-dining">
                             <span class="select__time--answer">8:00</span>
-                            <span class="select__time--answer-click"></span>
+                            <!-- <span class="select__time--answer-click"></span> -->
                         </div>
-                        <ul class="booking__options booking__options-time-dining booking__options--off" id="booking__options-time-dining">
-                            <li class="booking__options-time--single booking__options-time--1">8:00</li>
-                            <li class="booking__options-time--single booking__options-time--2">8:30</li>
-                            <li class="booking__options-time--single booking__options-time--3">9:00</li>
-                            <li class="booking__options-time--single booking__options-time--4">9:30</li>
+                        <ul class="select__options select__options-time-dining select__options--off" id="select__options-time-dining">
+                            <li class="select__li-time  select__li-time--1">8:00</li>
+                            <li class="select__li-time select__options-time--2">8:30</li>
+                            <li class="select__li-time select__options-time--3">9:00</li>
+                            <li class="select__li-time select__options-time--4">9:30</li>
                         </ul>
                     </li>
                 </li>
             </ul>
-            <ul class="flexbox-check-in flexbox-check-in-4">
-                <li class="datepicker-title">Guests</li>
-                <li class="select__wrapper">
+            <ul class="dining-formLg__selector dining-formLg__selector--4">
+                <li class="dining-formLg__title">Guests</li>
+                <li class="select">
                     <div class="select__numbers-guest-dining" id="select__numbers-guest-dining">
-                        <span class="select__numbers--answer-guest">1</span>
-                        <span class="select__numbers--answer-click"></span>
+                        <span class="select__numbers-answer-guest">1</span>
+                        <!-- <span class="select__numbers-click"></span> -->
                     </div>
-                    <ul class="booking__options booking__options--rooms booking__options-guest-dining booking__options--off" id="booking__options-guest-dining">
-                        <li class="booking__options-guest--single booking__options-guest--1">1</li>
-                        <li class="booking__options-guest--single booking__options-guest--2">2</li>
-                        <li class="booking__options-guest--single booking__options-guest--3">3</li>
-                        <li class="booking__options-guest--single booking__options-guest--4">4</li>
+                    <ul class="select__options select__options-guest-dining select__options--off" id="select__options-guest-dining">
+                        <li class="select__li-guest select__li-guest--1">1</li>
+                        <li class="select__li-guest select__li-guest--2">2</li>
+                        <li class="select__li-guest select__li-guest--3">3</li>
+                        <li class="select__li-guest select__li-guest--4">4</li>
                     </ul>
                 </li>
             </ul>
         </div>
 
-        <div class="show__containerLg">
-            <ul class="flexbox-check-in flexbox-check-in-1">
-                <li class="datepicker-title">Date</li>
+        <div class="show-formLg">
+            <ul class="show-formLg__selector show-formLg__selector--1">
+                <li class="show-formLg__title">Date</li>
                 
                 <li class="datepicker__wrapper">    
                     <input type="text" class="datepicker-month-7" autocomplete="off" placeholder="May">
@@ -235,98 +232,107 @@
                 </li>
             </ul>
         
-            <ul class="flexbox-check-in flexbox-check-in-2">
-                <li class="datepicker-title">Show</li>
-                <li class="select__wrapper">    
+            <ul class="show-formLg__selector show-formLg__selector--2">
+                <li class="show-formLg__title">Show</li>
+                <li class="select">    
                     <div class="select__word-show" id="select__word-show">
                         <span class="select__word-show--answer">THE LATIN KINGS</span>
                         <span class="select__word-show--answer-click"></span>
                     </div>
-                    <ul class="booking__options booking__options-word-show booking__options--off" id="booking__options-word-show">
-                        <li class="booking__options-word-show--single booking__options-word-show--1">THE LATIN KINGS</li>
-                        <li class="booking__options-word-show--single booking__options-word-show--2">SARAH EVANS</li>
-                        <li class="booking__options-word-show--single booking__options-word-show--3">THE BAND OF MAGICIANS</li>
+                    <ul class="select__options select__options-word-show select__options--off" id="select__options-word-show">
+                        <li class="select__li-word-show select__li-word-show--1">THE LATIN KINGS</li>
+                        <li class="select__li-word-show select__li-word-show--2">SARAH EVANS</li>
+                        <li class="select__li-word-show select__li-word-show--3">THE BAND OF MAGICIANS</li>
                     </ul>
                 </li>
             </ul>
 
-            <ul class="flexbox-check-in flexbox-check-in-3">
-                <li class="datepicker-title">Time</li>    
-                    <li class="select__wrapper">
+            <ul class="show-formLg__selector show-formLg__selector--3">
+                <li class="show-formLg__title">Time</li>    
+                    <li class="select">
                         <div class="select__time" id="select__time-show">
                             <span class="select__time--answer">8:00</span>
                             <span class="select__time--answer-click"></span>
                         </div>
-                        <ul class="booking__options booking__options-time booking__options--off" id="booking__options-time-show">
-                            <li class="booking__options-time--single booking__options-time--1">8:00</li>
-                            <li class="booking__options-time--single booking__options-time--2">8:30</li>
-                            <li class="booking__options-time--single booking__options-time--3">9:00</li>
-                            <li class="booking__options-time--single booking__options-time--4">9:30</li>
+                        <ul class="select__options select__options-time select__options--off" id="select__options-time-show">
+                            <li class="select__li-time select__options-time--1">8:00</li>
+                            <li class="select__li-time select__options-time--2">8:30</li>
+                            <li class="select__li-time select__options-time--3">9:00</li>
+                            <li class="select__li-time select__options-time--4">9:30</li>
                         </ul>
                     </li>
                 </li>
             </ul>
-            <ul class="flexbox-check-in flexbox-check-in-4">
-                <li class="datepicker-title">Tickets</li>
-                <li class="select__wrapper">
+            <ul class="show-formLg__selector show-formLg__selector--1">
+                <li class="show-formLg__title">Tickets</li>
+                <li class="select">
                     <div class="select__numbers-guest-show" id="select__numbers-guest-show">
-                        <span class="select__numbers--answer-guest">1</span>
-                        <span class="select__numbers--answer-click"></span>
+                        <span class="select__numbers-answer-guest">1</span>
+                        <span class="select__numbers-click"></span>
                     </div>
-                    <ul class="booking__options booking__options--rooms booking__options-guest-show booking__options--off" id="booking__options-guest-show">
-                        <li class="booking__options-guest--single booking__options-guest--1">1</li>
-                        <li class="booking__options-guest--single booking__options-guest--2">2</li>
-                        <li class="booking__options-guest--single booking__options-guest--3">3</li>
-                        <li class="booking__options-guest--single booking__options-guest--4">4</li>
+                    <ul class="select__options select__options--rooms select__options-guest-show select__options--off" id="select__options-guest-show">
+                        <li class="select__li-guest select__li-guest--1">1</li>
+                        <li class="select__li-guest select__li-guest--2">2</li>
+                        <li class="select__li-guest select__li-guest--3">3</li>
+                        <li class="select__li-guest select__li-guest--4">4</li>
                     </ul>
                 </li>
             </ul>
         </div>
-        <div class="button-container-1">
-            <button class="booknow-button">BOOK NOW</button>
-            <span class="button-container-text">
+        <div class="book-nowLg">
+            <button class="book-nowLg__button">BOOK NOW</button>
+            <span class="book-nowLg__content">
                 <p>For Assistance Call: <br>1-800-888-8888</p>
             </span>
         </div>
     </div>
 
 
-    <div class="bridgeLg-wrapper">
-        <div class="bridgeLg">
-            <div class="bridgeLg__content--wrapper-darken"></div>
-            <div class="bridgeLg__content--wrapper">
-                <p class="bridgeLg__content--1">summer sensation</p>
-                <p class="bridgeLg__content--2">enjoy 30% off</p>
+    <div class="adLg">
+        <div class="adLg__wrapper">
+            <div class="adLg__content--darken"></div>
+            <div class="adLg__content">
+                <p class="adLg__content--top">summer sensation</p>
+                <p class="adLg__content--bottom">enjoy 30% off</p>
             </div>
         </div>
     </div>
 </div>
 
-<!-- BOOKING SMALL -->
+
+
+
+
+
+<!-- START HERE  -CAUTIOUS FOR PREVIOUSLY UPDATED CONTENT -->
+<!-- BOOKING SMALL -->    
 
     <div class="booking">
         <div class="booking__wrapper">
-            <div class="booking__flexbox--container">
-                <div class="booking__flexbox booking__link">
-                    <button class="button booking__click booking__flexbox--item active__button do-nothing" href="#">Booking</button>
+            <div class="booking__tabs">
+                <div class="booking__link">
+                    <button class="button booking__link--booking booking__button-tab booking__button-tab--active  do-nothing" href="#">Booking</button>
                 </div>
-                <div class="booking__flexbox dining__link">
-                    <button class="button dining__click booking__flexbox--item booking__flexbox--item-center do-nothing" href="#">Dining</button>
+                <div class="booking__link">
+                    <button class="button booking__link--dining booking__button-tab booking__button-tab--center do-nothing" href="#">Dining</button>
                 </div>
-                <div class="booking__flexbox show__link">
-                    <button class="button show__click booking__flexbox--item do-nothing" href="#">Show</button>
+                <div class="booking__link">
+                    <button class="button booking__link--show booking__button-tab do-nothing" href="#">Show</button>
                 </div>
             </div>
-            <div class="booking__container active__container">
-                <div class="check__flexbox--wrapper">
+
+
+
+            <div class="booking-form active-form">
+                <div class="booking-form__wrap">
                     
-                    <div class="check-wrapper">
-                        <div class="check__title">
-                            <div class="check__title--item">Check-In</div>
-                            <div class="check__title--item check__title--item-2">Check-Out</div>
+                    <div class="booking-form__wrap--top">
+                        <div class="booking-form__title-wrap">
+                            <div class="booking-form__title">Check-In</div>
+                            <div class="booking-form__title booking-form__title--right">Check-Out</div>
                         </div>
-                        <div class="check__flexbox">    
-                            <div class="check__flexbox--item check__flexbox--item-1">
+                        <div class="booking-form__top-wrap">    
+                            <div class="booking-form__top-item ">
                                 <!-- DATEPICKER -->
                                 <div class="datepicker__wrapper">
                                         <input type="text" class="datepicker-month" autocomplete="off" placeholder="May">
@@ -334,7 +340,7 @@
                                         <p class="arrow__down--wrap"><i class="arrow__down"></i></p>
                                 </div>
                             </div>
-                            <div class="check__flexbox--item check__flexbox--item-2">
+                            <div class="booking-form__top-item ">
                                 <div class="datepicker__wrapper">
                                     <input type="text" class="datepicker-month-1" autocomplete="off" placeholder="May">
                                     <input type="text" id="datepicker-1" autocomplete="off" placeholder="10">
@@ -344,11 +350,16 @@
                         </div>
                     </div>
 
-                    <div class="room-wrapper">
-                        <div class="room__title">
-                            <div class="room__title--item">Rooms</div>
-                            <div class="room__title--item room__title--item-2">Guests</div>
+                    <div class="form-bottom">
+                        <div class="form-bottom__title-wrap">
+                            <div class="form-bottom__title">Rooms</div>
+                            <div class="form-bottom__title form-bottom__title-right">Guests</div>
                         </div>
+
+
+<!-- BEM NEEDED HERE DOWN FOR SM AP -->
+
+
                         <div class="room__flexbox">    
                             <div class="room__flexbox--item room__flexbox--item-1">
                                 <!-- Room / Guest selector Booking Section -->
@@ -357,25 +368,27 @@
                                         <span class="select__numbers--answer-sm">1</span>
                                         <span class="select__numbers--answer-click"></span>
                                     </div>
-                                    <ul class="booking__options-sm booking__options--rooms-sm booking__options--off" id="booking__options-sm">
-                                        <li class="booking__options--single booking__options--1-sm">1</li>
-                                        <li class="booking__options--single booking__options--2-sm">2</li>
-                                        <li class="booking__options--single booking__options--3-sm">3</li>
-                                        <li class="booking__options--single booking__options--4-sm">4</li>
+                                    <ul class="select__options-sm select__options--rooms-sm select__options--off" id="select__options-sm">
+                                        <li class="select__li select__li--1-sm">1</li>
+                                        <li class="select__li select__li--2-sm">2</li>
+                                        <li class="select__options--single select__options--3-sm select__li select__li--3-sm">3</li>
+                                        <li class=" select__li select__li--4-sm">4</li>
                                     </ul>
                                 </div>
                             </div>
+
+
                             <div class="room__flexbox--item room__flexbox--item-2">
                                 <div class="select__wrapper">
                                     <div class="select__numbers-sm" id="select__numbers-guest-sm">
                                         <span class="select__numbers--answer-guest-sm">1</span>
                                         <span class="select__numbers--answer-click"></span>
                                     </div>
-                                    <ul class="booking__options-sm booking__options--rooms-sm booking__options-guest-sm booking__options--off" id="booking__options-guest">
-                                        <li class="booking__options-guest--single booking__options-guest--1-sm">1</li>
-                                        <li class="booking__options-guest--single booking__options-guest--2-sm">2</li>
-                                        <li class="booking__options-guest--single booking__options-guest--3-sm">3</li>
-                                        <li class="booking__options-guest--single booking__options-guest--4-sm">4</li>
+                                    <ul class="select__options-sm select__options--rooms-sm select__options-guest-sm select__options--off" id="select__options-guest">
+                                        <li class="select__li-guest select__li-guest--1-sm">1</li>
+                                        <li class="select__li-guest select__li-guest--2-sm">2</li>
+                                        <li class="select__li-guest select__li-guest--3-sm">3</li>
+                                        <li class="select__li-guest select__li-guest--4-sm">4</li>
                                     </ul>
                                 </div>
                             </div>
@@ -388,15 +401,15 @@
                     <p>For Assistance Call: <br>1-800-888-8888</p>
                 </div>
             </div>
-                <div class="dining__container">
-                    <div class="check__flexbox--wrapper">
-                        <div class="check-wrapper">
-                            <div class="check__title">
-                                <div class="check__title--item">Check-In</div>
-                                <div class="check__title--item">Restaurants</div>
+                <div class="dining-form">
+                    <div class="dining-form__wrap">
+                        <div class="dining-form__wrap--top">
+                            <div class="dining-form__title-wrap">
+                                <div class="dining-form__title">Check-In</div>
+                                <div class="dining-form__title">Restaurants</div>
                             </div>
-                            <div class="check__flexbox">    
-                                <div class="check__flexbox--item check__flexbox--item-1">
+                            <div class="dining-form__top-wrap">    
+                                <div class="dining-form__top-item ">
                                     <!-- DATEPICKER -->
                                     <div class="datepicker__wrapper">
                                             <input type="text" class="datepicker-month-2" autocomplete="off" placeholder="May">
@@ -404,26 +417,26 @@
                                             <p class="arrow__down--wrap"><i class="arrow__down"></i></p>
                                     </div>
                                 </div>
-                                <div class="check__flexbox--item check__flexbox--item-2">
+                                <div class="dining-form__top-item ">
                                     <div class="select__wrapper">
                                         <div class="select__word-sm" id="select__word-sm">
                                             <span class="select__word--answer-sm">ROBERT IRVINE</span>
                                             <span class="select__word--answer-click"></span>
                                         </div>
-                                        <ul class="booking__options-sm booking__options-word-sm booking__options--off" id="booking__options-word-sm">
-                                            <li class="booking__options-word-sm--single booking__options-word--1-sm">ROBERT IRVINE</li>
-                                            <li class="booking__options-word-sm--single booking__options-word--2-sm">SOUTH BEACH</li>
-                                            <li class="booking__options-word-sm--single booking__options-word--3-sm">TROPICANA CAFE</li>
+                                        <ul class="select__options-sm select__options-word-sm select__options--off" id="select__options-word-sm">
+                                            <li class="select__options-word-sm--single select__li-word--1-sm">ROBERT IRVINE</li>
+                                            <li class="select__options-word-sm--single select__li-word--2-sm">SOUTH BEACH</li>
+                                            <li class="select__options-word-sm--single select__li-word--3-sm">TROPICANA CAFE</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="room-wrapper">
-                            <div class="room__title">
-                                <div class="room__title--item">Time</div>
-                                <div class="room__title--item">Guests</div>
+                        <div class="form-bottom">
+                            <div class="form-bottom__title-wrap">
+                                <div class="form-bottom__title">Time</div>
+                                <div class="form-bottom__title">Guests</div>
                             </div>
                             <div class="room__flexbox">    
                                 <div class="room__flexbox--item room__flexbox--item-1">
@@ -433,11 +446,11 @@
                                             <span class="select__time--answer">8:00</span>
                                             <span class="select__time--answer-click"></span>
                                         </div>
-                                        <ul class="booking__options-sm booking__options-time-dining-sm booking__options--off" id="booking__options-time-dining-sm">
-                                            <li class="booking__options-time--single booking__options-time--1-sm">8:00</li>
-                                            <li class="booking__options-time--single booking__options-time--2-sm">8:30</li>
-                                            <li class="booking__options-time--single booking__options-time--3-sm">9:00</li>
-                                            <li class="booking__options-time--single booking__options-time--4-sm">9:30</li>
+                                        <ul class="select__options-sm select__options-time-dining-sm select__options--off" id="select__options-time-dining-sm">
+                                            <li class="select__li-time select__options-time--1-sm">8:00</li>
+                                            <li class="select__li-time select__options-time--2-sm">8:30</li>
+                                            <li class="select__li-time select__options-time--3-sm">9:00</li>
+                                            <li class="select__li-time select__options-time--4-sm">9:30</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -447,11 +460,11 @@
                                             <span class="select__numbers--answer-guest-sm">1</span>
                                             <span class="select__numbers--answer-click"></span>
                                         </div>
-                                        <ul class="booking__options-sm booking__options--rooms-sm booking__options-guest-dining-sm booking__options--off" id="booking__options-guest-dining-sm">
-                                            <li class="booking__options-guest--single booking__options-guest--1-sm">1</li>
-                                            <li class="booking__options-guest--single booking__options-guest--2-sm">2</li>
-                                            <li class="booking__options-guest--single booking__options-guest--3-sm">3</li>
-                                            <li class="booking__options-guest--single booking__options-guest--4-sm">4</li>
+                                        <ul class="select__options-sm select__options--rooms-sm select__options-guest-dining-sm select__options--off" id="select__options-guest-dining-sm">
+                                            <li class="select__li-guest select__li-guest--1-sm">1</li>
+                                            <li class="select__li-guest select__li-guest--2-sm">2</li>
+                                            <li class="select__li-guest select__li-guest--3-sm">3</li>
+                                            <li class="select__li-guest select__li-guest--4-sm">4</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -467,15 +480,15 @@
                 </div>
 
 
-                <div class="show__container">
-                    <div class="check__flexbox--wrapper">
-                        <div class="check-wrapper">
-                            <div class="check__title">
-                                <div class="check__title--item">Date</div>
-                                <div class="check__title--item">Show</div>
+                <div class="show-form">
+                    <div class="show-form__wrap">
+                        <div class="show-form__wrap--top">
+                            <div class="show-form__title-wrap">
+                                <div class="show-form__title">Date</div>
+                                <div class="show-form__title">Show</div>
                             </div>
-                            <div class="check__flexbox">    
-                                <div class="check__flexbox--item check__flexbox--item-1">
+                            <div class="show-form__top-wrap">    
+                                <div class="show-form__top-item ">
                                     <!-- DATEPICKER -->
                                     <div class="datepicker__wrapper">
                                         <input type="text" class="datepicker-month-3" autocomplete="off" placeholder="May">
@@ -483,25 +496,25 @@
                                         <p class="arrow__down--wrap"><i class="arrow__down"></i></p>
                                     </div>
                                 </div>
-                                <div class="check__flexbox--item check__flexbox--item-2">
+                                <div class="show-form__top-item ">
                                     <div class="select__wrapper">
                                         <div class="select__word-show-sm" id="select__word-show-sm">
                                             <span class="select__word-show--answer-sm">THE LATIN KINGS</span>
                                             <span class="select__word-show--answer-click-sm"></span>
                                         </div>
-                                        <ul class="booking__options-sm booking__options-word-show-sm booking__options--off" id="booking__options-word-show-sm">
-                                            <li class="booking__options-word-show--single booking__options-word-show--1-sm">THE LATIN KINGS</li>
-                                            <li class="booking__options-word-show--single booking__options-word-show--2-sm">SARAH EVANS</li>
-                                            <li class="booking__options-word-show--single booking__options-word-show--3-sm">THE BAND OF MAGICIANS</li>
+                                        <ul class="select__options-sm select__options-word-show-sm select__options--off" id="select__options-word-show-sm">
+                                            <li class="select__li-word-show select__li-word-show--1-sm">THE LATIN KINGS</li>
+                                            <li class="select__li-word-show select__li-word-show--2-sm">SARAH EVANS</li>
+                                            <li class="select__li-word-show select__li-word-show--3-sm">THE BAND OF MAGICIANS</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="room-wrapper">
-                            <div class="room__title">
-                                <div class="room__title--item">Time</div>
-                                <div class="room__title--item">Tickets</div>
+                        <div class="form-bottom">
+                            <div class="form-bottom__title-wrap">
+                                <div class="form-bottom__title">Time</div>
+                                <div class="form-bottom__title">Tickets</div>
                             </div>
                             <div class="room__flexbox">    
                                 <div class="room__flexbox--item room__flexbox--item-1">
@@ -511,11 +524,11 @@
                                             <span class="select__time--answer">8:00</span>
                                             <span class="select__time--answer-click"></span>
                                         </div>
-                                        <ul class="booking__options-sm booking__options-time-sm booking__options--off" id="booking__options-time-show-sm">
-                                                <li class="booking__options-time--single booking__options-time--1-sm">8:00</li>
-                                                <li class="booking__options-time--single booking__options-time--2-sm">8:30</li>
-                                                <li class="booking__options-time--single booking__options-time--3-sm">9:00</li>
-                                                <li class="booking__options-time--single booking__options-time--4-sm">9:30</li>
+                                        <ul class="select__options-sm select__options-time-sm select__options--off" id="select__options-time-show-sm">
+                                                <li class="select__li-time select__options-time--1-sm">8:00</li>
+                                                <li class="select__li-time select__options-time--2-sm">8:30</li>
+                                                <li class="select__li-time select__options-time--3-sm">9:00</li>
+                                                <li class="select__li-time select__options-time--4-sm">9:30</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -525,11 +538,11 @@
                                             <span class="select__numbers--answer-guest-sm">1</span>
                                             <span class="select__numbers--answer-click"></span>
                                         </div>
-                                        <ul class="booking__options-sm booking__options--rooms-sm booking__options-guest-show-sm booking__options--off" id="booking__options-guest-show-sm">
-                                            <li class="booking__options-guest--single booking__options-guest--1-sm">1</li>
-                                            <li class="booking__options-guest--single booking__options-guest--2-sm">2</li>
-                                            <li class="booking__options-guest--single booking__options-guest--3-sm">3</li>
-                                            <li class="booking__options-guest--single booking__options-guest--4-sm">4</li>
+                                        <ul class="select__options-sm select__options--rooms-sm select__options-guest-show-sm select__options--off" id="select__options-guest-show-sm">
+                                            <li class="select__li-guest select__li-guest--1-sm">1</li>
+                                            <li class="select__li-guest select__li-guest--2-sm">2</li>
+                                            <li class="select__li-guest select__li-guest--3-sm">3</li>
+                                            <li class="select__li-guest select__li-guest--4-sm">4</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -545,94 +558,111 @@
         </div>
     </div>
         <!-- bridge pic -->
-        <div class="bridge-wrapper">
-            <div class="bridge">
-                <div class="bridge__content--wrapper">
-                    <h3 class="bridge__content--1">summer sensation</h3>
-                    <h4 class="bridge__content--2">enjoy 30% off</h4>
+        
+        <!-- <div class="adLg">
+                <div class="adLg__wrapper">
+                    <div class="adLg__content--darken"></div>
+                    <div class="adLg__content">
+                        <p class="adLg__content--top">summer sensation</p>
+                        <p class="adLg__content--bottom">enjoy 30% off</p>
+                    </div>
+                </div>
+            </div> -->
+
+
+
+        <div class="ad">
+            <div class="ad__wrapper">
+                <div class="bridge__content--wrapper ad__content">
+                    <h3 class="ad__content--top">summer sensation</h3>
+                    <h4 class="ad__content--bottom">enjoy 30% off</h4>
                 </div>
             </div>
         </div>
-    <!-- DINING -->
+
+
+
+
+                        <!-- DINING -->
         <div id="dining" class="dining__title">
             <img src="images/dining_title.jpg" alt="Dining Title" class="dining__image--title">
         </div>
-        <div class="dining__header--wrap">
+        <div class="dining__header-wrap">
             <span class="dining__header">OUR RESTAURANTS</span>
         </div>
         <div class="dining__wrapper">
-            <div class="dining__flexbox--container">
-                <div class="dining__flexbox-lg">
-                    <span class="dining__header-lg dining__flexbox--item dining__flexbox--item-lg">OUR RESTAURANTS</span>
+            <div class="dining__tab-wrap">
+                <div class="dining__tabs dining__tabs--display-title">
+                    <span class=" dining__link dining__link--top">OUR RESTAURANTS</span>
                 </div>
-                <div class="dining__flexbox cafe__link dining__flexbox-lg">
-                    <button class="button cafe__click dining__flexbox--item do-nothing" href="#">CAFE</button>
+                <div class="dining__tabs">
+                    <button class="button dining__cafe--click dining__link do-nothing" href="#">CAFE</button>
                 </div>
-                <div class="dining__flexbox irvine__link dining__flexbox-lg">
-                    <button class="button irvine__click dining__flexbox--item dining__flexbox--item-center active__dining--button do-nothing" href="#">CHEF IRVINE RESTAURANT</button>
+                <div class="dining__tabs">
+                    <button class="button dining__link dining__irvine--click dining__link--center dining__button--active do-nothing" href="#">CHEF IRVINE RESTAURANT</button>
                 </div>
-                <div class="dining__flexbox food-court__link dining__flexbox-lg">
-                    <button class="button food-court__click dining__flexbox--item do-nothing" href="#">SOUTH BEACH FOOD COURT</button>
+                <div class="dining__tabs">
+                    <button class="button dining__food-court--click dining__link do-nothing" href="#">SOUTH BEACH FOOD COURT</button>
                 </div>
             </div>
-            <!-- <div class="dining__container"> -->
-            <div class="dining__irvine--wrapper active__dining--image">
-                <div class="dining__container--1">
+
+            <div class="irvine active__dining--image dining__container--active">
+                <div class="irvine__container">
                     <p class="irvine__logo">ROBERT<br>IRVINE</p>
-                    <div class="dining__image--1"></div>    
-                    <div class="dining__description-1 dining__description-1-lg">
-                        <p class="dining__description-par dining__description-par-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        <div class="dining__button--container dining__button--container-lg">
-                            <button class="dining__button--reserve dining__button dining__button--reserve-lg dining__button-lg">RESERVE </button>
-                            <button class="dining__button--view dining__button dining__button--view-lg dining__button-lg">VIEW RESTAURANT</button> 
+                    <div class="irvine__image"></div>    
+                    <div class="irvine__description-wrap irvine__description-wrap-lg">
+                        <p class="irvine__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <div class="irvine__button-wrap">
+                            <button class="irvine__button--reserve irvine__button">RESERVE </button>
+                            <button class="irvine__button--view irvine__button irvine__button--view-lg">VIEW RESTAURANT</button> 
                         </div>
                     </div>
                 </div>
-                <div class="dining__description-1">
-                        <p class="dining__description-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        <div class="dining__button--container">
-                            <button class="dining__button--reserve dining__button">RESERVE </button>
-                            <button class="dining__button--view dining__button">VIEW RESTAURANT</button> 
+                <div class="irvine__description-wrap">
+                        <p class="irvine__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <div class="irvine__button-wrap">
+                            <button class="irvine__button--reserve irvine__button">RESERVE </button>
+                            <button class="irvine__button--view irvine__button">VIEW RESTAURANT</button> 
                         </div>
                 </div>
             </div>
-            <div class="dining__cafe--wrapper">
-                <div class="dining__container--2">
+            <div class="cafe">
+                <div class="cafe__container">
                     <p class="cafe__logo">CAFE</p>
-                    <div class="dining__image--2"></div>
-                    <div class="dining__description-1 dining__description-1-lg">
-                        <p class="dining__description-par dining__description-par-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        <div class="dining__button--container dining__button--container-lg">
-                            <button class="dining__button--reserve dining__button dining__button--reserve-lg dining__button-lg">RESERVE </button>
-                            <button class="dining__button--view dining__button dining__button--view-lg dining__button-lg">VIEW RESTAURANT</button> 
+                    <div class="cafe__image"></div>
+                    <div class="cafe__description-wrap cafe__description-wrap-lg">
+                        <p class="cafe__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <div class="cafe__button-wrap">
+                            <button class="cafe__button--reserve cafe__button">RESERVE </button>
+                            <button class="cafe__button--view cafe__button cafe__button--view-lg">VIEW RESTAURANT</button> 
                         </div>
                     </div>
                 </div>
-                <div class="dining__description-1">
-                    <p class="dining__description-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    <div class="dining__button--container">
-                        <button class="dining__button--reserve dining__button">RESERVE </button>
-                        <button class="dining__button--view dining__button">VIEW RESTAURANT</button> 
+                <div class="cafe__description-wrap">
+                    <p class="cafe__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <div class="cafe__button-wrap">
+                        <button class="cafe__button--reserve cafe__button">RESERVE </button>
+                        <button class="cafe__button--view cafe__button">VIEW RESTAURANT</button> 
                     </div>
                 </div>
             </div>
-            <div class="dining__court--wrapper">
-                <div class="dining__container--3">
+            <div class="foodcourt">
+                <div class="foodcourt__container">
                     <p class="foodCourt__logo">South Beach<br>Food Court</p>
-                    <div class="dining__image--3"></div>
-                    <div class="dining__description-1 dining__description-1-lg">
-                        <p class="dining__description-par dining__description-par-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        <div class="dining__button--container dining__button--container-lg">
-                            <button class="dining__button--reserve dining__button dining__button--reserve-lg dining__button-lg">RESERVE </button>
-                            <button class="dining__button--view dining__button dining__button--view-lg dining__button-lg">VIEW RESTAURANT</button> 
+                    <div class="foodcourt__image"></div>
+                    <div class="foodcourt__description-wrap foodcourt__description-wrap-lg">
+                        <p class="foodcourt__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <div class="foodcourt__button-wrap">
+                            <button class="foodcourt__button--reserve foodcourt__button">RESERVE </button>
+                            <button class="foodcourt__button--view dining__button foodcourt__button--view-lg">VIEW RESTAURANT</button> 
                         </div>
                     </div>
                 </div>
-                <div class="dining__description-1">
-                    <p class="dining__description-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    <div class="dining__button--container">
-                        <button class="dining__button--reserve dining__button">RESERVE </button>
-                        <button class="dining__button--view dining__button">VIEW RESTAURANT</button> 
+                <div class="foodcourt__description-wrap">
+                    <p class="foodcourt__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <div class="foodcourt__button-wrap">
+                        <button class="foodcourt__button--reserve dining__button">RESERVE </button>
+                        <button class="foodcourt__button--view foodcourt__button">VIEW RESTAURANT</button> 
                     </div>
                 </div>
             </div>
@@ -640,8 +670,10 @@
 
 
 
+            <!-- ENTERTAINMENT-->
+
             <!-- swiper -->
-            <div class="side-design"></div>
+            <div class="entertain__side-design"></div>
             <img src="images/entertainDesignWide.png" alt="design" class="entertainDesign__wide">
             <div id="entertain" class="entertain__title">
                 <img src="images/entertainment-title.jpg" alt="entertainment Title">
@@ -699,58 +731,58 @@
 
 <!-- ENTERTAIN LG -->
 
-            <div class="entertain-container"> 
-                <div class="entertain-wrapper">
-                    <div class="entertain__image--wrapper">
-                        <div class="entertain__image1">
-                            <div class="entertain__date">
+            <div class="entertainment"> 
+                <div class="entertainment__wrapper">
+                    <div class="entertainment__image-wrap">
+                        <div class="entertainment__image--left">
+                            <div class="entertainment__date">
                                 May 10, 2020 7PM
                             </div>
-                            <div class="entertain__artist--container">
-                                <div class="entertain__artist entertain__artist--latin">
+                            <div class="entertainment__artist-wrap">
+                                <div class="entertainment__artist">
                                     THE LATIN KINGS
                                 </div>
-                                <div class="entertain__artist--content-header">SPECIAL EVENT - ONE WEEKEND ONLY!</div>
-                                <div class="entertain__artist--content swiper__artist--content-1">
+                                <div class="entertainment__special-event">SPECIAL EVENT - ONE WEEKEND ONLY!</div>
+                                <div class="entertainment__artist-description">
                                     The Latin Kings of Comedy will perform May 5-6, 2017 at Tropicana Laugh Factory in Las Vegas.
                                 </div>
                                 
                             </div>
-                            <div class="entertain__artist--link do-nothing"><a href="#">LAUGH FACTORY</a></div>
+                            <div class="entertainment__theater-link do-nothing"><a href="#">LAUGH FACTORY</a></div>
                         </div>
                     </div>
-                    <div class="entertain__image--wrapper">
-                        <div class=" entertain__image2">
-                            <div class="entertain__date">
+                    <div class="entertainment__image-wrap">
+                        <div class=" entertainment__image--center">
+                            <div class="entertainment__date">
                                 May 17, 2020 7PM
                             </div>
-                            <div class="entertain__artist--container">
-                                <div class="entertain__artist entertain__artist--evans">
+                            <div class="entertainment__artist-wrap">
+                                <div class="entertainment__artist">
                                     SARAH EVANS
                                 </div>
-                                <div class="entertain__artist--content-header">SPECIAL EVENT - ONE WEEKEND ONLY!</div>
-                                <div class="entertain__artist--content swiper__artist--content-2">
+                                <div class="entertainment__special-event">SPECIAL EVENT - ONE WEEKEND ONLY!</div>
+                                <div class="entertainment__artist-description">
                                     Multi-platinum, RCA recording artist, Sarah Evans, will perform at Tropicana Theater in Las Vegas.
                                 </div>
                             </div>
-                            <div class="entertain__artist--link do-nothing"><a href="#">TROPICANA THEATER</a></div>
+                            <div class="entertainment__theater-link do-nothing"><a href="#">TROPICANA THEATER</a></div>
                         </div>
                     </div>
-                    <div class="entertain__image--wrapper">
-                        <div class="entertain-slide entertain__image3">
-                            <div class="entertain__date">
+                    <div class="entertainment__image-wrap">
+                        <div class="entertain-slide entertainment__image--right">
+                            <div class="entertainment__date">
                                 May 28, 2020 7PM
                             </div>
-                            <div class="entertain__artist--container">
-                                <div class="entertain__artist entertain__artist--magicians">
+                            <div class="entertainment__artist-wrap">
+                                <div class="entertainment__artist">
                                     BAND OF MAGICIANS
                                 </div>
-                                <div class="entertain__artist--content-header">SPECIAL EVENT - ONE WEEKEND ONLY!</div>
-                                <div class="entertain__artist--content entertain__artist--content-3">
+                                <div class="entertainment__special-event">SPECIAL EVENT - ONE WEEKEND ONLY!</div>
+                                <div class="entertainment__artist-description">
                                     Band of Magicians have one of the top acts, and they will perform at Tropicana Theater in Las Vegas.
                                 </div>
                             </div>
-                            <div class="entertain__artist--link do-nothing"><a href="#">TROPICANA THEATER</a></div>
+                            <div class="entertainment__theater-link do-nothing"><a href="#">TROPICANA THEATER</a></div>
                         </div>
                     </div>
                 </div>
@@ -760,25 +792,25 @@
                 <!-- Add Pagination -->
             <div class="swiper-pagination"></div> 
             <div class="sched-link-wrapper">
-                <div class="entertainment-sched-link do-nothing"><a href="#">SEE FULL ENTERTAINMENT <br> SCHEDULE</a> </div>
+                <div class="entertainment__full-sched do-nothing"><a href="#">SEE FULL ENTERTAINMENT <br> SCHEDULE</a> </div>
             </div>
 
             
             <!-- Experience -->
-            <div class="experience-container-all">
+            <div class="experience">
                 <div class="experience__title">
                     <img id="experience" src="images/experienceTitle.jpg" alt="Experience Title">
                 </div>
                 <div class="experience__container">
-                    <div class="experience__image--container">
+                    <div class="experience__image-wrap">
                         <div class="experience__image"></div>
                     </div>
                     <div class="experience__wrapper">
                         <div class="experience__rooms">
-                            <div class="experience__rooms--wrapper">
-                                <div class="experience__rooms--title">the rooms</div>
-                                <div class="experience__rooms--content">provide a casually elegant resort experience</div>
-                                <div class="experience__rooms--link do-nothing"><a href="#">view rooms</a></div>
+                            <div class="experience__room-wrap">
+                                <div class="experience__room-title">the rooms</div>
+                                <div class="experience__room-description">provide a casually elegant resort experience</div>
+                                <div class="experience__room-link do-nothing"><a href="#">view rooms</a></div>
                             </div>
                         </div>
                     
@@ -788,8 +820,8 @@
                         <div id="pool" class="pool__wrapper">
                             <a href="#pool">
                                 <img class="pool__image" src="images/pool.jpg" alt="Tropicana Pool">
-                                <div class="pool__content--wrapper">
-                                    <div class="pool__content">pool</div>
+                                <div class="pool__title-wrap">
+                                    <div class="pool__title">pool</div>
                                 </div>
                             </a>
                         </div>
@@ -797,8 +829,8 @@
                         <div id="casino" class="casino__wrapper">
                             <a href="#casino">
                                 <img class="casino__image" src="images/casino2.jpg" alt="Tropicana Casino">
-                                <div class="casino__content--wrapper">
-                                    <div class="casino__content">casino</div>
+                                <div class="casino__title-wrap">
+                                    <div class="casino__title">casino</div>
                                 </div>
                             </a>
                         </div>
@@ -806,8 +838,8 @@
                         <div id="spa" class="spa__wrapper">
                             <a href="#spa">
                                 <img class="spa__image" src="images/spa.jpg" alt="Tropicana Spa">
-                                <div class="spa__content--wrapper">
-                                    <div class="spa__content">spa</div>
+                                <div class="spa__title-wrap">
+                                    <div class="spa__title">spa</div>
                                 </div>
                             </a>
                         </div>
@@ -819,28 +851,28 @@
 
 
 <!-- LARGE -->
-<div id="experience-lg" class="experience-container-all-lg">
+<div id="experience-lg" class="experience-lg">
         <div class="experience__title">
             <img src="images/experienceTitle.jpg" alt="Experience Title">
         </div>
         <div class="experience__container">
-            <div class="experience__image--container">
+            <div class="experience__image-wrap">
                 <div class="experience__image"></div>
             </div>
             <div class="experience__wrapper">
                 <div class="experience__rooms">
-                    <div class="experience__rooms--wrapper">
-                        <div class="experience__rooms--title">the rooms</div>
-                        <div class="experience__rooms--content">provide a casually elegant resort experience</div>
-                        <div class="experience__rooms--link do-nothing"><a href="#">view rooms</a></div>
+                    <div class="experience__room-wrap">
+                        <div class="experience__room-title">the rooms</div>
+                        <div class="experience__room-description">provide a casually elegant resort experience</div>
+                        <div class="experience__room-link do-nothing"><a href="#">view rooms</a></div>
                     </div>
                 </div>
                 <div class="experience-flex-wrapper">
                     <div id="pool" class="pool__wrapper experience-flex-item">
                         <a href="#pool">
                             <img class="pool__image" src="images/pool.jpg" alt="Tropicana Pool">
-                            <div class="pool__content--wrapper">
-                                <div class="pool__content">pool</div>
+                            <div class="pool__title-wrap">
+                                <div class="pool__title">pool</div>
                             </div>
                         </a>
                     </div>
@@ -848,8 +880,8 @@
                     <div id="casino" class="casino__wrapper experience-flex-item">
                         <a href="#casino">
                             <img class="casino__image" src="images/casino2.jpg" alt="Tropicana Casino">
-                            <div class="casino__content--wrapper">
-                                <div class="casino__content">casino</div>
+                            <div class="casino__title-wrap">
+                                <div class="casino__title">casino</div>
                             </div>
                         </a>
                     </div>
@@ -857,8 +889,8 @@
                     <div id="spa" class="spa__wrapper experience-flex-item">
                         <a href="#spa">
                             <img class="spa__image" src="images/spa.jpg" alt="Tropicana Spa">
-                            <div class="spa__content--wrapper">
-                                <div class="spa__content">spa</div>
+                            <div class="spa__title-wrap">
+                                <div class="spa__title">spa</div>
                             </div>
                         </a>
                     </div>
@@ -868,9 +900,9 @@
     </div>
 
 
-    <!-- <div class="test"></div> -->
+                <!-- CLOSER -->
 
-    <div class="closer__container">
+    <div class="closer">
         <div class="closer__wrapper">
             <ul id="closer" class="closer__ul">
                 <li class="closer__location closer__fancy closer__li closer__no-link"> <a> 3801 Las Vegas Blvd, South <br>Las Vegas, NV 89109 </a></li>
@@ -888,27 +920,20 @@
     </div>
 
 
-        <div class="closer__container-lg">
+        <div class="closer-lg">
             <div class="closer__wrapper">
-                <ul id="closer" class="closer__flexbox-1 closer-ul">
+                <ul id="closer" class="closer__ul--top closer__ul closer__ul-lg">
                     <li class="closer__logo closer__flexbox-item-1 closer__fancy"><img src="images/troplogo.png" class="closer__logo1"></li>
                     <li class="closer__location closer__fancy closer__flexbox-item-1 closer__no-link"> <a> 3801 Las Vegas Blvd, South <br>Las Vegas, NV 89109 </a></li>
                     <li class="closer__email closer__fancy closer__flexbox-item-1 closer__no-link"><a >EMAIL:<br>TLVGuestServices@PNGaming.com</a></li>
                 </ul>
-                <ul class="closer__flexbox-2 closer-ul">
+                <ul class="closer__ul--bottom closer__ul closer__ul-lg">
                     <li class="closer__your_home closer__flexbox-item-2">YOUR HOME ON THE<br>LAS VEGAS STRIP</li>
                     <li class="closer__reservation closer__fancy closer__flexbox-item-2 closer__no-link"><a >RESERVATIONS:<br>1-800-381-8707</a></li>
                     <li class="closer__concierge closer__fancy closer__flexbox-item-2 closer__no-link"><a>CONCIERGE:<br>1-800-GO2-TROP</a></li>
                 </ul>
-                    <!-- <li class="closer__link closer__li"><a href="#closer">About Us</a></li>
-                    <li class="closer__link closer__li"><a href="#closer">Responsible Gaming</a></li>
-                    <li class="closer__link closer__li"><a href="#closer">Careers</a></li>
-                    <li class="closer__link closer__li"><a href="#closer">Press</a></li>
-                    <li class="closer__link closer__li"><a href="#closer">Marquee Rewards Locations</a></li>
-                    <li class="closer__warning closer__li"><a href="#closer">Gambling problem?  Call 1-800-522-4700</a></li>
-                </ul> -->
             </div>
-            <ul class="closer__flexbox-3">
+            <ul class="closer__ul--links closer__ul-lg">
                 <li class="closer__flexbox-item-3 closer__text-design closer__flexbox-item-3-first do-nothing"><a href="#">About Us</a></li>
                 <li class="closer__flexbox-item-3 closer__dot-design">•</li>
                 <li class="closer__flexbox-item-3 closer__text-design do-nothing"><a href="#">Responsible Gaming</a></li>
@@ -917,6 +942,7 @@
                 <li class="closer__flexbox-item-3 closer__dot-design">•</li>
                 <li class="closer__flexbox-item-3 closer__text-design do-nothing"><a href="#">Press</a></li>
                 <li class="closer__flexbox-item-3 closer__flexbox-item-3-last">Gambling problem? Call 1-800-522-4700</li>
+                </ul>
         </div>
     </div>
 

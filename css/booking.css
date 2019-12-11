@@ -1,3 +1,567 @@
+.booking {
+  background-color: white;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .booking {
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .booking {
+    display: none;
+  }
+}
+
+.booking__wrapper {
+  width: 90%;
+  z-index: 3;
+  top: -80px;
+  position: relative;
+  margin: 0 auto;
+  background-color: white;
+  -webkit-box-shadow: 0.2px 0.2px 19px -5.9px grey;
+          box-shadow: 0.2px 0.2px 19px -5.9px grey;
+}
+
+@media only screen and (max-width: 768px) {
+  .booking__wrapper {
+    max-width: 450px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .booking__wrapper {
+    width: 700px;
+  }
+}
+
+.booking__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  min-height: 55px;
+}
+
+@media only screen and (min-width: 768px) {
+  .booking__tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 183px;
+    float: left;
+    position: relative;
+    left: -30px;
+    background-color: white;
+    -webkit-box-shadow: -6.8px 0.2px 19px -11.9px grey;
+            box-shadow: -6.8px 0.2px 19px -11.9px grey;
+  }
+}
+
+.booking__link {
+  display: block;
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 768px) {
+  .booking__link {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.booking__button-tab {
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+}
+
+.booking__button-tab:hover {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .booking__button-tab {
+    border-left: 0.9px solid rgba(61, 58, 58, 0.3);
+    border-right: 0.9px solid rgba(61, 58, 58, 0.3);
+  }
+}
+
+.booking__button-tab-center {
+  border-left: 0.9px solid rgba(61, 58, 58, 0.3);
+  border-right: 0.9px solid rgba(61, 58, 58, 0.3);
+}
+
+.booking__container, .show__container, .dining__container {
+  margin: 0 auto;
+}
+
+.booking__container--button, .show__container--button, .dining__container--button {
+  z-index: 1;
+  font-size: 16px;
+  color: white;
+  width: 240px;
+  height: 46px;
+  background-color: #e32f2d;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: border-radius 1s;
+  transition: border-radius 1s;
+}
+
+@media only screen and (min-width: 768px) {
+  .booking__container--button, .show__container--button, .dining__container--button {
+    font-size: 13px;
+    color: white;
+    width: 90px;
+    height: 44px;
+    background-color: #e32f2d;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    float: right;
+    top: -147px;
+    left: 410px;
+  }
+}
+
+.booking__container--button:hover, .show__container--button:hover, .dining__container--button:hover {
+  border-radius: 30px;
+  background-color: #da1f1d;
+}
+
+.booking__container--button:active, .show__container--button:active, .dining__container--button:active {
+  background-color: #e64544;
+}
+
+.booking__container--button-content, .show__container--button-content, .dining__container--button-content {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .booking__container--button-content, .show__container--button-content, .dining__container--button-content {
+    font-size: 10px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    float: right;
+    top: -61px;
+    left: 458px;
+  }
+}
+
+.check__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 12px;
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .check__title {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+.check__title--item {
+  width: 112px;
+  text-align: center;
+  font-style: italic;
+}
+
+@media only screen and (min-width: 768px) {
+  .check__title--item {
+    padding-top: 25px;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .check__title--item-2 {
+    margin-left: 7px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .check-wrapper {
+    width: 300px;
+  }
+}
+
+.check__flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 25px;
+  border-bottom: solid 1px #c6dde1;
+}
+
+@media only screen and (min-width: 768px) {
+  .check__flexbox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: none;
+  }
+  .check__flexbox:after {
+    content: '';
+    border-right: solid 1px #c6dde1;
+    height: 140px;
+    position: absolute;
+    top: 25px;
+    left: 295px;
+  }
+}
+
+.check__flexbox--wrapper {
+  width: 88%;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+
+.check__flexbox--item {
+  border: solid 1px black;
+  height: 102px;
+  width: 112px;
+}
+
+@media only screen and (min-width: 768px) {
+  .check__flexbox--item {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .room-wrapper {
+    width: 300px;
+    position: relative;
+    float: right;
+    top: -177px;
+    margin-right: 34px;
+  }
+}
+
+.room__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 12px;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .room__title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.room__title--item {
+  width: 112px;
+  text-align: center;
+  font-style: italic;
+}
+
+@media only screen and (min-width: 768px) {
+  .room__title--item {
+    margin-right: 10px;
+  }
+}
+
+.room__flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media only screen and (min-width: 768px) {
+  .room__flexbox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.room__flexbox--wrapper {
+  width: 88%;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+
+.room__flexbox--item {
+  border: solid 1px black;
+  height: 102px;
+  width: 112px;
+}
+
+@media only screen and (min-width: 768px) {
+  .room__flexbox--item {
+    margin-right: 10px;
+  }
+}
+
+.booking__container {
+  display: none;
+}
+
+.dining__container {
+  display: none;
+}
+
+.show__container {
+  display: none;
+}
+
+.active__container {
+  display: block;
+}
+
+.active__button {
+  opacity: 1;
+  border-bottom: solid 3px #53cdeb;
+  background-color: #eef1f2;
+}
+
+@media only screen and (min-width: 768px) {
+  .active__button {
+    border-left: solid 3px #53cdeb;
+    border-bottom: none;
+  }
+}
+
+/* DATEPICKER */
+#datepicker, #datepicker-1, #datepicker-2, #datepicker-3 {
+  width: 100%;
+  font-size: 44px;
+  background: none;
+  border: none;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  color: transparent;
+  text-shadow: 0 0 0 #e12f37;
+  -webkit-transform: translate(-1%);
+          transform: translate(-1%);
+}
+
+#datepicker::-webkit-input-placeholder, #datepicker-1::-webkit-input-placeholder, #datepicker-2::-webkit-input-placeholder, #datepicker-3::-webkit-input-placeholder {
+  color: #e12f37;
+  opacity: 1;
+}
+
+#datepicker:-ms-input-placeholder, #datepicker-1:-ms-input-placeholder, #datepicker-2:-ms-input-placeholder, #datepicker-3:-ms-input-placeholder {
+  color: #e12f37;
+  opacity: 1;
+}
+
+#datepicker::-ms-input-placeholder, #datepicker-1::-ms-input-placeholder, #datepicker-2::-ms-input-placeholder, #datepicker-3::-ms-input-placeholder {
+  color: #e12f37;
+  opacity: 1;
+}
+
+#datepicker::placeholder, #datepicker-1::placeholder, #datepicker-2::placeholder, #datepicker-3::placeholder {
+  color: #e12f37;
+  opacity: 1;
+}
+
+#datepicker:focus, #datepicker-1:focus, #datepicker-2:focus, #datepicker-3:focus {
+  outline: none;
+}
+
+.datepicker__wrapper {
+  max-width: 100%;
+}
+
+.datepicker-month, .datepicker-month-1, .datepicker-month-2, .datepicker-month-3 {
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+  padding-top: 11px;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  border: none;
+  font-weight: bold;
+  cursor: default;
+  color: transparent;
+  text-shadow: 0 0 0 black;
+  font-family: 'Lato', sans-serif;
+}
+
+.datepicker-month::-webkit-input-placeholder, .datepicker-month-1::-webkit-input-placeholder, .datepicker-month-2::-webkit-input-placeholder, .datepicker-month-3::-webkit-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.datepicker-month:-ms-input-placeholder, .datepicker-month-1:-ms-input-placeholder, .datepicker-month-2:-ms-input-placeholder, .datepicker-month-3:-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.datepicker-month::-ms-input-placeholder, .datepicker-month-1::-ms-input-placeholder, .datepicker-month-2::-ms-input-placeholder, .datepicker-month-3::-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.datepicker-month::placeholder, .datepicker-month-1::placeholder, .datepicker-month-2::placeholder, .datepicker-month-3::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.datepicker-month:focus, .datepicker-month-1:focus, .datepicker-month-2:focus, .datepicker-month-3:focus {
+  outline: none;
+}
+
+.select__wrapper {
+  max-width: 100%;
+  height: 100%;
+}
+
+.select__word, .select__word-show, .select__word-sm, .select__word-show-sm {
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: transparent;
+  text-shadow: 0 0 0 black;
+  background: transparent;
+  -webkit-appearance: none;
+}
+
+.select__word::-webkit-input-placeholder, .select__word-show::-webkit-input-placeholder, .select__word-sm::-webkit-input-placeholder, .select__word-show-sm::-webkit-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.select__word:-ms-input-placeholder, .select__word-show:-ms-input-placeholder, .select__word-sm:-ms-input-placeholder, .select__word-show-sm:-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.select__word::-ms-input-placeholder, .select__word-show::-ms-input-placeholder, .select__word-sm::-ms-input-placeholder, .select__word-show-sm::-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.select__word::placeholder, .select__word-show::placeholder, .select__word-sm::placeholder, .select__word-show-sm::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.select__word:focus, .select__word-show:focus, .select__word-sm:focus, .select__word-show-sm:focus {
+  outline: none;
+}
+
+.select__time, .select__time-sm, .select__time-dining, .select__time-dining-sm {
+  font-size: 35px;
+  /* text-align: center; */
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: transparent;
+  text-shadow: 0 0 0 black;
+  /* margin-left: 5px; */
+  background: transparent;
+  -webkit-appearance: none;
+  text-align-last: center;
+}
+
+.select__time::-webkit-input-placeholder, .select__time-sm::-webkit-input-placeholder, .select__time-dining::-webkit-input-placeholder, .select__time-dining-sm::-webkit-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.select__time:-ms-input-placeholder, .select__time-sm:-ms-input-placeholder, .select__time-dining:-ms-input-placeholder, .select__time-dining-sm:-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.select__time::-ms-input-placeholder, .select__time-sm::-ms-input-placeholder, .select__time-dining::-ms-input-placeholder, .select__time-dining-sm::-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.select__time::placeholder, .select__time-sm::placeholder, .select__time-dining::placeholder, .select__time-dining-sm::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.select__time:focus, .select__time-sm:focus, .select__time-dining:focus, .select__time-dining-sm:focus {
+  outline: none;
+}
+
+.select__numbers, .select__numbers-sm, .select__numbers-guest-dining, .select__numbers-guest-dining-sm, .select__numbers-guest-show, .select__numbers-guest-show-sm {
+  font-size: 45px;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: transparent;
+  text-shadow: 0 0 0 black;
+  background: transparent;
+}
+
+.select__numbers::-webkit-input-placeholder, .select__numbers-sm::-webkit-input-placeholder, .select__numbers-guest-dining::-webkit-input-placeholder, .select__numbers-guest-dining-sm::-webkit-input-placeholder, .select__numbers-guest-show::-webkit-input-placeholder, .select__numbers-guest-show-sm::-webkit-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.select__numbers:-ms-input-placeholder, .select__numbers-sm:-ms-input-placeholder, .select__numbers-guest-dining:-ms-input-placeholder, .select__numbers-guest-dining-sm:-ms-input-placeholder, .select__numbers-guest-show:-ms-input-placeholder, .select__numbers-guest-show-sm:-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.select__numbers::-ms-input-placeholder, .select__numbers-sm::-ms-input-placeholder, .select__numbers-guest-dining::-ms-input-placeholder, .select__numbers-guest-dining-sm::-ms-input-placeholder, .select__numbers-guest-show::-ms-input-placeholder, .select__numbers-guest-show-sm::-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.select__numbers::placeholder, .select__numbers-sm::placeholder, .select__numbers-guest-dining::placeholder, .select__numbers-guest-dining-sm::placeholder, .select__numbers-guest-show::placeholder, .select__numbers-guest-show-sm::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.select__numbers:focus, .select__numbers-sm:focus, .select__numbers-guest-dining:focus, .select__numbers-guest-dining-sm:focus, .select__numbers-guest-show:focus, .select__numbers-guest-show-sm:focus {
+  outline: none;
+}
+
 .booking-container-1 {
   display: none;
 }

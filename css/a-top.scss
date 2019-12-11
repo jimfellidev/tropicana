@@ -1,0 +1,63 @@
+ .a-top {
+    padding-top: 65px;
+    height: 65vh;
+    overflow: auto;
+    margin-top: -20px;
+    padding: 0;
+    background: url("../images/backgroundLg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 53%;
+    min-height: 400px;
+    overflow: hidden;
+    @media only screen and (min-width: 600px) {  
+        background: url("../images/backgroundLg.jpg");
+        background-repeat: no-repeat;
+    }
+    &__header {
+        text-transform: uppercase;
+        &--top {
+            top: 38%;
+            padding-left: 2px;
+            padding-right: 119px;
+            display: block;
+            position: relative;
+            opacity: .7;
+            font-size: 49px;
+            text-align: center;
+            font-family: 'Bitter', serif;
+            @media all and (min-width: 600px) {
+                  top: 28%;
+                  padding-right: 209px;
+                  font-size: 79px;
+            }
+        }
+        &--bottom {
+            color: #e62c34;
+            text-align: center;
+            line-height: 0.358;
+            top: 40%;
+            position: relative;
+            opacity: .8;
+            font-size: 50px;
+            font-family: 'Bitter', serif;
+            @media all and (min-width: 600px) {
+                  top: 30%;
+                  font-size: 80px;
+            }
+        }
+    }
+}
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+
+  

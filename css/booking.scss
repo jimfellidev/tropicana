@@ -1,6 +1,482 @@
+// Small
+.booking {
+    background-color: white;
+    display: block;
 
+    @media only screen and (min-width: 768px) {
+        margin-left: 30px;
+    }
+    @media only screen and (min-width: 768px) {
+        display: none;
+    }
+    // min-height: 600px;
+    &__wrapper {
+        width: 90%;
+        z-index: 3;
+        top: -80px;
+        position: relative;
+        margin: 0 auto;
+        background-color: white;
+        box-shadow: 0.2px 0.2px 19px -5.9px grey;
+
+        @media only screen and (max-width: 768px) {
+            max-width: 450px;
+        }
+        
+        @media only screen and (min-width: 768px) {
  
+            width: 700px;
+             
+            }
 
+    }
+    &__tabs {
+        display: flex;
+        margin: 0 auto;
+        min-height: 55px;
+        
+        
+
+        @media only screen and (min-width: 768px) {
+            // flex-direction: column;
+            // -webkit-box-orient: vertical;
+            // -webkit-box-direction: normal;
+            // -ms-flex-direction: column;
+            // flex-direction: column;
+            // height: 183px;
+            // float: left;
+            // -webkit-box-orient: vertical;
+            // -webkit-box-direction: normal;
+            // -ms-flex-direction: column;
+            flex-direction: column;
+            height: 183px;
+            float: left;
+            position: relative;
+            left: -30px;
+            background-color: white;
+            box-shadow: -6.8px 0.2px 19px -11.9px grey;
+            }
+            
+        
+    }
+    &__link {
+        display: block;
+        width: 33.33333%; 
+        // border-bottom: .9px solid rgba(61, 58, 58, .3);       
+        
+        // box-shadow: 0.2px 0.2px 3px -3px;
+        @media only screen and (min-width: 768px) {
+            height: 80px;
+            width: 80px;
+        }
+    } 
+    &__button-tab {
+        height: 100%;
+        width: 100%;
+        display: block;
+        text-align: center;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+            }
+        // ^^^ adjust to center content vertically  //
+        @media only screen and (min-width: 768px) {
+            border-left: .9px solid rgba(61, 58, 58, .3);
+            border-right: .9px solid rgba(61, 58, 58, .3);
+        }
+        &-center {
+            border-left: .9px solid rgba(61, 58, 58, .3);
+            border-right: .9px solid rgba(61, 58, 58, .3);
+            // border-bottom: 0.9px solid rgba(61, 58, 58, 0.3);
+        }
+    }
+}
+
+
+
+
+.booking__container, .show__container, .dining__container {
+    margin: 0 auto;
+    // display: none;
+    &--button {
+        z-index: 1;
+        font-size: 16px;
+        color: white;
+        width: 240px;
+        height: 46px;
+        background-color: rgb(227,47,45);
+        border: none;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        left: 50%;
+        transform: translatex(-50%);
+        position: relative;
+        cursor: pointer;
+        @media only screen and (min-width: 768px) {
+            font-size: 13px;
+            color: white;
+            width: 90px;
+            height: 44px;
+            background-color: #e32f2d;
+            border: none;
+            position: relative;
+            cursor: pointer;
+            float: right;
+            top: -147px;
+            left: 410px;
+            }
+        -webkit-transition: border-radius 1s;
+        transition: border-radius 1s;
+        &:hover {
+            border-radius: 30px;
+            background-color: darken(#e32f2d, 5% );
+        }
+        &:active {
+            background-color: lighten( #e32f2d, 5% )
+        }
+        &-content {
+            display: none;
+            @media only screen and (min-width: 768px) {
+            font-size: 10px;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            float: right;
+            top: -61px;
+            left: 458px;
+            }
+        }
+    }
+}
+
+// Rooms / Guests 
+.check__title {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 12px;
+    margin-top: 30px;
+    @media only screen and (min-width: 768px) {
+        justify-content: left;
+        }
+    &--item {
+        width: 112px;
+        text-align: center;
+        font-style: italic;
+        @media only screen and (min-width: 768px) {
+            padding-top: 25px;
+            margin-left: 10px;
+        }
+        &-2 {
+            @media only screen and (min-width: 768px) {
+                margin-left: 7px;
+            }
+        }
+    }
+}
+
+
+.check-wrapper {
+    @media only screen and (min-width: 768px) {
+        width: 300px;
+    }
+    
+}
+
+.check__flexbox {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 25px;
+    border-bottom: solid 1px rgb(198,221,225);
+    @media only screen and (min-width: 768px) {
+        justify-content: center;
+        border-bottom: none;
+        &:after {
+            content: '';
+            border-right: solid 1px #c6dde1;
+            height: 140px;
+            position: absolute;
+            top: 25px;
+            left: 295px;
+            }
+        }
+
+    &--wrapper {
+        width: 88%;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+         
+
+    }
+    &--item {
+        border: solid 1px black;
+        height: 102px;
+        width: 112px;
+        @media only screen and (min-width: 768px) {
+            margin-right: 10px;
+            }
+    }
+    // &:after {
+    //     content: "";
+    //     display: block;
+    //     margin: 0 auto;
+    //     width: 80%;
+    //     padding-top: 20px;
+    //     border-bottom: 1px solid rgb(198, 221, 225);
+    // }
+
+}
+
+.room-wrapper {
+    @media only screen and (min-width: 768px) {
+        width: 300px;
+        position: relative;
+        float: right;
+        top: -177px;
+        margin-right: 34px;
+
+    
+    }
+    
+}
+
+
+.room__title {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 12px;
+    margin-top: 20px;
+    @media only screen and (min-width: 768px) {
+        justify-content: center;
+        }
+    &--item {
+        width: 112px;
+        text-align: center;
+        font-style: italic;
+        @media only screen and (min-width: 768px) {
+            margin-right: 10px;
+        }
+        &-2 {
+            @media only screen and (min-width: 768px) {
+                
+            }
+        }
+    }
+}
+
+.room__flexbox {
+    display: flex;
+    justify-content: space-around;
+    @media only screen and (min-width: 768px) {
+        justify-content: center;
+        }
+    &--wrapper {
+        width: 88%;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+        // @media only screen and (min-width: 768px) {
+        //     justify-content: flex-start;
+        //     }
+         
+
+    }
+    &--item {
+        border: solid 1px black;
+        height: 102px;
+        width: 112px;
+        @media only screen and (min-width: 768px) {
+            margin-right: 10px;
+            }
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Check in / reservation nav bar for Js use / active
+
+.booking__container {
+    display: none;
+    
+}
+
+.dining__container {
+    display: none;
+}
+
+.show__container {
+  display: none;
+}
+
+.active__container {
+    display: block;
+}
+
+.active__button {
+    opacity: 1;
+    border-bottom: solid 3px rgb(83, 205, 235);
+    background-color: rgb(238, 241,242);
+    @media only screen and (min-width: 768px) {
+
+        border-left: solid 3px rgb(83, 205, 235);
+        border-bottom: none;
+         
+        }
+}
+
+
+/* DATEPICKER */
+
+#datepicker, #datepicker-1, #datepicker-2, #datepicker-3 {
+    width: 100%;
+    font-size: 44px;
+    background: none;
+    border: none;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    color: transparent;
+    text-shadow: 0 0 0 #e12f37;
+    transform: translate(-1%);
+    &::placeholder{
+        color: #e12f37;
+        opacity: 1;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.datepicker__wrapper {
+    max-width: 100%;
+}
+
+.datepicker-month, .datepicker-month-1, .datepicker-month-2, .datepicker-month-3 {
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    padding-top: 11px;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    border: none;
+    font-weight: bold;
+    cursor: default;
+    color: transparent;
+    text-shadow: 0 0 0 black;
+    font-family: 'Lato', sans-serif;
+    &::placeholder {
+        color: black;
+        opacity: 1;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.select__wrapper {
+    max-width: 100%;
+    height: 100%;
+}
+
+.select__word, .select__word-show, .select__word-sm, .select__word-show-sm {
+    // text-align-last: center;
+    // transform: translate(25%);
+    font-size: 100%;
+    // text-align: center;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    // padding-bottom: 2px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: transparent;
+    // margin-left: 5px;
+    text-shadow: 0 0 0 black;
+    background: transparent;
+    -webkit-appearance:none;
+
+    &::placeholder {
+        color: black;
+        opacity: 1;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.select__time, .select__time-sm, .select__time-dining, .select__time-dining-sm  {
+    font-size: 35px;
+    /* text-align: center; */
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: transparent;
+    text-shadow: 0 0 0 black;
+    /* margin-left: 5px; */
+    background: transparent;
+    -webkit-appearance: none;
+    text-align-last: center;
+    
+    // transform: translate(39%);
+    &::placeholder {
+        color: black;
+        opacity: 1;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.select__numbers, .select__numbers-sm, .select__numbers-guest-dining, .select__numbers-guest-dining-sm, .select__numbers-guest-show, .select__numbers-guest-show-sm {
+    font-size: 45px;
+    // text-align: center;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    // padding-bottom: 2px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: transparent;
+    text-shadow: 0 0 0 black;
+    
+    background: transparent;
+    // text-align-last: center;
+    
+    &::placeholder {
+        color: black;
+        opacity: 1;
+    }
+    &:focus {
+        outline: none;
+    }
+
+}
+
+
+
+
+// LARGE
+ 
  .booking-container-1 {
     display: none;
     @media screen and (min-width: 768px) {
