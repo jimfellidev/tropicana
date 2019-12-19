@@ -7,9 +7,20 @@
   @media only screen and (min-width: 768px) {
     .footer {
       padding-bottom: 0;
+      
     }
   }
   
+  @media only screen and (min-width: 768px) {
+    .footer__container {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        width: 93%;
+    }
+  }
+
+
   .footer__app-link-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -22,23 +33,13 @@
   
   @media only screen and (min-width: 768px) {
     .footer__app-link-wrap {
-      display: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 180px;
     }
   }
-  
-  .footer__app-link-wrap-lg {
-    display: none;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .footer__app-link-wrap-lg {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      width: 180px;
-    }
-  }
-  
+
   .footer__app-link {
     color: white;
     border: solid 1px #414647;
@@ -106,10 +107,26 @@
   .footer__content a:active {
     color: #6a6f6b;
   }
+
+  @media only screen and (min-width: 768px) {
+    .footer__content br {
+      display: none;
+    }
+  }
   
   .footer__bullet {
     padding: 0px 16px;
     font-weight: 800;
+  }
+
+  .footer__bullet--invisible {
+      display: none;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .footer__bullet--invisible {
+      display: inline-block;
+    }
   }
   
   .footer__content-wrap {
@@ -119,20 +136,11 @@
   
   @media only screen and (min-width: 768px) {
     .footer__content-wrap {
-      display: none;
-    }
-  }
-  
-  .footer__content-wrap-lg {
-    display: none;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .footer__content-wrap-lg {
-      display: block;
       width: 85%;
     }
   }
+  
+
   
   .footer__copyright {
     word-spacing: 2px;
@@ -154,20 +162,9 @@
       font-size: 12px;
     }
   }
+
   
-  .footer__flex-lg {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: 0 auto;
-    width: 90%;
-  }
-  
-  .test {
+  /* .test {
     background-image: url(/images/troplogo.png);
-  }
+  } */
   /*# sourceMappingURL=footer.css.map */

@@ -1,19 +1,9 @@
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     .experience {
       display: none;
     }
-  }
-  
-  .experience-lg {
-    display: none;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .experience-lg {
-      display: block;
-      overflow: auto;
-    }
-  }
+  } */
+
   
   .experience__title {
     padding-top: 60px;
@@ -487,27 +477,34 @@
     top: -32px;
   }
   
-  .experience-flex-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 80%;
-    float: right;
-    position: relative;
-    top: -160px;
-    margin-right: 10px;
+  @media only screen and (min-width: 768px) {
+    .experience__images-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 80%;
+      float: right;
+      position: relative;
+      top: -160px;
+      margin-right: 10px;
+    }
   }
+
   
   @media only screen and (min-width: 897px) {
-    .experience-flex-wrapper {
+    .experience__images-container {
       top: -160px;
     }
   }
-  
-  .experience-flex-item {
-    margin-left: 30px;
+
+
+
+  @media only screen and (min-width: 768px) {
+    .experience__placeholder {
+      width: 6%;
+    }
   }
   /*# sourceMappingURL=experience.css.map */
