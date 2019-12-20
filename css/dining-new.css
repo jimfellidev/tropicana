@@ -1,18 +1,34 @@
-.dining__title {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.dining__title-wrap {
+  padding-top: 40px;
+  padding-bottom: 50px;
   text-align: center;
   position: relative;
   z-index: -1;
+  margin: auto 0;
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__title {
-    padding-left: 50%;
-    -webkit-transform: translate(-25%);
-            transform: translate(-25%);
+  .dining__title-wrap {
+    margin: auto 0;
+    padding-top: 0px;
   }
 }
+
+.dining__title {
+  font-size: 8px;
+  letter-spacing: 1.2px;
+}
+
+.dining__title--center {
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+  position: relative;
+  top: 2.5px;
+}
+
 
 .dining__header-wrap {
   width: 100%;
