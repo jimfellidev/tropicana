@@ -13,6 +13,17 @@
   }
 
 
+
+
+
+
+
+
+
+
+
+
+
   .experience__title-wrap {
     padding-bottom: 110px;
     text-align: center;
@@ -50,15 +61,6 @@
     top: 2.5px;
   }
 
-
-
-
-
-
-
-
-
-
   
   .experience__container {
     width: 100%;
@@ -71,13 +73,14 @@
       margin: 0 auto;
       border-bottom: none;
       overflow: hidden;
-      height: 550px;
+      /* height: 550px; */
+      margin-bottom: -180px;
     }
   }
   
   @media only screen and (min-width: 995px) {
     .experience__container {
-      height: 600px;
+      /* height: 600px; */
     }
   }
   
@@ -240,68 +243,11 @@
   }
   
   .pool__image {
-    height: 200px;
-    width: 100%;
-  }
-  
-  @media only screen and (min-width: 360px) {
-    .pool__image {
-      height: 225px;
-    }
-  }
-  
-  @media only screen and (min-width: 430px) {
-    .pool__image {
-      height: 275px;
-    }
-  }
-  
-  @media only screen and (min-width: 500px) {
-    .pool__image {
-      height: 300px;
-    }
-  }
-  
-  @media only screen and (min-width: 550px) {
-    .pool__image {
-      height: 325px;
-    }
-  }
-  
-  @media only screen and (min-width: 630px) {
-    .pool__image {
-      height: 350px;
-    }
-  }
-  
-  @media only screen and (min-width: 700px) {
-    .pool__image {
-      height: 375px;
-    }
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .pool__image {
-      height: 140px;
-    }
-  }
-  
-  @media only screen and (min-width: 855px) {
-    .pool__image {
-      height: 150px;
-    }
-  }
-  
-  @media only screen and (min-width: 990px) {
-    .pool__image {
-      height: 170px;
-    }
-  }
-  
-  @media only screen and (min-width: 1070px) {
-    .pool__image {
-      height: 190px;
-    }
+    background-image: url("../images/pool.jpg");
+    padding-top: calc(9 / 16 * 100%);
+    background-repeat: no-repeat;
+    min-height: 120px;
+    background-size: cover;
   }
   
   .pool__title {
@@ -319,7 +265,7 @@
     position: relative;
     display: block;
     width: 100%;
-    top: -32px;
+    top: -4px;
   }
   
   .casino__wrapper {
@@ -343,70 +289,13 @@
   .casino__wrapper a {
     text-decoration: none;
   }
-  
+
   .casino__image {
-    height: 200px;
-    width: 100%;
-  }
-  
-  @media only screen and (min-width: 360px) {
-    .casino__image {
-      height: 225px;
-    }
-  }
-  
-  @media only screen and (min-width: 430px) {
-    .casino__image {
-      height: 275px;
-    }
-  }
-  
-  @media only screen and (min-width: 500px) {
-    .casino__image {
-      height: 300px;
-    }
-  }
-  
-  @media only screen and (min-width: 550px) {
-    .casino__image {
-      height: 325px;
-    }
-  }
-  
-  @media only screen and (min-width: 630px) {
-    .casino__image {
-      height: 350px;
-    }
-  }
-  
-  @media only screen and (min-width: 700px) {
-    .casino__image {
-      height: 375px;
-    }
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .casino__image {
-      height: 140px;
-    }
-  }
-  
-  @media only screen and (min-width: 855px) {
-    .casino__image {
-      height: 150px;
-    }
-  }
-  
-  @media only screen and (min-width: 990px) {
-    .casino__image {
-      height: 170px;
-    }
-  }
-  
-  @media only screen and (min-width: 1070px) {
-    .casino__image {
-      height: 190px;
-    }
+    background-image: url("../images/casino2.jpg");
+    padding-top: calc(9 / 16 * 100%);
+    background-repeat: no-repeat;
+    min-height: 120px;
+    background-size: cover;
   }
   
   .casino__title {
@@ -424,7 +313,7 @@
     position: relative;
     display: block;
     width: 100%;
-    top: -32px;
+    top: -4px;
   }
   
   .spa__wrapper {
@@ -451,69 +340,13 @@
   }
   
   .spa__image {
-    height: 200px;
-    width: 100%;
+    background-image: url("../images/spa.jpg");
+    padding-top: calc(9 / 16 * 100%);
+    background-repeat: no-repeat;
+    min-height: 120px;
+    background-size: cover;
   }
-  
-  @media only screen and (min-width: 360px) {
-    .spa__image {
-      height: 225px;
-    }
-  }
-  
-  @media only screen and (min-width: 430px) {
-    .spa__image {
-      height: 275px;
-    }
-  }
-  
-  @media only screen and (min-width: 500px) {
-    .spa__image {
-      height: 300px;
-    }
-  }
-  
-  @media only screen and (min-width: 550px) {
-    .spa__image {
-      height: 325px;
-    }
-  }
-  
-  @media only screen and (min-width: 630px) {
-    .spa__image {
-      height: 350px;
-    }
-  }
-  
-  @media only screen and (min-width: 700px) {
-    .spa__image {
-      height: 375px;
-    }
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .spa__image {
-      height: 140px;
-    }
-  }
-  
-  @media only screen and (min-width: 855px) {
-    .spa__image {
-      height: 150px;
-    }
-  }
-  
-  @media only screen and (min-width: 990px) {
-    .spa__image {
-      height: 170px;
-    }
-  }
-  
-  @media only screen and (min-width: 1070px) {
-    .spa__image {
-      height: 190px;
-    }
-  }
+
   
   .spa__title {
     background-color: #272a2b;
@@ -530,7 +363,7 @@
     position: relative;
     display: block;
     width: 100%;
-    top: -32px;
+    top: -4px;
   }
   
   @media only screen and (min-width: 768px) {
