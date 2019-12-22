@@ -86,17 +86,16 @@
   
   .experience__image {
     width: 100%;
-    background-image: url("../images/suite3.jpg");
+    background-image: url("../images/suite2.jpg");
     height: 220px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: cover;
+    /* background-size: cover; */
     overflow: visible;
-
-    
-    
     height: 100%;
-    
+
+
+    /* background-size: contain; */  
     /* overflow: auto; */    
     /* padding-top: calc(3182 / 5656 * 100%); */
     /* padding-top: calc(3182 / 5262 * 100%); */
@@ -109,7 +108,7 @@
       height: 100%; 
 
       /* just toying around with this */
-      background-attachment: fixed;
+      /* background-attachment: fixed; */
     }
   }
   
