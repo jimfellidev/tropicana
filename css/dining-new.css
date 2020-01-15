@@ -667,6 +667,7 @@
     background-color: #e12f37;
     border: none;
     padding: 12px 32px;
+    font-weight: bold;
   }
   
    .irvine__button--reserve:hover, .cafe__button--reserve:hover, .foodcourt__button--reserve:hover {

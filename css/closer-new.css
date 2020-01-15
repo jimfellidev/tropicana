@@ -190,6 +190,11 @@
             transform: translate(-20%);
   }
   
+  .closer__email:hover {
+    cursor: pointer !important;
+    opacity: .7;
+  }
+
   .closer__text-design {
     color: white;
   }
@@ -229,4 +234,10 @@
     height: 40px;
     width: 105px;
   }
+
+
+.closer__location {
+  cursor: pointer !important;
+}
+
   /*# sourceMappingURL=closer.css.map */
