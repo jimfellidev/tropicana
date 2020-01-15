@@ -16,6 +16,7 @@
   .a-top {
     background: url("../images/backgroundLg.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -60,4 +61,3 @@
     font-size: 80px;
   }
 }
-/*# sourceMappingURL=a-top.css.map */

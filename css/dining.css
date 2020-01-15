@@ -1,27 +1,43 @@
-.dining__title {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.dining__title-wrap {
+  padding-top: 40px;
+  padding-bottom: 50px;
   text-align: center;
   position: relative;
   z-index: -1;
+  margin: auto 0;
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__title {
-    padding-left: 50%;
-    -webkit-transform: translate(-25%);
-            transform: translate(-25%);
+  .dining__title-wrap {
+    margin: auto 0;
+    padding-top: 0px;
   }
 }
 
-.dining__header--wrap {
+.dining__title {
+  font-size: 8px;
+  letter-spacing: 1.2px;
+}
+
+.dining__title--center {
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+  position: relative;
+  top: 2.5px;
+}
+
+
+.dining__header-wrap {
   width: 100%;
   text-align: center;
   margin-bottom: 15px;
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__header--wrap {
+  .dining__header-wrap {
     display: none;
   }
 }
@@ -76,7 +92,7 @@
   }
 }
 
-.dining__flexbox--container {
+.dining__tab-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,7 +101,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__flexbox--container {
+  .dining__tab-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -99,7 +115,7 @@
 }
 
 @media only screen and (min-width: 768px) and (min-width: 768px) {
-  .dining__flexbox--container:before {
+  .dining__tab-wrap:before {
     position: absolute;
     content: '';
     height: 25px;
@@ -113,31 +129,36 @@
 }
 
 @media only screen and (min-width: 768px) and (min-width: 1124px) {
-  .dining__flexbox--container:before {
+  .dining__tab-wrap:before {
     top: 0px;
   }
 }
 
-.dining__flexbox {
+.dining__tabs {
   display: block;
   width: 33.33333%;
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__flexbox {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .dining__flexbox-lg {
+  .dining__tabs {
+    /* display: none; */
     display: block;
     width: 100%;
     border-bottom: solid 1px #d0e3e6;
   }
 }
 
-.dining__flexbox--item {
+.dining__tabs--display-title {
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+ .dining__tabs--display-title {
+    display: block;
+    }
+}
+
+
+.dining__link {
   height: 100%;
   width: 100%;
   display: block;
@@ -149,12 +170,12 @@
   cursor: pointer;
 }
 
-.dining__flexbox--item:hover {
+.dining__link:hover {
   opacity: 1;
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__flexbox--item {
+  .dining__link {
     text-align: left;
     height: 51px;
     font-size: 16px;
@@ -164,38 +185,34 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .dining__flexbox--item-lg {
-    display: none;
-  }
-}
 
-.dining__flexbox--item-center {
+
+.dining__link--center {
   border-left: 0.9px solid rgba(61, 58, 58, 0.3);
   border-right: 0.9px solid rgba(61, 58, 58, 0.3);
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__flexbox--item-center {
+  .dining__link--center {
     border-left: none;
     border-right: none;
   }
 }
 
-.active__dining--button {
+.dining__button--active {
   opacity: 1;
   border-bottom: solid 3px #53cdeb;
   background-color: #eef1f2;
 }
 
 @media only screen and (min-width: 768px) {
-  .active__dining--button {
+  .dining__button--active {
     border-bottom: none;
     border-left: solid 3px #53cdeb;
   }
 }
 
-.dining__container--1 {
+.irvine__container {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/irvine3.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/irvine3.jpg);
   height: 220px;
@@ -207,7 +224,7 @@
   z-index: 2;
 }
 
-.dining__container--1:after {
+.irvine__container:after {
   position: absolute;
   content: '';
   height: 38px;
@@ -220,26 +237,26 @@
 }
 
 @media only screen and (min-width: 420px) {
-  .dining__container--1 {
+  .irvine__container {
     width: 90%;
     margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .dining__container--1 {
+  .irvine__container {
     width: 85%;
   }
 }
 
 @media only screen and (min-width: 700px) {
-  .dining__container--1 {
+  .irvine__container {
     width: 80%;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__container--1 {
+  .irvine__container {
     height: 400px;
     width: 60%;
     left: 40%;
@@ -247,13 +264,13 @@
     position: relative;
     margin: 0;
   }
-  .dining__container--1:after {
+  .irvine__container:after {
     display: none;
   }
 }
 
 @media only screen and (min-width: 1124px) {
-  .dining__container--1 {
+  .irvine__container {
     width: 50%;
     z-index: 2;
     top: -80px;
@@ -263,7 +280,7 @@
   }
 }
 
-.dining__container--2 {
+.cafe__container {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/cafe3.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cafe3.jpg);
   height: 220px;
@@ -275,7 +292,7 @@
   z-index: 2;
 }
 
-.dining__container--2:after {
+.cafe__container:after {
   position: absolute;
   content: '';
   height: 38px;
@@ -288,26 +305,26 @@
 }
 
 @media only screen and (min-width: 420px) {
-  .dining__container--2 {
+  .cafe__container {
     width: 90%;
     margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .dining__container--2 {
+  .cafe__container {
     width: 85%;
   }
 }
 
 @media only screen and (min-width: 700px) {
-  .dining__container--2 {
+  .cafe__container {
     width: 80%;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__container--2 {
+  .cafe__container {
     height: 400px;
     width: 60%;
     left: 40%;
@@ -315,13 +332,13 @@
     position: relative;
     margin: 0;
   }
-  .dining__container--2:after {
+  .cafe__container:after {
     display: none;
   }
 }
 
 @media only screen and (min-width: 1124px) {
-  .dining__container--2 {
+  .cafe__container {
     width: 50%;
     z-index: 2;
     top: -80px;
@@ -331,7 +348,7 @@
   }
 }
 
-.dining__container--3 {
+.foodcourt__container {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/rest4.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/rest4.jpg);
   height: 220px;
@@ -343,7 +360,7 @@
   z-index: 2;
 }
 
-.dining__container--3:after {
+.foodcourt__container:after {
   position: absolute;
   content: '';
   height: 38px;
@@ -356,26 +373,26 @@
 }
 
 @media only screen and (min-width: 420px) {
-  .dining__container--3 {
+  .foodcourt__container {
     width: 90%;
     margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .dining__container--3 {
+  .foodcourt__container {
     width: 85%;
   }
 }
 
 @media only screen and (min-width: 700px) {
-  .dining__container--3 {
+  .foodcourt__container {
     width: 80%;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__container--3 {
+  .foodcourt__container {
     height: 400px;
     width: 60%;
     position: relative;
@@ -384,13 +401,13 @@
     bottom: 224px;
     margin: 0;
   }
-  .dining__container--3:after {
+  .foodcourt__container:after {
     display: none;
   }
 }
 
 @media only screen and (min-width: 1124px) {
-  .dining__container--3 {
+  .foodcourt__container {
     height: 400px;
     width: 50%;
     background-repeat: no-repeat;
@@ -406,7 +423,7 @@
   }
 }
 
-.dining__image--1 {
+.irvine__image {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url(../images/irvinemeal1.jpg);
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../images/irvinemeal1.jpg);
   width: 70%;
@@ -423,27 +440,27 @@
 }
 
 @media only screen and (min-width: 420px) {
-  .dining__image--1 {
+  .irvine__image {
     right: -32%;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .dining__image--1 {
+  .irvine__image {
     right: -44%;
     width: 60%;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .dining__image--1 {
+  .irvine__image {
     right: -53%;
     width: 50%;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__image--1 {
+  .irvine__image {
     width: 70%;
     height: 215px;
     bottom: -273px;
@@ -454,7 +471,7 @@
 }
 
 @media only screen and (min-width: 1124px) {
-  .dining__image--1 {
+  .irvine__image {
     width: 60%;
     height: 215px;
     bottom: 146px;
@@ -462,7 +479,7 @@
   }
 }
 
-.dining__image--2 {
+.cafe__image {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url(../images/cafemeal.jpg);
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../images/cafemeal.jpg);
   width: 70%;
@@ -479,27 +496,27 @@
 }
 
 @media only screen and (min-width: 420px) {
-  .dining__image--2 {
+  .cafe__image {
     right: -32%;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .dining__image--2 {
+  .cafe__image {
     right: -44%;
     width: 60%;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .dining__image--2 {
+  .cafe__image {
     right: -53%;
     width: 50%;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__image--2 {
+  .cafe__image {
     width: 70%;
     height: 215px;
     bottom: -273px;
@@ -510,7 +527,7 @@
 }
 
 @media only screen and (min-width: 1124px) {
-  .dining__image--2 {
+  .cafe__image {
     width: 60%;
     height: 215px;
     bottom: 146px;
@@ -518,7 +535,7 @@
   }
 }
 
-.dining__image--3 {
+.foodcourt__image {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url(../images/southbeachfood.jpg);
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../images/southbeachfood.jpg);
   width: 70%;
@@ -535,27 +552,27 @@
 }
 
 @media only screen and (min-width: 420px) {
-  .dining__image--3 {
+  .foodcourt__image {
     right: -32%;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .dining__image--3 {
+  .foodcourt__image {
     right: -44%;
     width: 60%;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .dining__image--3 {
+  .foodcourt__image {
     right: -53%;
     width: 50%;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__image--3 {
+  .foodcourt__image {
     width: 70%;
     height: 215px;
     bottom: -273px;
@@ -566,7 +583,7 @@
 }
 
 @media only screen and (min-width: 1124px) {
-  .dining__image--3 {
+  .foodcourt__image {
     width: 60%;
     height: 215px;
     bottom: 146px;
@@ -574,7 +591,7 @@
   }
 }
 
-.dining__description-1 {
+.irvine__description-wrap, .cafe__description-wrap, .foodcourt__description-wrap {
   padding-top: 90px;
   width: 90%;
   margin: auto;
@@ -582,29 +599,29 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__description-1 {
+  .irvine__description-wrap, .cafe__description-wrap, .foodcourt__description-wrap {
     display: none;
   }
 }
+.irvine__description-wrap-lg, .cafe__description-wrap-lg, .foodcourt__description-wrap-lg {
 
-.dining__description-1-lg {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__description-1-lg {
+  .irvine__description-wrap-lg, .cafe__description-wrap-lg, .foodcourt__description-wrap-lg {
     display: block;
     padding-top: 0px;
   }
 }
 
-.dining__description-par {
+.irvine__description, .cafe__description, .foodcourt__description {
   text-align: left;
   font-family: 'Lato', sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__description-par {
+  .irvine__description, .cafe__description, .foodcourt__description {
     color: white;
     padding-bottom: 40px;
     width: 70%;
@@ -616,7 +633,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__description-par {
+  .irvine__description, .cafe__description, .foodcourt__description {
     text-align: left;
     padding-bottom: 25px;
     width: 70%;
@@ -625,7 +642,7 @@
   }
 }
 
-.dining__button {
+.irvine__button, .cafe__button, .foodcourt__button {
   margin-top: 20px;
   margin: auto;
   text-align: center;
@@ -633,42 +650,43 @@
   font-weight: bold;
 }
 
-.dining__button:focus {
+.irvine__button:focus, .cafe__button:focus, .foodcourt__button:focus {
   outline: 0;
 }
 
-.dining__button:active {
+.irvine__button:active, .cafe__button:active, .foodcourt__button:active {
   opacity: .7;
 }
 
-.dining__button:hover {
+.irvine__button:hover, .cafe__button:hover, .foodcourt__button:hover {
   cursor: pointer;
 }
 
-.dining__button--reserve {
-  color: white;
-  background-color: #e12f37;
-  border: none;
-  padding: 12px 32px;
-}
-
-.dining__button--reserve:hover {
-  background-color: #d71f27;
-}
-
-.dining__button--reserve:active {
-  background-color: #e4454c;
-}
-
-@media only screen and (min-width: 768px) {
-  .dining__button--reserve {
-    background-color: rgba(0, 0, 0, 0);
-    border: solid 1px white;
-    display: inline-block;
+.irvine__button--reserve, .cafe__button--reserve, .foodcourt__button--reserve {
+    color: white;
+    background-color: #e12f37;
+    border: none;
+    padding: 12px 32px;
+    font-weight: bold;
   }
-}
+  
+   .irvine__button--reserve:hover, .cafe__button--reserve:hover, .foodcourt__button--reserve:hover {
+    background-color: #d71f27;
+  }
+  
+   .irvine__button--reserve:active, .cafe__button--reserve:active, .foodcourt__button--reserve:active {
+    background-color: #e4454c;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .irvine__button--reserve, .cafe__button--reserve, .foodcourt__button--reserve {
+      background-color: rgba(0, 0, 0, 0);
+      border: solid 1px white;
+      display: inline-block;
+    }
+  }
 
-.dining__button--view {
+.irvine__button--view, .cafe__button--view, .foodcourt__button--view {
   background-color: white;
   color: #e12f37;
   border: none;
@@ -677,39 +695,39 @@
   margin-left: 2px;
 }
 
-.dining__button--view:hover {
+.irvine__button--view:hover, .cafe__button--view:hover, .foodcourt__button--view:hover {
   color: #c11c23;
 }
 
-.dining__button--view:active {
+.irvine__button--view:active, .cafe__button--view:active, .foodcourt__button--view:active {
   color: #e4454c;
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__button--view {
+.irvine__button--view, .cafe__button--view, .foodcourt__button--view {
     display: none;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__button--view-lg {
+  .irvine__button--view-lg, .cafe__button--view-lg, .foodcourt__button--view-lg {
     background-color: rgba(0, 0, 0, 0);
     border: solid 1px white;
     display: inline-block;
     color: white;
     margin-left: 10px;
   }
-  .dining__button--view-lg:hover {
+  .irvine__button--view-lg:hover, .cafe__button--view-lg:hover, .foodcourt__button--view-lg:hover {
     background-color: #d71f27;
     color: white;
   }
-  .dining__button--view-lg:active {
+  .irvine__button--view-lg:active, .cafe__button--view-lg:active, .foodcourt__button--view-lg:active {
     background-color: #e4454c;
     color: white;
   }
 }
 
-.dining__button--container {
+.irvine__button-wrap, .cafe__button-wrap, .foodcourt__button-wrap  {
   padding-top: 15px;
   display: block;
   padding-bottom: 20px;
@@ -728,19 +746,19 @@
   }
 }
 
-.dining__irvine--wrapper {
+.irvine {
   display: none;
 }
 
-.dining__cafe--wrapper {
+.cafe {
   display: none;
 }
 
-.dining__court--wrapper {
+.foodcourt {
   display: none;
 }
 
-.active__dining--image {
+.dining__container--active {
   display: block;
 }
 
@@ -768,7 +786,7 @@
   padding: 20px 0 0 20px;
 }
 
-.dining__header-lg {
+.dining__link--top {
   position: relative;
   text-align: left;
   color: #e12f37;
@@ -782,7 +800,7 @@
 }
 
 @media only screen and (min-width: 1124px) {
-  .dining__header-lg:after {
+  .dining__link--top:after {
     position: absolute;
     content: '';
     height: 25px;
@@ -795,13 +813,13 @@
   }
 }
 
-.dining__header-lg:hover {
+.dining__link--top:hover {
   background-color: white;
   cursor: default;
 }
 
 @media only screen and (max-width: 767px) {
-  .dining__header-lg {
+  .dining__link--top {
     display: none;
   }
 }
