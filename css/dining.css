@@ -1,34 +1,3 @@
-.dining__title-wrap {
-  padding-top: 40px;
-  padding-bottom: 50px;
-  text-align: center;
-  position: relative;
-  z-index: -1;
-  margin: auto 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .dining__title-wrap {
-    margin: auto 0;
-    padding-top: 0px;
-  }
-}
-
-.dining__title {
-  font-size: 8px;
-  letter-spacing: 1.2px;
-}
-
-.dining__title--center {
-  padding-left: 12px;
-  padding-right: 12px;
-  font-size: 15px;
-  letter-spacing: 1.2px;
-  font-weight: 500;
-  position: relative;
-  top: 2.5px;
-}
-
 
 .dining__header-wrap {
   width: 100%;
@@ -65,13 +34,13 @@
 .dining__wrapper {
   width: 100%;
   z-index: 3;
-  /* top: -80px; */
   position: relative;
   margin: 0 auto;
   background-color: #fafafa;
   border-top: solid 1px #c6d3e1;
   border-bottom: solid 1px #d0e3e6;
   padding-bottom: 30px;
+  max-width: 1365px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -119,12 +88,11 @@
     position: absolute;
     content: '';
     height: 25px;
-    width: 91px;
+    width: 341px;
     opacity: .7;
     background: #53cdeb;
-    left: -5.5%;
+    left: -23.5%;
     z-index: -1;
-    top: 216px;
   }
 }
 
@@ -141,7 +109,6 @@
 
 @media only screen and (min-width: 768px) {
   .dining__tabs {
-    /* display: none; */
     display: block;
     width: 100%;
     border-bottom: solid 1px #d0e3e6;
@@ -158,7 +125,7 @@
 }
 
 
-.dining__link {
+.dining__tab {
   height: 100%;
   width: 100%;
   display: block;
@@ -170,12 +137,12 @@
   cursor: pointer;
 }
 
-.dining__link:hover {
+.dining__tab:hover {
   opacity: 1;
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__link {
+  .dining__tab {
     text-align: left;
     height: 51px;
     font-size: 16px;
@@ -187,13 +154,13 @@
 
 
 
-.dining__link--center {
+.dining__tab--center {
   border-left: 0.9px solid rgba(61, 58, 58, 0.3);
   border-right: 0.9px solid rgba(61, 58, 58, 0.3);
 }
 
 @media only screen and (min-width: 768px) {
-  .dining__link--center {
+  .dining__tab--center {
     border-left: none;
     border-right: none;
   }
@@ -786,7 +753,7 @@
   padding: 20px 0 0 20px;
 }
 
-.dining__link--top {
+.dining__tab--top {
   position: relative;
   text-align: left;
   color: #e12f37;
@@ -800,7 +767,7 @@
 }
 
 @media only screen and (min-width: 1124px) {
-  .dining__link--top:after {
+  .dining__tab--top:after {
     position: absolute;
     content: '';
     height: 25px;
@@ -813,13 +780,13 @@
   }
 }
 
-.dining__link--top:hover {
+.dining__tab--top:hover {
   background-color: white;
   cursor: default;
 }
 
 @media only screen and (max-width: 767px) {
-  .dining__link--top {
+  .dining__tab--top {
     display: none;
   }
 }

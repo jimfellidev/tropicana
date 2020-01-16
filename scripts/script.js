@@ -86,15 +86,9 @@ $(".booking__link--booking").click(function(){
     $(".booking__link--booking").addClass("booking__button-tab--active");
     $(".booking__link--dining").removeClass("booking__button-tab--active");
     $(".booking__link--show").removeClass("booking__button-tab--active");
-    $(".booking-formLg").addClass("active__containerLg");
-    $(".dining-formLg").removeClass("active__containerLg");
-    $(".show-formLg").removeClass("active__containerLg");
     });
 
 $(".booking__link--dining").click(function(){
-    $(".dining-formLg").addClass("active__containerLg");
-    $(".booking-formLg").removeClass("active__containerLg");
-    $(".show-formLg").removeClass("active__containerLg");
     $(".booking__link--dining").addClass("booking__button-tab--active");
     $(".booking__link--booking").removeClass("booking__button-tab--active");
     $(".booking__link--show").removeClass("booking__button-tab--active");
@@ -104,9 +98,6 @@ $(".booking__link--dining").click(function(){
     });    
 
 $(".booking__link--show").click(function(){
-    $(".show-formLg").addClass("active__containerLg");
-    $(".booking-formLg").removeClass("active__containerLg");
-    $(".dining-formLg").removeClass("active__containerLg");
     $(".booking__link--show").addClass("booking__button-tab--active");
     $(".booking__link--dining").removeClass("booking__button-tab--active");
     $(".booking__link--booking").removeClass("booking__button-tab--active");
@@ -114,6 +105,9 @@ $(".booking__link--show").click(function(){
     $(".booking-form").removeClass("active-form");
     $(".dining-form").removeClass("active-form");
     });    
+
+
+ 
 
 
 // Center selector

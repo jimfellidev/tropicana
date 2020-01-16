@@ -1,70 +1,7 @@
-/* @media only screen and (min-width: 768px) {
-    .experience {
-      display: none;
-    }
-  } */
-
-  
-  .experience__title {
-    padding-top: 60px;
-    padding-bottom: 30px;
-    text-align: center;
-    position: relative;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .experience__title-wrap {
-    padding-bottom: 110px;
-    text-align: center;
-    position: relative;
-    z-index: -1;
-    margin: auto 0;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .experience__title-wrap {
-      margin: auto 0;
-      padding-bottom: 30px;
-    }
-  }
-  
-  .experience__title {
-    font-size: 8px;
-    letter-spacing: 1.2px;
-    padding-bottom: 15px;
-  }
-  @media only screen and (min-width: 768px) {
-    .experience__title {
-      padding-top: 40px;
-      border-top: solid 1px #d0e3e6;
-    }
-  }
-  
-  .experience__title--center {
-    padding-left: 12px;
-    padding-right: 12px;
-    font-size: 15px;
-    letter-spacing: 1.2px;
-    font-weight: 500;
-    position: relative;
-    top: 2.5px;
-  }
-
-  
-  .experience__container {
+.experience__container {
     width: 100%;
     border-bottom: solid 4px #de1f26;
+    max-width: 1365px;
   }
   
   @media only screen and (min-width: 768px) {
@@ -73,14 +10,8 @@
       margin: 0 auto;
       border-bottom: none;
       overflow: hidden;
-      /* height: 550px; */
+      
       margin-bottom: -180px;
-    }
-  }
-  
-  @media only screen and (min-width: 995px) {
-    .experience__container {
-      /* height: 600px; */
     }
   }
   
@@ -90,15 +21,8 @@
     height: 220px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    /* background-size: cover; */
     overflow: visible;
     height: 100%;
-
-
-    /* background-size: contain; */  
-    /* overflow: auto; */    
-    /* padding-top: calc(3182 / 5656 * 100%); */
-    /* padding-top: calc(3182 / 5262 * 100%); */
   }
   
   @media only screen and (min-width: 768px) {
@@ -106,9 +30,6 @@
       width: 90%;
       float: right;
       height: 100%; 
-
-      /* just toying around with this */
-      /* background-attachment: fixed; */
     }
   }
   
@@ -399,4 +320,3 @@
       width: 6%;
     }
   }
-  /*# sourceMappingURL=experience.css.map */

@@ -30,9 +30,9 @@
       display: -ms-flexbox;
       display: flex;
       position: relative;
-      /* top: -20px; */
       width: 90%;
       margin: 0 auto;
+      max-width: 1365px;
     }
   }
   
@@ -56,15 +56,12 @@
   @media screen and (min-width: 1070px) {
     .booking__wrapper {
       width: 68.5%;
-      /* justify-content: left; */
     }
   }
 
   @media only screen and (min-width: 1188px) {
     .booking__wrapper {
       width: 75%;
-      /* justify-content: center; */
-      
     }
   }
   
@@ -75,26 +72,6 @@
     margin: 0 auto;
     min-height: 55px;
   }
-  
-  /* @media only screen and (min-width: 768px) {
-    .booking__tabs {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      height: 183px;
-      float: left;
-      position: relative;
-      left: -30px;
-      background-color: white;
-      -webkit-box-shadow: -6.8px 0.2px 19px -11.9px grey;
-              box-shadow: -6.8px 0.2px 19px -11.9px grey;
-    }
-  } */
-  
-
-
-
 
   @media screen and (min-width: 768px) {
     .booking__tabs {
@@ -107,7 +84,6 @@
               flex-direction: column;
       list-style-type: none;
       border-right: 0.9px solid rgba(61, 58, 58, 0.3);
-      /* width: 13%; */
       min-width: 100px;
       margin: 0;
     }
@@ -167,15 +143,6 @@
     }
   }
 
-
-
-
-
-
-
-
-
-
   .booking__link {
     display: block;
     width: 33.33333%;
@@ -207,7 +174,6 @@
   @media only screen and (min-width: 768px) {
     .booking__button-tab {
       border-left: 0.9px solid rgba(61, 58, 58, 0.3);
-      /* border-right: 0.9px solid rgba(61, 58, 58, 0.3); */
     }
   }
   
@@ -223,25 +189,10 @@
       border-top: 0.9px solid rgba(61, 58, 58, 0.3);
     }
   }
-
-
-
-
-
-
   
   .booking-form, .show-form, .dining-form {
     margin: 0 auto;
   }
-  
-
-  
-  
-  /* .booking__container--button-content, .show__container--button-content, .dining__container--button-content {
-    display: none;
-  } */
-  
-
   
   .booking-form__title-wrap, .dining-form__title-wrap, .show-form__title-wrap{
     display: -webkit-box;
@@ -280,7 +231,6 @@
     .booking-form__title, .dining-form__title, .show-form__title {
       padding-top: 25px;
       padding-right: 10px;
-      /* margin-left: 10px; */
     }
   }
 
@@ -289,16 +239,10 @@
       padding-top: 0;
     }
   }
-  /* @media only screen and (min-width: 768px) {
-    .booking-form__title {
-      margin-left: 0;
-    }
-  } */
   
   @media only screen and (min-width: 768px) {
      .dining-form__title--right, .show-form__title--right {
       margin-left: 7px;
-      /* padding-left: 7px; */
     }
   }
   @media only screen and (min-width: 768px) {
@@ -310,8 +254,6 @@
   @media only screen and (min-width: 768px) {
     .booking-form__title--right, .dining-form__title--right, .show-form__title--right {
       padding-top: 0;
-      /* margin-right: 20px; */
-      /* padding-right: 20px; */
     }
   }
 
@@ -323,26 +265,6 @@
       width: 37%;
     }
   }
-
-  /* @media only screen and (min-width: 768px) {
-    .booking-form__wrap--1:after, .dining-form__wrap--1:after, .show-form__wrap--1:after{
-      right: 66.6%;
-      background-color: #c6dde1;
-      color: #c6dde1;
-      color: green;
-      height: 120px;
-      width: 1px;
-      position: relative;
-      content: '';
-      /* left: 40.5%; */
-      /* top: 54px; */
-      /* background: #53cdeb; */
-      /* left: -5.5%; */
-      /* z-index: -1; */
-      /* top: 216px; */
-      /* position: absolute; */
-    /* }
-  }  */
 
   @media only screen and (min-width: 768px) {
     .booking__wrapper:after {
@@ -390,23 +312,6 @@
       border-bottom: none;  
     }
   }
-  
-  /* @media only screen and (min-width: 768px) {
-    .check__flexbox {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: space-around;
-      border-bottom: none;
-    }
-    .check__flexbox:after {
-      content: '';
-      border-right: solid 1px #c6dde1;
-      height: 140px;
-      position: absolute;
-      top: 25px;
-      left: 295px;
-    }
-  } */
 
   @media only screen and (min-width: 768px) {
    .booking-form__top-wrap, .dining-form__top-wrap,.show-form__top-wrap, .datepicker__container--1 {
@@ -470,11 +375,7 @@
   
   @media only screen and (min-width: 768px) {
     .booking-form__wrap--2, .dining-form__wrap--2, .show-form__wrap--2{
-      /* width: 300px; */
       position: relative;
-      /* float: right; */
-      /* top: -177px; */
-      /* margin-right: 34px; */
       padding-top: 0;
       margin-top: 0;
       width: 37%;
@@ -493,14 +394,9 @@
   
   @media only screen and (min-width: 768px) {
     .booking-form__title-wrap--2, .dining-form__title-wrap--2, .show-form__title-wrap--2  {
-      /* -webkit-box-pack: center;
-      -ms-flex-pack: center; */
       justify-content: space-around;
       margin-top: 0;
       width: 100%;
-
-
-              
     }
   }
   
@@ -531,7 +427,6 @@
     .room__flexbox, .datepicker__container--2 {
       justify-content: space-around;
       width: 100%;
-      
     }
   }
   
@@ -568,12 +463,10 @@
   
   .dining-form {
     display: none;
-    /* margin: 0; */
   }
   
   .show-form {
     display: none;
-    /* margin: 0; */
   }
   
   .active-form {
@@ -723,7 +616,6 @@
   
   .select__time, .datepicker__time-select-show, .select__time-dining, .datepicker__time-select-dining {
     font-size: 35px;
-    /* text-align: center; */
     width: 100%;
     height: 100%;
     text-transform: uppercase;
@@ -732,7 +624,6 @@
     cursor: pointer;
     color: transparent;
     text-shadow: 0 0 0 black;
-    /* margin-left: 5px; */
     background: transparent;
     -webkit-appearance: none;
     text-align-last: center;
@@ -799,9 +690,6 @@
     outline: none;
   }
 
-  
-  
-  
   @media screen and (min-width: 768px) {
     .datepicker-month-4, .datepicker-month-5, .datepicker-month-6, .datepicker-month-7 {
       text-align: center;
@@ -967,7 +855,6 @@
   }
   
   .selector {
-    /* margin-left: -5px; */
     z-index: 10;
     position: absolute;
   }
@@ -1022,65 +909,6 @@
     margin-left: 2.2%; 
   }
 }
-
-/* @media only screen and (min-width: 768px) {
-  .dining__bookNow, .show__bookNow {
-    padding-left: 2.5%;
-  }
-} */
-
-
-  
-  /* @media screen and (min-width: 804px) {
-    .bookNow { */
-      /* padding-left: 2.5%; */
-      /* padding-right: 27px; */
-    /* } */
-  /* } */
-
-  /* @media screen and (min-width: 1070px) {
-    .bookNow {
-      padding-left: 0px;
-      padding-right: 0px;
-      margin-right: 12px;
-    }
-  }
-  
-  @media screen and (min-width: 1124px) {
-    .bookNow {
-      padding-left: 15px;
-      padding-right: 25px;
-    }
-  }
-  
-  @media screen and (min-width: 1166px) {
-    .bookNow {
-      padding-left: 13px;
-      padding-right: 27px;
-    }
-  }
-  
-  @media screen and (min-width: 1192px) {
-    .bookNow {
-      padding-left: 11px;
-      padding-right: 29px;
-    }
-  }
-  
-  @media screen and (min-width: 1251px) {
-    .bookNow {
-      padding-left: 9px;
-      padding-right: 31px;
-    }
-  }
-  
-  @media screen and (min-width: 1305px) {
-    .bookNow {
-      padding-left: 7px;
-      padding-right: 33px;
-    }
-  } */
-
 
   .bookNow__button {
     z-index: 1;
@@ -1256,3 +1084,15 @@
     }
   }
   /*# sourceMappingURL=booking.css.map */
+
+
+
+  .test1, .test2, .test3 {
+    display: none;
+  }
+
+  .test-active {
+    display: block;
+  }
+
+  

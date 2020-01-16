@@ -103,6 +103,8 @@
 
     <div class="booking">
         <div class="booking__wrapper">
+
+            
             <div class="booking__tabs">
                 <div class="booking__link">
                     <button class="button booking__link--booking booking__button-tab booking__button-tab--active  do-nothing" href="#">Booking</button>
@@ -114,9 +116,6 @@
                     <button class="button booking__link--show booking__button-tab do-nothing" href="#">Show</button>
                 </div>
             </div>
-
-
-
             <div class="booking-form active-form">
                 <div class="booking-form__wrap">
                     
@@ -191,11 +190,11 @@
                     </div>
 
                 </div>
-                <!-- <button class="booking__container--button">BOOK NOW</button>
-                <div class="booking__container--button-content">
-                    <p>For Assistance Call: <br>1-800-888-8888</p>
-                </div> -->
             </div>
+
+
+
+
                 <div class="dining-form">
                     <div class="dining-form__wrap">
                         <div class="dining-form__wrap--1">
@@ -238,8 +237,8 @@
                                     <!-- Room / Guest selector Booking Section -->
                                     <div class="datepicker__select">
                                         <div class="datepicker__time-select-dining" id="datepicker__time-select-dining">
-                                            <span class="datepicker__time--answer">8:00</span>
-                                            <span class="datepicker__time--click"></span>
+                                            <span class="datepicker__time datepicker__time--answer">8:00</span>
+                                            <span class="datepicker__time datepicker__time--click"></span>
                                         </div>
                                         <ul class="selector selector__time-dining select__options--off" id="selector__time-dining">
                                             <li class="selector__li-time select__options-time--1">8:00</li>
@@ -252,7 +251,7 @@
                                 <div class="datepicker__wrap">
                                     <div class="datepicker__select">
                                         <div class="datepicker__number" id="datepicker__number-select--dining">
-                                            <span class="datepicker__number-guest--answer">1</span>
+                                            <span class="datepicker__number-guest datepicker__number-guest--answer">1</span>
                                             <span class="datepicker__number--click"></span>
                                         </div>
                                         <ul class="selector selector__rooms selector__dining-guest select__options--off" id="selector__dining-guest">
@@ -378,13 +377,11 @@
 
 
 
-
-
-
+            
                         <!-- DINING -->
-    <div class="dining">
-        <div id="dining" class="dining__title-wrap">
-            <div class="dining__title">///////////////////<a class="dining__title--center">DINING</a>/////////////////// 
+    <div class="dining" id="dining">
+        <div  class="section__title-wrap">
+            <div class="section__title">///////////////////<a class="section__title section__title--center">DINING</a>/////////////////// 
             </div>
         </div>
 
@@ -396,20 +393,20 @@
         <div class="dining__wrapper">
             <div class="dining__tab-wrap">
                 <div class="dining__tabs dining__tabs--display-title">
-                    <span class=" dining__link dining__link--top">OUR RESTAURANTS</span>
+                    <div class=" dining__tab dining__tab--top">OUR RESTAURANTS</div>
                 </div>
                 <div class="dining__tabs">
-                    <button class="button dining__cafe--click dining__link do-nothing" href="#">CAFE</button>
+                    <button class="button dining__cafe dining__cafe--click dining__tab do-nothing" href="#">CAFE</button>
                 </div>
                 <div class="dining__tabs">
-                    <button class="button dining__link dining__irvine--click dining__link--center dining__button--active do-nothing" href="#">CHEF IRVINE RESTAURANT</button>
+                    <button class="button dining__tab dining__irvine dining__irvine--click dining__tab--center dining__button--active do-nothing" href="#">CHEF IRVINE RESTAURANT</button>
                 </div>
                 <div class="dining__tabs">
-                    <button class="button dining__food-court--click dining__link do-nothing" href="#">SOUTH BEACH FOOD COURT</button>
+                    <button class="button dining__food-court dining__food-court--click dining__tab do-nothing" href="#">SOUTH BEACH FOOD COURT</button>
                 </div>
             </div>
 
-            <div class="irvine active__dining--image dining__container--active">
+            <div class="irvine dining__container dining__container--active">
                 <div class="irvine__container">
                     <p class="irvine__logo">ROBERT<br>IRVINE</p>
                     <div class="irvine__image"></div>    
@@ -480,8 +477,8 @@
             <img src="images/entertainDesignWide.png" alt="design" class="entertainDesign__wide">
 
 
-            <div id="entertain" class="entertain__title-wrap">
-                <div class="entertain__title">///////////////////<a class="entertain__title--center">ENTERTAINMENT</a>/////////////////// </div>
+            <div id="entertain" class="section__title-wrap">
+                <div class="section__title">///////////////////<a class="entertain__title--center">ENTERTAINMENT</a>/////////////////// </div>
             </div>
 
              <div class="swiper-container"> 
@@ -603,8 +600,8 @@
             
             <!-- Experience -->
             <div class="experience">
-                <div id="experience" class="experience__title-wrap">
-                    <div class="experience__title">///////////////////<a class="experience__title--center">TROPICANA EXPERIENCE</a>/////////////////// 
+                <div id="experience" class="section__title-wrap">
+                    <div class="section__title">///////////////////<a class="section__title--center">TROPICANA EXPERIENCE</a>/////////////////// 
                     </div>
                 </div>
 
