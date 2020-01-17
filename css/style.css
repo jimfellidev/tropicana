@@ -81,17 +81,33 @@ html {
 
 
   .section__title-wrap {
-    padding-bottom: 110px;
+    padding-bottom: 40px;
+    padding-top: 40px;
     text-align: center;
     position: relative;
     z-index: -1;
     margin: auto 0;
   }
-  
+
   @media only screen and (min-width: 768px) {
     .section__title-wrap {
       margin: auto 0;
       padding-bottom: 30px;
+      padding-top: 0px;
+    }
+  }
+
+  .section__title-wrap--entertain {
+    padding-top: 0px;
+  }
+
+  .section__title-wrap--experience {
+    margin-bottom: 50px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .section__title-wrap--experience {
+      margin-bottom: 0;
     }
   }
   
