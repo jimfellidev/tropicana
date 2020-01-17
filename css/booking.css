@@ -143,13 +143,13 @@
     }
   }
 
-  .booking__link {
+  .booking__btn {
     display: block;
     width: 33.33333%;
   }
   
   @media only screen and (min-width: 768px) {
-    .booking__link {
+    .booking__btn {
       height: 100%;
       width: 100%;
     }
@@ -261,7 +261,7 @@
 
 
   @media only screen and (min-width: 768px) {
-    .booking-form__wrap--1, .dining-form__wrap--1, .show-form__wrap--1{
+    .booking-form__wrap-1, .dining-form__wrap-1, .show-form__wrap-1{
       width: 37%;
     }
   }
@@ -295,7 +295,7 @@
   
 
   
-  .datepicker__container--1 {
+  .datepicker {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -306,7 +306,7 @@
   }
 
   @media only screen and (min-width: 768px) {
-    .datepicker__container--1{
+    .datepicker{
       width: 100%;
       justify-content: space-around;
       border-bottom: none;  
@@ -314,7 +314,7 @@
   }
 
   @media only screen and (min-width: 768px) {
-   .booking-form__top-wrap, .dining-form__top-wrap,.show-form__top-wrap, .datepicker__container--1 {
+   .booking-form__top-wrap, .dining-form__top-wrap,.show-form__top-wrap, .datepicker {
      padding-bottom: 0;
      justify-content: space-around;
    }
@@ -406,7 +406,7 @@
     font-style: italic;
   }
   
-  .room__flexbox, .datepicker__container--2 {
+  .room__flexbox, .datepicker-2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -415,7 +415,7 @@
   }
   
   @media only screen and (min-width: 768px) {
-    .room__flexbox, .datepicker__container--2 {
+    .room__flexbox, .datepicker-2 {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: space-around;
@@ -424,7 +424,7 @@
   }
 
   @media only screen and (min-width: 1069px) {
-    .room__flexbox, .datepicker__container--2 {
+    .room__flexbox, .datepicker-2 {
       justify-content: space-around;
       width: 100%;
     }

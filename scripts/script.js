@@ -1,15 +1,7 @@
-// INCLUDE JQUERY & JQUERY UI 1.12.1
-// $( function() {
-// 	$( "#datepicker" ).datepicker({
-// 		dateFormat: "MM dd"
-// 		,	duration: "fast"
-// 	});
-// } );
-
-            // just make datepicker3 class in html for show section datepicker to work
+            // DATEPICKER
     $(function() {
         $( "#datepicker" ).datepicker({
-        showAnim: "fold",
+        showAnim: "",
         dateFormat: "dd",
         altFormat: "MM",
         altField: ".datepicker-month"
@@ -18,7 +10,7 @@
 
     $(function() {
         $( "#datepicker-1" ).datepicker({
-        showAnim: "fold",
+        showAnim: "",
         dateFormat: "dd",
         altFormat: "MM",
         altField: ".datepicker-month-1"
@@ -27,7 +19,7 @@
 
     $(function() {
         $( "#datepicker-2" ).datepicker({
-        showAnim: "fold",
+        showAnim: "",
         dateFormat: "dd",
         altFormat: "MM",
         altField: ".datepicker-month-2"
@@ -36,71 +28,40 @@
 
     $(function() {
         $( "#datepicker-3" ).datepicker({
-        showAnim: "fold",
+        showAnim: "",
         dateFormat: "dd",
         altFormat: "MM",
         altField: ".datepicker-month-3"
         });
     });
-    $(function() {
-        $( "#datepicker-4" ).datepicker({
-        showAnim: "fold",
-        dateFormat: "dd",
-        altFormat: "MM",
-        altField: ".datepicker-month-4"
-        });
-    });
-    $(function() {
-        $( "#datepicker-5" ).datepicker({
-        showAnim: "fold",
-        dateFormat: "dd",
-        altFormat: "MM",
-        altField: ".datepicker-month-5"
-        });
-    });
-    $(function() {
-        $( "#datepicker-6" ).datepicker({
-        showAnim: "fold",
-        dateFormat: "dd",
-        altFormat: "MM",
-        altField: ".datepicker-month-6"
-        });
-    });
-    $(function() {
-        $( "#datepicker-7" ).datepicker({
-        showAnim: "fold",
-        dateFormat: "dd",
-        altFormat: "MM",
-        altField: ".datepicker-month-7"
-        });
-    });
+    
 
 
 
             // event listener to scroll through sections
             
-$(".booking__link--booking").click(function(){
+$(".booking__btn--booking").click(function(){
     $(".booking-form").addClass("active-form");
     $(".dining-form").removeClass("active-form");
     $(".show-form").removeClass("active-form");
-    $(".booking__link--booking").addClass("booking__button-tab--active");
-    $(".booking__link--dining").removeClass("booking__button-tab--active");
-    $(".booking__link--show").removeClass("booking__button-tab--active");
+    $(".booking__btn--booking").addClass("booking__button-tab--active");
+    $(".booking__btn--dining").removeClass("booking__button-tab--active");
+    $(".booking__btn--show").removeClass("booking__button-tab--active");
     });
 
-$(".booking__link--dining").click(function(){
-    $(".booking__link--dining").addClass("booking__button-tab--active");
-    $(".booking__link--booking").removeClass("booking__button-tab--active");
-    $(".booking__link--show").removeClass("booking__button-tab--active");
+$(".booking__btn--dining").click(function(){
+    $(".booking__btn--dining").addClass("booking__button-tab--active");
+    $(".booking__btn--booking").removeClass("booking__button-tab--active");
+    $(".booking__btn--show").removeClass("booking__button-tab--active");
     $(".dining-form").addClass("active-form");
     $(".booking-form").removeClass("active-form");
     $(".show-form").removeClass("active-form");
     });    
 
-$(".booking__link--show").click(function(){
-    $(".booking__link--show").addClass("booking__button-tab--active");
-    $(".booking__link--dining").removeClass("booking__button-tab--active");
-    $(".booking__link--booking").removeClass("booking__button-tab--active");
+$(".booking__btn--show").click(function(){
+    $(".booking__btn--show").addClass("booking__button-tab--active");
+    $(".booking__btn--dining").removeClass("booking__button-tab--active");
+    $(".booking__btn--booking").removeClass("booking__button-tab--active");
     $(".show-form").addClass("active-form");
     $(".booking-form").removeClass("active-form");
     $(".dining-form").removeClass("active-form");
@@ -142,8 +103,14 @@ $("#myDropdown").click(function() {
     $("#myDropdown").removeClass("toggle-active");
 });
 
+// book now close dropdown
+$(".book_now").click(function(){
+  if ($("#hamburger").hasClass("is-active")){
+      $("#hamburger").removeClass("is-active");
+      $("#myDropdown").removeClass("toggle-active");
+  } 
+});
 
-  
 
 //   dining
 
