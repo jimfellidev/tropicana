@@ -146,16 +146,16 @@ $("body").click(function() {
 });
 
 
-$(".select__options-time--1").click(function(){
+$(".selector__li-time--1").click(function(){
   $( ".datepicker__time--answer").text("8:00");
 });
-$(".select__options-time--2").click(function(){
+$(".selector__li-time--2").click(function(){
   $( ".datepicker__time--answer").text("8:30");
 });
-$(".select__options-time--3").click(function(){
+$(".selector__li-time--3").click(function(){
   $( ".datepicker__time--answer").text("9:00");
 });
-$(".select__options-time--4").click(function(){
+$(".selector__li-time--4").click(function(){
   $( ".datepicker__time--answer").text("9:30");
 });
 
@@ -218,21 +218,10 @@ $("body").click(function() {
   }
 });
 
-$(".select__options-time--1-sm").click(function(){
-  $( ".datepicker__time--answer").text("8:00");
-});
-$(".select__options-time--2-sm").click(function(){
-  $( ".datepicker__time--answer").text("8:30");
-});
-$(".select__options-time--3-sm").click(function(){
-  $( ".datepicker__time--answer").text("9:00");
-});
-$(".select__options-time--4-sm").click(function(){
-  $( ".datepicker__time--answer").text("10:00");
-});
+
                 // SHOW SELECTION
   
-  $(".datepicker__word-select--show").click(function(){
+  $(".datepicker__select-show").click(function(){
     if ($(".selector__show").hasClass("select__options--active")){
         $(".selector__show").removeClass("select__options--active");
     } else { 
@@ -241,7 +230,7 @@ $(".select__options-time--4-sm").click(function(){
 });
 
 $("body").click(function() {
-    target = $("#datepicker__word-select--show")[0];
+    target = $("#datepicker__select-show")[0];
     flag = event.path.some(function(el, i, arr) {
       return (el == target)
     });
@@ -250,14 +239,14 @@ $("body").click(function() {
     }
   });
 
-  $(".selector__li-word-show--1").click(function(){
-    $(".datepicker__word-show--answer").text("THE LATIN KINGS");
+  $(".selector__li-show--1").click(function(){
+    $(".datepicker__select-show--answer").text("THE LATIN KINGS");
   });
-  $(".selector__li-word-show--2").click(function(){
-    $(".datepicker__word-show--answer").text("SARAH EVANS");
+  $(".selector__li-show--2").click(function(){
+    $(".datepicker__select-show--answer").text("SARAH EVANS");
   });
-  $(".selector__li-word-show--3").click(function(){
-    $(".datepicker__word-show--answer").text("BAND OF MAGICIANS");
+  $(".selector__li-show--3").click(function(){
+    $(".datepicker__select-show--answer").text("BAND OF MAGICIANS");
   });
 
 

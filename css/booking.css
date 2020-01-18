@@ -374,7 +374,7 @@
   }
   
   @media only screen and (min-width: 768px) {
-    .booking-form__wrap--2, .dining-form__wrap--2, .show-form__wrap--2{
+    .booking-form__wrap-2, .dining-form__wrap-2, .show-form__wrap-2{
       position: relative;
       padding-top: 0;
       margin-top: 0;
@@ -576,7 +576,7 @@
     height: 100%;
   }
   
-  .select__word, .select__word-show, .datepicker__word-select--dining, .datepicker__word-select--show {
+  .select__word, .select__word-show, .datepicker__word-select--dining, .datepicker__select-show {
     font-size: 100%;
     width: 100%;
     height: 100%;
@@ -590,27 +590,27 @@
     -webkit-appearance: none;
   }
   
-  .select__word::-webkit-input-placeholder, .select__word-show::-webkit-input-placeholder, .datepicker__word-select--dining::-webkit-input-placeholder, .datepicker__word-select--show::-webkit-input-placeholder {
+  .select__word::-webkit-input-placeholder, .select__word-show::-webkit-input-placeholder, .datepicker__word-select--dining::-webkit-input-placeholder, .datepicker__select-show::-webkit-input-placeholder {
     color: black;
     opacity: 1;
   }
   
-  .select__word:-ms-input-placeholder, .select__word-show:-ms-input-placeholder, .datepicker__word-select--dining:-ms-input-placeholder, .datepicker__word-select--show:-ms-input-placeholder {
+  .select__word:-ms-input-placeholder, .select__word-show:-ms-input-placeholder, .datepicker__word-select--dining:-ms-input-placeholder, .datepicker__select-show:-ms-input-placeholder {
     color: black;
     opacity: 1;
   }
   
-  .select__word::-ms-input-placeholder, .select__word-show::-ms-input-placeholder, .datepicker__word-select--dining::-ms-input-placeholder, .datepicker__word-select--show::-ms-input-placeholder {
+  .select__word::-ms-input-placeholder, .select__word-show::-ms-input-placeholder, .datepicker__word-select--dining::-ms-input-placeholder, .datepicker__select-show::-ms-input-placeholder {
     color: black;
     opacity: 1;
   }
   
-  .select__word::placeholder, .select__word-show::placeholder, .datepicker__word-select--dining::placeholder, .datepicker__word-select--show::placeholder {
+  .select__word::placeholder, .select__word-show::placeholder, .datepicker__word-select--dining::placeholder, .datepicker__select-show::placeholder {
     color: black;
     opacity: 1;
   }
   
-  .select__word:focus, .select__word-show:focus, .datepicker__word-select--dining:focus, .datepicker__word-select--show:focus {
+  .select__word:focus, .select__word-show:focus, .datepicker__word-select--dining:focus, .datepicker__select-show:focus {
     outline: none;
   }
   
@@ -804,13 +804,13 @@
     padding-top: 28px;
   }
   
-  .datepicker__word-select--dining, .datepicker__word-select--show {
+  .datepicker__word-select--dining, .datepicker__select-show {
     text-align: center;
     padding-top: 34px;
   }
 
   @media screen and (min-width: 768px) {
-    .datepicker__word-select--dining, .datepicker__word-select--show {
+    .datepicker__word-select--dining, .datepicker__select-show {
       padding-top: 30px;
     }
   }
@@ -826,7 +826,7 @@
     margin-left: -11px;
   }
   
-  .selector__li, .selector__li-guest, .datepicker__guest-options-sm--single, .selector__li-time, .selector__time-show--single, .datepicker__guest-options-dining--single, .selector__dining-guest--single, .datepicker__guest-options-show--single, .selector__tickets--single, .select__options-time-dining--single, .selector__li-time-dining--single, .selector__li-word, .selector__word--single, .selector__li-word-show, .selector__li-word-show-sm--single {
+  .selector__li, .selector__li-guest, .datepicker__guest-options-sm--single, .selector__li-time, .selector__time-show--single, .datepicker__guest-options-dining--single, .selector__dining-guest--single, .datepicker__guest-options-show--single, .selector__tickets--single, .select__options-time-dining--single, .selector__li-time-dining--single, .selector__li-word, .selector__li-show, .selector__li-show-sm--single {
     margin: 0 auto;
     text-align: center;
     font-size: 20px;
@@ -837,20 +837,20 @@
     background-color: white;
   }
   
-  .selector__li:hover, .selector--single:hover, .selector__li-guest:hover, .datepicker__guest-options-sm--single:hover, .selector__li-time:hover, .selector__time-show--single:hover, .datepicker__guest-options-dining--single:hover, .selector__dining-guest--single:hover, .datepicker__guest-options-show--single:hover, .selector__tickets--single:hover, .select__options-time-dining--single:hover, .selector__li-time-dining--single:hover, .selector__li-word:hover, .selector__word--single:hover, .selector__li-word-show:hover, .selector__show--single:hover {
+  .selector__li:hover, .selector--single:hover, .selector__li-guest:hover, .datepicker__guest-options-sm--single:hover, .selector__li-time:hover, .selector__time-show--single:hover, .datepicker__guest-options-dining--single:hover, .selector__dining-guest--single:hover, .datepicker__guest-options-show--single:hover, .selector__tickets--single:hover, .select__options-time-dining--single:hover, .selector__li-time-dining--single:hover, .selector__li-word:hover, .selector__li-word:hover, .selector__li-show:hover, .selector__show--single:hover {
     background-color: #eef1f9;
     cursor: pointer;
   }
   
-  .selector__li--4, .selector--4, .selector__li-guest--4, .datepicker__guest-options-sm--4, .select__options-time--4, .selector__time-show--4, .datepicker__guest-options-dining--4, .selector__dining-guest--4, .datepicker__guest-options-show--4, .selector__tickets--4, .select__options-time-dining--4, .selector__li-time-dining--4, .selector__li-word--4, .selector__word--4, .select__options-word-show--4, .selector__show--4 {
+  .selector__li--4, .selector--4, .selector__li-guest--4, .datepicker__guest-options-sm--4, .selector__li-time--4, .selector__time-show--4, .datepicker__guest-options-dining--4, .selector__dining-guest--4, .datepicker__guest-options-show--4, .selector__tickets--4, .select__options-time-dining--4, .selector__li-time-dining--4, .selector__li-word--4, .selector__word--4, .select__options-word-show--4, .selector__show--4 {
     border-bottom: none;
   }
   
-  .selector__li--4-sm, .selector__li-guest--4-sm, .datepicker__guest-options-sm--4-sm, .select__options-time--4-sm, .selector__time-show--4-sm, .datepicker__guest-options-dining--4-sm, .selector__dining-guest--4-sm, .datepicker__guest-options-show--4-sm, .selector__tickets--4-sm, .select__options-time-dining--4-sm, .selector__li-time-dining--4-sm, .selector__li-word--4-sm, .selector__word--4-sm, .select__options-word-show--4-sm, .selector__show--4-sm {
+  /* .selector__li--4-sm, .selector__li-guest--4-sm, .datepicker__guest-options-sm--4-sm, .selector__li-time--4-sm, .selector__time-show--4-sm, .datepicker__guest-options-dining--4-sm, .selector__dining-guest--4-sm, .datepicker__guest-options-show--4-sm, .selector__tickets--4-sm, .select__options-time-dining--4-sm, .selector__li-time-dining--4-sm, .selector__li-word--4-sm, .selector__word--4-sm, .select__options-word-show--4-sm, .selector__show--4-sm {
     border-bottom: none;
-  }
+  } */
   
-  .select__options--active, .selector--active, .selector__li-guest--active, .datepicker__guest-options-sm--active, .select__options-time--active, .selector__time-show--active, .datepicker__guest-options-dining--active, .selector__dining-guest--active, .datepicker__guest-options-show--active, .selector__tickets--active, .select__options-time-dining--active, .selector__li-time-dining--active, .select__options-word--active, .selector__word--active, .select__options-word-show--active, .selector__show--active {
+  .select__options--active, .selector--active, .selector__li-guest--active, .datepicker__guest-options-sm--active, .selector__li-time--active, .selector__time-show--active, .datepicker__guest-options-dining--active, .selector__dining-guest--active, .datepicker__guest-options-show--active, .selector__tickets--active, .select__options-time-dining--active, .selector__li-time-dining--active, .select__options-word--active, .selector__word--active, .select__options-word-show--active, .selector__show--active {
     display: block !important;
   }
   
@@ -865,15 +865,15 @@
     }
   }
   
-  .selector__li-word, .selector__li-word-show {
+  .selector__li-word, .selector__li-show {
     font-size: 16px;
   }
   
-  .selector__li-word--3, .selector__li-word-show--3 {
+  .selector__li-word--3, .selector__li-show--3 {
     border-bottom: none;
   }
   
-  .selector__word--single {
+  .selector__li-word {
     font-size: 16px;
   }
 
@@ -1025,7 +1025,7 @@
   }
  
 
-  .adLg__content {
+  .adLg__content, .ad__content {
     z-index: 2;
     text-align: center;
     margin: auto;
@@ -1034,18 +1034,18 @@
     text-transform: uppercase;
   }
   
-  .adLg__content--darken {
+  .adLg__content-dark, .ad__content-dark {
     width: 100%;
     height: 100%;
     background-color: black;
     opacity: .4;
   }
   
-  .adLg__content--top {
+  .adLg__content--top, .ad__content--top {
     font-size: 25px;
   }
   
-  .adLg__content--bottom {
+  .adLg__content--bottom, .ad__content--bottom  {
     font-size: 20px;
   }
 
