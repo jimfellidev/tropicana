@@ -102,44 +102,44 @@
     background: #53cdeb;
   }
   
-  .swiper__artist--container {
+  .swiper__artist-wrap {
     width: 90%;
     position: relative;
     margin: 0 auto;
   }
   
-  .swiper__artist--content {
+  .swiper__content {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: .3px;
   }
   
-  .swiper__artist--content-header {
+  .swiper__content-head {
     font-size: 15px;
     font-weight: 600;
     padding-bottom: 8px;
     padding-top: 5px;
   }
   
-  .swiper__artist--link {
+  .swiper__link {
     font-size: 15px;
     padding-top: 20px;
     text-align: center;
     padding-bottom: 20px;
   }
   
-  .swiper__artist--link a {
+  .swiper__link a {
     text-decoration: none;
     color: #787a7a;
     font-weight: 600;
   }
   
-  .swiper__artist--link a:hover {
+  .swiper__link a:hover {
     cursor: pointer;
     color: #e75c62;
   }
   
-  .swiper__artist--link a:active {
+  .swiper__link a:active {
     color: #d71f27;
   }
   
@@ -171,13 +171,13 @@
     }
   }
   
-  .sched-link-wrapper {
+  .entertainment__sched-wrap {
     width: 100%;
     padding-bottom: 50px;
     border-bottom: 1px solid #d0e3e6;
   }
   
-  .sched-link-wrapper:after {
+  .entertainment__sched-wrap:after {
     position: absolute;
     content: '';
     height: 30px;
@@ -188,12 +188,12 @@
   }
   
   @media only screen and (min-width: 768px) {
-    .sched-link-wrapper:after {
+    .entertainment__sched-wrap:after {
       display: none;
     }
   }
   
-  .sched-link-wrapper:before {
+  .entertainment__sched-wrap:before {
     content: '';
     background-image: url(../images/entertainDesignTall.png);
     background-repeat: no-repeat;
@@ -204,12 +204,12 @@
   }
   
   @media only screen and (min-width: 768px) {
-    .sched-link-wrapper:before {
+    .entertainment__sched-wrap:before {
       display: none;
     }
   }
   
-  .entertainment__full-sched {
+  .entertainment__sched {
     margin-top: 60px;
     font-size: 17px;
     font-weight: 700;
@@ -217,23 +217,23 @@
   }
 
   @media only screen and (min-width: 1344px) {
-    .entertainment__full-sched {
+    .entertainment__sched {
       margin-top: 100px;
     }
   }
 
   
-  .entertainment__full-sched a {
+  .entertainment__sched a {
     text-decoration: none;
     color: #e12f37;
   }
   
-  .entertainment__full-sched a:hover {
+  .entertainment__sched a:hover {
     cursor: pointer;
     color: #e75c62;
   }
   
-  .entertainment__full-sched a:active {
+  .entertainment__sched a:active {
     color: #d71f27;
   }
   
@@ -403,7 +403,7 @@
     padding-top: 5px;
   }
   
-  .entertainment__theater-link {
+  .entertainment__link {
     font-size: 15px;
     padding-top: 20px;
     text-align: left;
@@ -411,18 +411,18 @@
     padding-left: 10px;
   }
   
-  .entertainment__theater-link a {
+  .entertainment__link a {
     text-decoration: none;
     color: #787a7a;
     font-weight: 600;
   }
   
-  .entertainment__theater-link a:hover {
+  .entertainment__link a:hover {
     cursor: pointer;
     color: #e75c62;
   }
   
-  .entertainment__theater-link a:active {
+  .entertainment__link a:active {
     color: #d71f27;
   }
   
