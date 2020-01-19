@@ -87,6 +87,7 @@ html {
     position: relative;
     z-index: -1;
     margin: auto 0;
+    
   }
 
   @media only screen and (min-width: 768px) {
@@ -94,11 +95,13 @@ html {
       margin: auto 0;
       padding-bottom: 30px;
       padding-top: 0px;
+      border-top: solid 1px #d0e3e6;
     }
   }
 
   .section__title-wrap--entertain {
     padding-top: 0px;
+    z-index: 2;
   }
 
   .section__title-wrap--experience {
@@ -119,7 +122,6 @@ html {
   @media only screen and (min-width: 768px) {
     .section__title {
       padding-top: 40px;
-      border-top: solid 1px #d0e3e6;
     }
   }
   

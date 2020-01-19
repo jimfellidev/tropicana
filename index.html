@@ -102,7 +102,7 @@
 <!-- BOOKING -->    
 
     <div class="booking">
-        <div class="booking__wrapper">
+        <div class="booking__app-wrap  booking__app-wrap--booking active-app">
 
             
             <div class="booking__tabs">
@@ -116,9 +116,9 @@
                     <button class="button  booking__btn booking__btn--show booking__button-tab do-nothing" href="#">Show</button>
                 </div>
             </div>
-            <div class="booking-form active-form">
-                <div class="booking-form__wrap">
-                    
+            <div class="booking-form">
+
+                <div class="booking-form__wrap">    
                     <div class="booking-form__wrap-1">
                         <div class="booking-form__title-wrap">
                             <div class="booking-form__title">Check-In</div>
@@ -164,8 +164,6 @@
                                     </ul>
                                 </div>
                             </div>
-
-
                             <div class="datepicker__wrap">
                                 <div class="datepicker__select">
                                     <div class="datepicker__number" id="datepicker__number-guest">
@@ -191,10 +189,20 @@
 
                 </div>
             </div>
+        </div>
 
-
-
-
+        <div class="booking__app-wrap  booking__app-wrap--dining">
+            <div class="booking__tabs">
+                <div class="booking__btn">
+                    <button class="button booking__btn booking__btn--booking booking__button-tab  do-nothing" href="#">Booking</button>
+                </div>
+                <div class="booking__btn">
+                    <button class="button booking__btn booking__btn--dining booking__button-tab booking__button-tab--active booking__button-tab--center do-nothing" href="#">Dining</button>
+                </div>
+                <div class="booking__btn">
+                    <button class="button  booking__btn booking__btn--show booking__button-tab do-nothing" href="#">Show</button>
+                </div>
+            </div>
                 <div class="dining-form">
                     <div class="dining-form__wrap">
                         <div class="dining-form__wrap-1">
@@ -273,8 +281,20 @@
                             </div>
                         </div>
                 </div>
+            </div>
 
-
+            <div class="booking__app-wrap  booking__app-wrap--show">
+                <div class="booking__tabs">
+                    <div class="booking__btn">
+                        <button class="button booking__btn booking__btn--booking booking__button-tab  do-nothing" href="#">Booking</button>
+                    </div>
+                    <div class="booking__btn">
+                        <button class="button booking__btn booking__btn--dining booking__button-tab booking__button-tab--center do-nothing" href="#">Dining</button>
+                    </div>
+                    <div class="booking__btn">
+                        <button class="button  booking__btn booking__btn--show booking__button-tab booking__button-tab--active do-nothing" href="#">Show</button>
+                    </div>
+                </div>
                 <div class="show-form">
                     <div class="show-form__wrap">
                         <div class="show-form__wrap-1">
@@ -320,10 +340,10 @@
                                             <span class="datepicker__time--click"></span>
                                         </div>
                                         <ul class="selector selector__time-show select__options--off" id="selector__time-show">
-                                                <li class="selector__li-time selector__li-time--1">8:00</li>
-                                                <li class="selector__li-time selector__li-time--2">8:30</li>
-                                                <li class="selector__li-time selector__li-time--3">9:00</li>
-                                                <li class="selector__li-time selector__li-time--4">9:30</li>
+                                            <li class="selector__li-time selector__li-time--1">8:00</li>
+                                            <li class="selector__li-time selector__li-time--2">8:30</li>
+                                            <li class="selector__li-time selector__li-time--3">9:00</li>
+                                            <li class="selector__li-time selector__li-time--4">9:30</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -353,6 +373,9 @@
                     </div>
                 </div>
         </div>
+
+
+
         <div class="adLg">
                 <div class="adLg__wrapper">
                     <div class="adLg__content-dark"></div>

@@ -176,6 +176,11 @@
     padding-bottom: 50px;
     border-bottom: 1px solid #d0e3e6;
   }
+  @media only screen and (min-width: 768px) {
+    .entertainment__sched-wrap {
+      border-bottom: none;
+    }
+  }
   
   .entertainment__sched-wrap:after {
     position: absolute;

@@ -41,30 +41,21 @@
             // event listener to scroll through sections
             
 $(".booking__btn--booking").click(function(){
-    $(".booking-form").addClass("active-form");
-    $(".dining-form").removeClass("active-form");
-    $(".show-form").removeClass("active-form");
-    $(".booking__btn--booking").addClass("booking__button-tab--active");
-    $(".booking__btn--dining").removeClass("booking__button-tab--active");
-    $(".booking__btn--show").removeClass("booking__button-tab--active");
+    $(".booking__app-wrap--booking").addClass("active-app");
+    $(".booking__app-wrap--dining").removeClass("active-app");
+    $(".booking__app-wrap--show").removeClass("active-app");
     });
 
 $(".booking__btn--dining").click(function(){
-    $(".booking__btn--dining").addClass("booking__button-tab--active");
-    $(".booking__btn--booking").removeClass("booking__button-tab--active");
-    $(".booking__btn--show").removeClass("booking__button-tab--active");
-    $(".dining-form").addClass("active-form");
-    $(".booking-form").removeClass("active-form");
-    $(".show-form").removeClass("active-form");
+    $(".booking__app-wrap--booking").removeClass("active-app");
+    $(".booking__app-wrap--dining").addClass("active-app");
+    $(".booking__app-wrap--show").removeClass("active-app");
     });    
 
 $(".booking__btn--show").click(function(){
-    $(".booking__btn--show").addClass("booking__button-tab--active");
-    $(".booking__btn--dining").removeClass("booking__button-tab--active");
-    $(".booking__btn--booking").removeClass("booking__button-tab--active");
-    $(".show-form").addClass("active-form");
-    $(".booking-form").removeClass("active-form");
-    $(".dining-form").removeClass("active-form");
+    $(".booking__app-wrap--booking").removeClass("active-app");
+    $(".booking__app-wrap--dining").removeClass("active-app");
+    $(".booking__app-wrap--show").addClass("active-app");
     });    
 
 
