@@ -35,55 +35,27 @@
         });
     });
     
-
-
-
             // event listener to scroll through sections
             
 $(".booking__btn--booking").click(function(){
-    // $(".booking-form").addClass("active-form");
-    // $(".dining-form").removeClass("active-form");
-    // $(".show-form").removeClass("active-form");
-    // $(".booking__btn--booking").addClass("booking__button-tab--active");
-    // $(".booking__btn--dining").removeClass("booking__button-tab--active");
-    // $(".booking__btn--show").removeClass("booking__button-tab--active");
     $(".booking__app-wrap--booking").addClass("active-app");
     $(".booking__app-wrap--dining").removeClass("active-app");
     $(".booking__app-wrap--show").removeClass("active-app");
     });
 
 $(".booking__btn--dining").click(function(){
-    // $(".booking__btn--dining").addClass("booking__button-tab--active");
-    // $(".booking__btn--booking").removeClass("booking__button-tab--active");
-    // $(".booking__btn--show").removeClass("booking__button-tab--active");
-    // $(".dining-form").addClass("active-form");
-    // $(".booking-form").removeClass("active-form");
-    // $(".show-form").removeClass("active-form");
     $(".booking__app-wrap--booking").removeClass("active-app");
     $(".booking__app-wrap--dining").addClass("active-app");
     $(".booking__app-wrap--show").removeClass("active-app");
     });    
 
 $(".booking__btn--show").click(function(){
-    // $(".booking__btn--show").addClass("booking__button-tab--active");
-    // $(".booking__btn--dining").removeClass("booking__button-tab--active");
-    // $(".booking__btn--booking").removeClass("booking__button-tab--active");
-    // $(".show-form").addClass("active-form");
-    // $(".booking-form").removeClass("active-form");
-    // $(".dining-form").removeClass("active-form");
     $(".booking__app-wrap--booking").removeClass("active-app");
     $(".booking__app-wrap--dining").removeClass("active-app");
     $(".booking__app-wrap--show").addClass("active-app");
     });    
 
-
- 
-
-
-// Center selector
-
-
-// HAMBURGER ON CLICK
+    // HAMBURGER ON CLICK
 
 $(".hamburger").click(function(){
     if ($("#hamburger").hasClass("is-active")){
@@ -95,7 +67,7 @@ $(".hamburger").click(function(){
     }
 });
 
-// dropdown close on offclick
+  // dropdown close on offclick
 $("body").click(function() {
     target = $(".navbar")[0];
     flag = event.path.some(function(el, i, arr) {
@@ -106,13 +78,13 @@ $("body").click(function() {
         $("#myDropdown").removeClass("toggle-active");
     }
   });
-// close dropbox when link is closed
+    // close dropbox when link is closed
 $("#myDropdown").click(function() {
     $("#hamburger").removeClass("is-active");
     $("#myDropdown").removeClass("toggle-active");
 });
 
-// book now close dropdown
+    // book now close dropdown
 $(".book_now").click(function(){
   if ($("#hamburger").hasClass("is-active")){
       $("#hamburger").removeClass("is-active");
@@ -121,7 +93,7 @@ $(".book_now").click(function(){
 });
 
 
-//   dining
+        //   DINING
 
 $(".dining__cafe--click").click(function(){
     $(".cafe").addClass("dining__container--active");
@@ -150,27 +122,8 @@ $(".dining__food-court--click").click(function(){
     $(".dining__food-court--click").addClass("dining__button--active");
     });
 
-    // dining__irvine--click
-    // cafe__click
-    // dining__food-court--click
-    // dining__button--active 
-
-
-
-// if ($("#hamburger").hasClass("is-active")){
-//     $("#myDropdown").addClass("toggle-active");
-// } else {
-//     $("#myDropdown").removeClass("toggle-active");
-// };
-
-
-
-
-
-
-
-
-// swiper
+    
+        // SWIPER
 
 var swiper = new Swiper('.swiper-container', {
     spaceBetween: 10,
@@ -194,9 +147,7 @@ var swiper = new Swiper('.swiper-container', {
   });
 
 
-
-
-//   Copyright current year
+      //   COPYRIGHT
 const currentYear = new Date().getFullYear();
 document.getElementById('copyright').innerText = currentYear;
 
@@ -205,15 +156,7 @@ document.getElementById('copyright').innerText = currentYear;
 
 
 
-
-
-
-
-
-
-
-// SMOOTH SCROLL AND HEADER ADJUSTMENT ON NAV CLICK
-// if (widthLarge()) {
+        // SMOOTH SCROLL AND HEADER ADJUSTMENT ON NAV CLICK
 
 (function(document, history, location) {
     var HISTORY_SUPPORT = !!(history && history.pushState);
@@ -268,18 +211,18 @@ document.getElementById('copyright').innerText = currentYear;
         return !!match;
     },
     
-    /**
-     * Attempt to scroll to the current location's hash.
-     */
+      /**
+       * Attempt to scroll to the current location's hash.
+       */
     scrollToCurrent: function(e) { 
         if(this.scrollIfAnchor(window.location.hash) && e) {
             e.preventDefault();
         }
     },
 
-    /**
-     * If the click event's target was an anchor, fix the scroll position.
-     */
+      /**
+       * If the click event's target was an anchor, fix the scroll position.
+       */
     delegateAnchors: function(e) {
         var elem = e.target;
 
@@ -293,11 +236,7 @@ document.getElementById('copyright').innerText = currentYear;
 })(window.document, window.history, window.location);
     
    
-
-
-
-
-// REMOVE BLUE RING ON BUTTONS, BUT KEEP FOR TAB CLICKS
+        // REMOVE BLUE RING ON BUTTONS, BUT KEEP FOR TAB CLICKS
 function handleFirstTab(e) {
     if (e.keyCode === 9) {
       document.body.classList.add('user-is-tabbing');
@@ -316,15 +255,7 @@ function handleFirstTab(e) {
   
   window.addEventListener('keydown', handleFirstTab);
 
-
-
-
-
-
-
 //   EXPERIENCE SECTION HOVER ATTRIBUTES
-
-
 
 $(document).ready(function(){
     $(".pool__wrapper").mouseover(function(){
@@ -354,9 +285,7 @@ $(document).ready(function(){
     });
   });
 
-
-
-  // Click listener to take make all non-functioning links do nothing
+  // LISTENER TO MAKE NON-FUNCTIONAL LINKS DO NOTHING ON CLICK
   $(".do-nothing").click(function(e) {
     e.preventDefault();
 });

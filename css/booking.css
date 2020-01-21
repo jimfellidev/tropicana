@@ -715,41 +715,6 @@
   }
   
   @media screen and (min-width: 768px) {
-    #datepicker-4, #datepicker-5, #datepicker-6, #datepicker-7 {
-      text-align: center;
-      width: 100%;
-      font-size: 44px;
-      background: none;
-      border: none;
-      position: relative;
-      cursor: pointer;
-      color: transparent;
-      text-shadow: 0 0 0 #e12f37;
-      -webkit-transform: translate(-1%);
-              transform: translate(-1%);
-    }
-    #datepicker-4::-webkit-input-placeholder, #datepicker-5::-webkit-input-placeholder, #datepicker-6::-webkit-input-placeholder, #datepicker-7::-webkit-input-placeholder {
-      color: #e12f37;
-      opacity: 1;
-    }
-    #datepicker-4:-ms-input-placeholder, #datepicker-5:-ms-input-placeholder, #datepicker-6:-ms-input-placeholder, #datepicker-7:-ms-input-placeholder {
-      color: #e12f37;
-      opacity: 1;
-    }
-    #datepicker-4::-ms-input-placeholder, #datepicker-5::-ms-input-placeholder, #datepicker-6::-ms-input-placeholder, #datepicker-7::-ms-input-placeholder {
-      color: #e12f37;
-      opacity: 1;
-    }
-    #datepicker-4::placeholder, #datepicker-5::placeholder, #datepicker-6::placeholder, #datepicker-7::placeholder {
-      color: #e12f37;
-      opacity: 1;
-    }
-    #datepicker-4:focus, #datepicker-5:focus, #datepicker-6:focus, #datepicker-7:focus {
-      outline: none;
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
     .booking-formLg__title, .dining-formLg__title, .show-formLg__title{
       text-align: center;
       padding-top: 39px;

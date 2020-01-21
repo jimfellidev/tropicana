@@ -1,7 +1,6 @@
-// BOOKING 
+          // BOOKING 
 
-
-  // NUMBERS - ROOMS
+        // NUMBERS - ROOMS
   $(".datepicker__number").click(function(){
     if ($(".selector").hasClass("select__options--active")){
         $(".selector").removeClass("select__options--active");
@@ -33,18 +32,9 @@ $("body").click(function() {
     $( ".datepicker__number-room-answer").text("4");
   });
 
-
-
-
-
-
-
-
-
-
                 //    GUEST
 
-  // NUMBERS - booking guest
+        // NUMBERS - BOOKING GUEST
   $(".datepicker__number-guest").click(function(){
     if ($(".datepicker__guest-options-sm").hasClass("select__options--active")){
         $(".datepicker__guest-options-sm").removeClass("select__options--active");
@@ -63,7 +53,7 @@ $("body").click(function() {
     }
   });
 
-//   booking options click for answer guest
+      //   BOOKING OPTIONS LISTENER FOR ANSWER
 $(".selector__li-guest--1").click(function(){
   $( ".datepicker__number-guest--answer").text("1");
 });
@@ -77,14 +67,8 @@ $(".selector__li-guest--4").click(function(){
   $( ".datepicker__number-guest--answer").text("4");
 });
 
+          // SHOW TICKETS
 
-
-
-
-
-
-
-// SHOW TICKETS
   $(".datepicker__number-show").click(function(){
     if ($(".selector__tickets").hasClass("select__options--active")){
         $(".selector__tickets").removeClass("select__options--active");
@@ -92,7 +76,6 @@ $(".selector__li-guest--4").click(function(){
     $(".selector__tickets").addClass("select__options--active");
     }
 });
-
 
   $("body").click(function() {
     target = $("#datepicker__number-show")[0];
@@ -104,14 +87,7 @@ $(".selector__li-guest--4").click(function(){
     }
   });
 
-
-
-
-              // DINING
-
-  // DINING TIME
-  // number menu close on click 
-
+          // DINING
 
   $("body").click(function() {
     target = $("#datepicker__number-select--dining")[0];
@@ -122,8 +98,6 @@ $(".selector__li-guest--4").click(function(){
         $("#selector__dining-guest").removeClass("select__options--active");   
     }
   });
-
-
 
   //   booking options click for answer
 
@@ -159,8 +133,6 @@ $(".selector__li-time--4").click(function(){
   $( ".datepicker__time--answer").text("9:30");
 });
 
-
-
         // RESTAURANT SELECTION
 
 $(".datepicker__word-select--dining").click(function(){
@@ -180,7 +152,9 @@ $("body").click(function() {
       $("#selector__word").removeClass("select__options--active");  
   }
 });
-//   booking options click for answer
+
+      //   BOOKING OPTIONS LISTENER FOR ANSWER
+
 $(".selector__li-word--1").click(function(){
   $( ".datepicker__word-dining--answer").text("ROBERT IRVINE");
 });
@@ -190,15 +164,9 @@ $(".selector__li-word--2").click(function(){
 $(".selector__li-word--3").click(function(){
   $( ".datepicker__word-dining--answer").text("TROPICANA CAFE");
 });
+          // SHOW
 
-
-
-
-
-
-                // SHOW
-
-//   TIME - Show 
+      //   TIME - Show 
 
 $(".datepicker__time-select-show").click(function(){
   if ($(".selector__time-show").hasClass("select__options--active")){
@@ -218,8 +186,7 @@ $("body").click(function() {
   }
 });
 
-
-                // SHOW SELECTION
+          // SHOW SELECTION
   
   $(".datepicker__select-show").click(function(){
     if ($(".selector__show").hasClass("select__options--active")){
@@ -248,7 +215,3 @@ $("body").click(function() {
   $(".selector__li-show--3").click(function(){
     $(".datepicker__select-show--answer").text("BAND OF MAGICIANS");
   });
-
-
-  
-
