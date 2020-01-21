@@ -1,36 +1,72 @@
             // DATEPICKER
-    $(function() {
-        $( "#datepicker" ).datepicker({
-        showAnim: "",
-        dateFormat: "dd",
-        altFormat: "MM",
-        altField: ".datepicker-month"
-        });
-    });
+$.datepicker.setDefaults({
+  showAnim: '',
+  dateFormat: 'dd',
+  altFormat: "MM"
+});
+
 
     $(function() {
-        $( "#datepicker-1" ).datepicker({
-        showAnim: "",
-        dateFormat: "dd",
-        altFormat: "MM",
-        altField: ".datepicker-month-1"
-        });
+        $( "#datepicker" ).datepicker({
+        altField: ".datepicker-month",
+        minDate: new Date(),
+        showOn: "focus",       
+        minDate: '+0',
+        // onSelect: function(dateStr) {
+        //     var min = $(this).datepicker('getDate') || new Date(); // Selected date or today if none
+        //     var max = new Date(min.getTime());
+        //     max.setMonth(max.getMonth() + 1); // Add one month
+        //     $('#datepicker-1').datepicker('option', {minDate: min, maxDate: max});
+        // }
+
+        onClose: function(selectedDate) {
+          $("datepicker-1").datepicker( "option", "minDate", selectedDate );
+        }
+      });
+
+
+      // DA FUQ??
+      $( "#datepicker-1" ).datepicker({
+        altField: ".datepicker-month-1",
+        minDate: '+0',
+        maxDate: '+1m',
+
+
+        onClose: function( selectedDate ) {
+          $( "#datepicker").datepicker( "option", "maxDate", selectedDate );
+        }
+
+
+
+        // onSelect: function(dateStr) {
+        //     var max = $(this).datepicker('getDate'); // Selected date or null if none
+        //     $('#datepicker').datepicker('option', {maxDate: max});
+        // }
+      });
+
+
     });
+
+    // $(function() {
+        $( "#datepicker-1" ).datepicker({
+        altField: ".datepicker-month-1",
+        // minDate: '1',
+        // maxDate: '+2',
+        // onSelect: function(dateStr) {
+        //     var max = $(this).datepicker('getDate'); // Selected date or null if none
+        //     $('#datepicker').datepicker('option', {maxDate: max});
+        // }
+      });
+  // });
 
     $(function() {
         $( "#datepicker-2" ).datepicker({
-        showAnim: "",
-        dateFormat: "dd",
-        altFormat: "MM",
         altField: ".datepicker-month-2"
         });
     });
 
     $(function() {
         $( "#datepicker-3" ).datepicker({
-        showAnim: "",
-        dateFormat: "dd",
-        altFormat: "MM",
         altField: ".datepicker-month-3"
         });
     });
