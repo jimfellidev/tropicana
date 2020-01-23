@@ -24,8 +24,7 @@ $(document).ready(function(){
   // set placeholder date to today
   $("#datepicker").datepicker("setDate", "+0");
 
- 
-
+  
 
   $("#datepicker-1").datepicker({ 
       // dateFormat: "dd",
