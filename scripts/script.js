@@ -1,7 +1,7 @@
 //             // DATEPICKER
 $.datepicker.setDefaults({
   showAnim: '',
-  // dateFormat: 'dd',
+  dateFormat: 'dd',
   altFormat: "MM",
   minDate: 0
 });
@@ -11,56 +11,59 @@ $.datepicker.setDefaults({
 
 
 
-$(document).ready(function(){
-  $("#datepicker").datepicker({
-      altField: ".datepicker-month", 
-      altFormat: "MM",
-      // dateFormat: "dd",
-      onSelect: function(selected, inst) {
-        $("#datepicker-1").datepicker("option","minDate", selected)
-      },
-  });
+// $(document).ready(function(){
+//   $("#datepicker").datepicker({
+//       altField: ".datepicker-month", 
+//       altFormat: "MM",
+//       // dateFormat: "dd",
+//       onSelect: function(selected, inst) {
+//         $("#datepicker-1").datepicker("option","minDate", selected)
+//       },
+//   });
 
   
 
   // set placeholder date to today
-  $("#datepicker").datepicker("setDate", "+0");
+  // $("#datepicker").datepicker("setDate", "+0");
 
   
 
-  $("#datepicker-1").datepicker({ 
-      // dateFormat: "dd",
-      altFormat: "MM",
-      altField: ".datepicker-month-1",
-      onSelect: function(selected, inst) {
-         $("#datepicker").datepicker("option","maxDate", selected)      
-      },
-  });  
+  // $("#datepicker-1").datepicker({ 
+      
+  //     altFormat: "MM",
+  //     altField: ".datepicker-month-1",
+  //     onSelect: function(selected, inst) {
+  //        $("#datepicker").datepicker("option","maxDate", selected)      
+  //     },
+  // });  
 
   // set placeholder date to 3 days from now
-  $("#datepicker-1").datepicker("setDate", "+3");
+//   $("#datepicker-1").datepicker("setDate", "+3");
 
-});
+// });
 
   
 
 
 
 
-      // COMPARE THESE 2
+      // DATEPICKER TO AND FROM DATES
 
-// $( "#datepicker" ).datepicker({
-// altField: ".datepicker-month",
-// minDate: new Date(),
-// showOn: "focus",       
-// minDate: '+0',
-// });
+$( "#datepicker" ).datepicker({
+altField: ".datepicker-month",
+showOn: "focus",       
+minDate: '+0',
+});
+// set datepicker placeholder
+$("#datepicker").datepicker("setDate", "+0");
 
 
-// $( "#datepicker-1" ).datepicker({
-//   altField: ".datepicker-month-1",
-//   minDate: '+0',
-// });
+$( "#datepicker-1" ).datepicker({
+  altField: ".datepicker-month-1",
+  minDate: '+0',
+});
+// set datepicker-1 placeholder
+$("#datepicker-1").datepicker("setDate", "+3");
 
 
 
