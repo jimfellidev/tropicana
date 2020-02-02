@@ -144,6 +144,19 @@
     }
   }
 
+
+.booking__btn-container {
+  display: block;
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 768px) {
+  .booking__btn-container {
+    height: 100%;
+    width: 100%;
+  }
+}
+
   .booking__btn {
     display: block;
     width: 33.33333%;
@@ -834,14 +847,14 @@
 
 
 
-/* BookNow */
+/* Book Now */
 
-.booking__bookNow, .dining__bookNow, .show__bookNow {
+.booking__book-now, .dining__book-now, .show__book-now {
   padding-top: 20px;
   padding-bottom: 10px;
 }
 @media only screen and (min-width: 768px) {
-  .booking__bookNow, .dining__bookNow, .show__bookNow {
+  .booking__book-now, .dining__book-now, .show__book-now {
     padding-top: 0;
     padding-bottom: 0;
     display: flex;
@@ -860,12 +873,12 @@
 } 
 
 @media only screen and (min-width: 1110px) {
-  .booking__bookNow, .dining__bookNow, .show__bookNow {
+  .booking__book-now, .dining__book-now, .show__book-now {
     margin-left: 2.2%; 
   }
 }
 
-  .bookNow__button {
+  .book-now__button {
     z-index: 1;
     font-size: 16px;
     color: white;
@@ -885,7 +898,7 @@
   }
   
   @media only screen and (min-width: 768px) {
-    .bookNow__button {
+    .book-now__button {
       font-size: 13px;
       color: white;
       width: 90px;
@@ -898,29 +911,29 @@
     }
   } 
   
-  .bookNow__button:hover {
+  .book-now__button:hover {
     border-radius: 30px;
     background-color: #da1f1d;
   }
   @media only screen and (min-width: 768px) {
-    .bookNow__button:hover {
+    .book-now__button:hover {
       border-radius: 0;
       background-color: #da1f1d;
     }
   }
 
   @media screen and (min-width: 768px) {
-    .bookNow__button:active {
+    .book-now__button:active {
       background-color: #e64544;
     }
   }
 
-  .bookNow__content {
+  .book-now__content {
     font-size: 10px;
     text-align: center;
   }
   @media only screen and (min-width: 768px) {
-    .bookNow__content {
+    .book-now__content {
       font-size: 10px;
       text-align: center;
       left: 458px;

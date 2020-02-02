@@ -1,3 +1,16 @@
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  #dining:before {
+    position: absolute;
+    content: '';
+    height: 25px;
+    width: 40%;
+    opacity: .7;
+    background: #53cdeb;
+    left: 0;
+    z-index: -1;
+    margin-top: 104px;
+  }
+}
 
 .dining__header-wrap {
   width: 100%;
@@ -80,25 +93,6 @@
     margin-left: 0px;
     border: solid 1px #c6d3e1;
     background-color: white;
-  }
-}
-
-@media only screen and (min-width: 768px) and (min-width: 768px) {
-  .dining__tab-wrap:before {
-    position: absolute;
-    content: '';
-    height: 25px;
-    width: 341px;
-    opacity: .7;
-    background: #53cdeb;
-    left: -23.5%;
-    z-index: -1;
-  }
-}
-
-@media only screen and (min-width: 768px) and (min-width: 1124px) {
-  .dining__tab-wrap:before {
-    top: 0px;
   }
 }
 
