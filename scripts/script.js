@@ -82,27 +82,18 @@ $(".dining__cafe--click").click(function () {
   $(".cafe").addClass("dining__container--active");
   $(".irvine").removeClass("dining__container--active");
   $(".foodcourt").removeClass("dining__container--active");
-  $(".dining__cafe--click").addClass("dining__button--active");
-  $(".dining__irvine--click").removeClass("dining__button--active");
-  $(".dining__food-court--click").removeClass("dining__button--active");
 });
 
 $(".dining__irvine--click").click(function () {
   $(".irvine").addClass("dining__container--active");
   $(".cafe").removeClass("dining__container--active");
   $(".foodcourt").removeClass("dining__container--active");
-  $(".dining__cafe--click").removeClass("dining__button--active");
-  $(".dining__irvine--click").addClass("dining__button--active");
-  $(".dining__food-court--click").removeClass("dining__button--active");
 });
 
 $(".dining__food-court--click").click(function () {
   $(".foodcourt").addClass("dining__container--active");
   $(".irvine").removeClass("dining__container--active");
   $(".cafe").removeClass("dining__container--active");
-  $(".dining__cafe--click").removeClass("dining__button--active");
-  $(".dining__irvine--click").removeClass("dining__button--active");
-  $(".dining__food-court--click").addClass("dining__button--active");
 });
 // SWIPER
 var swiper = new Swiper('.swiper-container', {

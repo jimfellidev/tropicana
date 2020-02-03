@@ -259,12 +259,23 @@
     position: absolute;
     content: '';
     height: 30px;
-    width: 161px;
+    width: 12.4%;
     opacity: .7;
     background: #53cdeb;
     right: 0;
     margin-top: 491px;
     z-index: 4;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .entertainment__wrapper:before {
+      margin-top: 541px;
+    }
+  }
+  @media only screen and (min-width: 1725px) {
+    .entertainment__wrapper:before {
+      width: 22%;
+    }
   }
   
   .entertainment__wrapper:after {
@@ -275,7 +286,18 @@
     width: 70px;
     z-index: -1;
     right: 0;
-    margin-top: 50px;
+    margin-top: 5.5%;
+  }
+
+  @media only screen and (min-width: 1100px) {
+    .entertainment__wrapper:after {
+      width: 19%;
+    }
+  }
+  @media only screen and (min-width: 2245px) {
+    .entertainment__wrapper:after {
+      margin-top: 4.3%;
+    }
   }
   
   .entertainment__image--left {
