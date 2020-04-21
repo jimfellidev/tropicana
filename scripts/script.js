@@ -61,50 +61,45 @@ $(".hamburger").click(function () {
 
 
 // dropdown close on offclick (works this way for safari and mobile)
-// function isDescendant(parent, child) {
-//   var node = child.parentNode;
-//   while (node != null) {
-//     if (node == parent) {
-//       return true;
-//     }
-//     node = node.parentNode;
-//   }
-//   return false;
-// }
+function isDescendant(parent, child) {
+  var node = child.parentNode;
+  while (node != null) {
+    if (node == parent) {
+      return true;
+    }
+    node = node.parentNode;
+  }
+  return false;
+}
 
 
-// document.addEventListener("click", function(event){
-//   console.log('event.target', event.target);    
-//   let parent = document.querySelector(".navbar__links");
-//   let selector = document.querySelector(".dropdown");
-//   let descendant = isDescendant(parent, event.target);
-//   console.log('descendant', descendant);
-//   let hamburger = document.querySelector(".hamburger");
-//   if (selector.classList.contains('toggle-active') && descendant) {
-//     console.log('true')           
-//   } else {
-//     console.log('false')
-//     selector.classList.remove("toggle-active");
-//     hamburger.classList.remove("is-active");
+document.addEventListener("click", function (event) {
+  console.log('event.target', event.target);
+  let parent = document.querySelector(".navbar__links");
+  let selector = document.querySelector(".dropdown");
+  let descendant = isDescendant(parent, event.target);
+  console.log('descendant', descendant);
+  let hamburger = document.querySelector(".hamburger");
+  if (selector.classList.contains('toggle-active') && descendant) {
+    console.log('true')
+  } else {
+    console.log('false')
+    selector.classList.remove("toggle-active");
+    hamburger.classList.remove("is-active");
 
-//   }
-// })    
+  }
+})
 
-
-
-
-
-
-// $("body").click(function () {
-//   target = $(".navbar")[0];
-//   flag = event.path.some(function (el, i, arr) {
-//     return (el == target)
-//   });
-//   if (!flag) {
-//     $("#hamburger").removeClass("is-active");
-//     $("#myDropdown").removeClass("toggle-active");
-//   }
-// });
+$("body").click(function () {
+  target = $(".navbar")[0];
+  flag = event.path.some(function (el, i, arr) {
+    return (el == target)
+  });
+  if (!flag) {
+    $("#hamburger").removeClass("is-active");
+    $("#myDropdown").removeClass("toggle-active");
+  }
+});
 
 
 // close dropbox when link is closed

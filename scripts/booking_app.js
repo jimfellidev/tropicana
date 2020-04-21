@@ -1,33 +1,3 @@
-// CLOSE DATEPICKER ON OFFCLICK AND CLICKING OTHER DATEPICKERS -- works on safari and mobile
-$(".datepicker__parent").click(function () {
-  console.log(event.target);
-  $(event.currentTarget).toggleClass(".datepicker__parent--active");
-  console.log('active toggled');
-  if ($('.datepicker__parent').hasClass(".datepicker__parent--active")) {
-    $('.selector').removeClass('select__options--active')
-    console.log('remove all selector elements')
-    $(this).children('.selector').addClass('select__options--active');
-    console.log('add selector only to clicked element')
-  } else if (event.currentTarget !== $(".datepicker__parent")) {
-    $(".selector").removeClass("select__options--active") 
-  }
-});
-
-  $(document).ready( function(){
-    $(".datepicker__parent").click(function () {
-        event.stopPropagation();
-    });
-
-    $(document).click(function(event){
-      console.log('close on off click');
-      $(".selector").removeClass("select__options--active")
-    });
-});
-
-$(".selector-answer").click(function () {
-    $(".selector").removeClass("select__options--active") 
-});
-
 // add class selector-li to all select options
 // if click selector-li remove class selector__options--active from class selector
 
@@ -69,6 +39,7 @@ $(".selector__li-guest--4").click(function () {
 
 $(".selector__li-time--1").click(function () {
   $(".datepicker__time--answer").text("8:00");
+
 });
 $(".selector__li-time--2").click(function () {
   $(".datepicker__time--answer").text("8:30");
@@ -100,4 +71,38 @@ $(".selector__li-show--2").click(function () {
 });
 $(".selector__li-show--3").click(function () {
   $(".datepicker__select-show--answer").text("BAND OF MAGICIANS");
+});
+
+
+
+// CLOSE DATEPICKER ON OFFCLICK AND CLICKING OTHER DATEPICKERS -- works on safari and mobile
+$(".datepicker__parent").click(function () {
+  console.log(event.target);
+  $(event.currentTarget).toggleClass(".datepicker__parent--active");
+  console.log('active toggled');
+  if ($('.datepicker__parent').hasClass(".datepicker__parent--active")) {
+    $('.selector').removeClass('select__options--active')
+    console.log('remove all selector elements')
+    $(this).children('.selector').addClass('select__options--active');
+    console.log('add selector only to clicked element')
+  } else if (event.currentTarget !== $(".datepicker__parent")) {
+    $(".selector").removeClass("select__options--active")
+  }
+});
+
+$(document).ready(function () {
+  $(".selector-answer").click(function () {
+    $(".selector").removeClass("select__options--active")
+    event.stopPropagation();
+  });
+  $(".datepicker__parent").click(function () {
+    $(event.currentTarget).toggleClass(".datepicker__parent--active");
+
+    event.stopPropagation();
+  });
+
+  $(document).click(function (event) {
+    console.log('close on off click');
+    $(".selector").removeClass("select__options--active")
+  });
 });
