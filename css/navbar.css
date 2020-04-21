@@ -21,11 +21,11 @@ nav {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   z-index: 10;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   list-style-type: none;
   background-color: #e12f37;
 }
@@ -139,7 +139,7 @@ nav {
 
 .toggle-active {
   -webkit-transform: translatey(400px);
-          transform: translatey(400px);
+  transform: translatey(400px);
 }
 
 @media only screen and (max-width: 767px) {
@@ -173,11 +173,11 @@ nav {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   z-index: 10;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   list-style-type: none;
 }
 
@@ -306,11 +306,11 @@ nav {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   z-index: 10;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   list-style-type: none;
   font-size: 12px;
   text-align: center;
@@ -548,4 +548,5 @@ nav {
 .navbarLg__item-2-10 a:link {
   color: black;
 }
+
 /*# sourceMappingURL=navbar.css.map */

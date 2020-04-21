@@ -86,8 +86,8 @@
   .dining__tab-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 40%;
     max-width: 381px;
     margin-left: 0px;
@@ -115,14 +115,14 @@
 }
 
 .dining__tabs--display {
-    display: none;
-}
-@media only screen and (min-width: 768px) {
- .dining__tabs--display {
-    display: block;
-    }
+  display: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .dining__tabs--display {
+    display: block;
+  }
+}
 
 .dining__btn {
   height: 100%;
@@ -150,8 +150,6 @@
     padding-left: 25px;
   }
 }
-
-
 
 .dining__btn--center {
   border-left: 0.9px solid rgba(61, 58, 58, 0.3);
@@ -244,7 +242,7 @@
     top: -80px;
     left: 50%;
     -webkit-transform: translate(-50%);
-            transform: translate(-50%);
+    transform: translate(-50%);
   }
 }
 
@@ -312,7 +310,7 @@
     top: -80px;
     left: 50%;
     -webkit-transform: translate(-50%);
-            transform: translate(-50%);
+    transform: translate(-50%);
   }
 }
 
@@ -387,7 +385,7 @@
     top: -80px;
     left: 50%;
     -webkit-transform: translate(-50%);
-            transform: translate(-50%);
+    transform: translate(-50%);
   }
 }
 
@@ -571,8 +569,8 @@
     display: none;
   }
 }
-.irvine__description-wrap-lg, .cafe__description-wrap-lg, .foodcourt__description-wrap-lg {
 
+.irvine__description-wrap-lg, .cafe__description-wrap-lg, .foodcourt__description-wrap-lg {
   display: none;
 }
 
@@ -631,28 +629,28 @@
 }
 
 .irvine__button--reserve, .cafe__button--reserve, .foodcourt__button--reserve {
-    color: white;
-    background-color: #e12f37;
-    border: none;
-    padding: 12px 32px;
-    font-weight: bold;
+  color: white;
+  background-color: #e12f37;
+  border: none;
+  padding: 12px 32px;
+  font-weight: bold;
+}
+
+.irvine__button--reserve:hover, .cafe__button--reserve:hover, .foodcourt__button--reserve:hover {
+  background-color: #d71f27;
+}
+
+.irvine__button--reserve:active, .cafe__button--reserve:active, .foodcourt__button--reserve:active {
+  background-color: #e4454c;
+}
+
+@media only screen and (min-width: 768px) {
+  .irvine__button--reserve, .cafe__button--reserve, .foodcourt__button--reserve {
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px white;
+    display: inline-block;
   }
-  
-   .irvine__button--reserve:hover, .cafe__button--reserve:hover, .foodcourt__button--reserve:hover {
-    background-color: #d71f27;
-  }
-  
-   .irvine__button--reserve:active, .cafe__button--reserve:active, .foodcourt__button--reserve:active {
-    background-color: #e4454c;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .irvine__button--reserve, .cafe__button--reserve, .foodcourt__button--reserve {
-      background-color: rgba(0, 0, 0, 0);
-      border: solid 1px white;
-      display: inline-block;
-    }
-  }
+}
 
 .irvine__button--view, .cafe__button--view, .foodcourt__button--view {
   background-color: white;
@@ -672,7 +670,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-.irvine__button--view, .cafe__button--view, .foodcourt__button--view {
+  .irvine__button--view, .cafe__button--view, .foodcourt__button--view {
     display: none;
   }
 }
@@ -695,7 +693,7 @@
   }
 }
 
-.irvine__button-wrap, .cafe__button-wrap, .foodcourt__button-wrap  {
+.irvine__button-wrap, .cafe__button-wrap, .foodcourt__button-wrap {
   padding-top: 15px;
   display: block;
   padding-bottom: 20px;
@@ -791,4 +789,5 @@
     display: none;
   }
 }
+
 /*# sourceMappingURL=dining.css.map */

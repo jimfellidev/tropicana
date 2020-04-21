@@ -165,12 +165,13 @@
                                 <div class="datepicker-2">
                                     <div class="datepicker__wrap">
                                         <!-- Room / Guest selector Booking Section -->
-                                        <div class="datepicker__select">
+                                        <div class="datepicker__select datepicker__parent">
                                             <div class="datepicker__number" id="datepicker__guest-options">
                                                 <span class="datepicker__number-room-answer">1</span>
                                                 <span class="datepicker__number--click"></span>
                                             </div>
-                                            <ul class="selector selector__rooms select__options--off" id="selector">
+                                            <ul class="selector selector__rooms selector__rooms--1 select__options--off"
+                                                id="selector">
                                                 <li class="selector__li selector__li--1">1</li>
                                                 <li class="selector__li selector__li--2">2</li>
                                                 <li class="selector__li selector__li--3">3</li>
@@ -179,13 +180,13 @@
                                         </div>
                                     </div>
                                     <div class="datepicker__wrap">
-                                        <div class="datepicker__select">
-                                            <div class="datepicker__number" id="datepicker__number-guest">
+                                        <div class="datepicker__select datepicker__parent">
+                                            <div class="datepicker__number" id="datepicker__guest-options-2">
                                                 <span class="datepicker__number-guest--answer">1</span>
                                                 <span class="datepicker__number datepicker__number--click"></span>
                                             </div>
-                                            <ul class="selector selector__rooms datepicker__guest-options-sm select__options--off"
-                                                id="datepicker__guest-options">
+                                            <ul
+                                                class="selector selector__rooms selector__rooms--2 selector__datepicker__guest-options-sm select__options--off">
                                                 <li class="selector__li-guest selector__li-guest--1">1</li>
                                                 <li class="selector__li-guest selector__li-guest--2">2</li>
                                                 <li class="selector__li-guest selector__li-guest--3">3</li>
@@ -238,7 +239,7 @@
                                         </div>
                                     </div>
                                     <div class="datepicker__wrap">
-                                        <div class="datepicker__select">
+                                        <div class="datepicker__select datepicker__parent">
                                             <div class="datepicker__word-select--dining"
                                                 id="datepicker__word-select--dining">
                                                 <span class="datepicker__word-dining--answer">ROBERT IRVINE</span>
@@ -263,7 +264,7 @@
                                 <div class="datepicker-2">
                                     <div class="datepicker__wrap">
                                         <!-- Room / Guest selector Booking Section -->
-                                        <div class="datepicker__select">
+                                        <div class="datepicker__select datepicker__parent">
                                             <div class="datepicker__time-select-dining"
                                                 id="datepicker__time-select-dining">
                                                 <span class="datepicker__time datepicker__time--answer">8:00</span>
@@ -279,14 +280,14 @@
                                         </div>
                                     </div>
                                     <div class="datepicker__wrap">
-                                        <div class="datepicker__select">
-                                            <div class="datepicker__number" id="datepicker__number-select--dining">
+                                        <div class="datepicker__select datepicker__parent">
+                                            <div class="datepicker__number" id="datepicker__guest-options-3">
                                                 <span
                                                     class="datepicker__number-guest datepicker__number-guest--answer">1</span>
                                                 <span class="datepicker__number--click"></span>
                                             </div>
-                                            <ul class="selector selector__rooms selector__dining-guest select__options--off"
-                                                id="selector__dining-guest">
+                                            <ul
+                                                class="selector selector__rooms selector__rooms--3 selector__dining-guest select__options--off">
                                                 <li class="selector__li-guest selector__li-guest--1">1</li>
                                                 <li class="selector__li-guest selector__li-guest--2">2</li>
                                                 <li class="selector__li-guest selector__li-guest--3">3</li>
@@ -341,7 +342,7 @@
                                         </div>
                                     </div>
                                     <div class="datepicker__wrap">
-                                        <div class="datepicker__select">
+                                        <div class="datepicker__select datepicker__parent">
                                             <div class="datepicker__select-show" id="datepicker__select-show">
                                                 <span class="datepicker__select-show--answer">THE LATIN KINGS</span>
                                                 <span class="datepicker__select-show--click"></span>
@@ -365,7 +366,7 @@
                                 <div class="datepicker-2">
                                     <div class="datepicker__wrap">
                                         <!-- Room / Guest selector Booking Section -->
-                                        <div class="datepicker__select">
+                                        <div class="datepicker__select datepicker__parent">
                                             <div class="datepicker__time-select-show" id="datepicker__time-select-show">
                                                 <span class="datepicker__time--answer">8:00</span>
                                                 <span class="datepicker__time--click"></span>
@@ -380,7 +381,7 @@
                                         </div>
                                     </div>
                                     <div class="datepicker__wrap">
-                                        <div class="datepicker__select">
+                                        <div class="datepicker__select datepicker__parent">
                                             <div class="datepicker__number-show" id="datepicker__number-show">
                                                 <span class="datepicker__number-guest--answer">1</span>
                                                 <span class="datepicker__number--click"></span>
@@ -736,7 +737,7 @@
 
                         <div class="experience__images-container">
                             <div id="pool" class="pool__wrapper">
-                                <a href="#pool">
+                                <a>
                                     <div class="pool__image"></div>
                                     <div class="pool__title-wrap">
                                         <div class="pool__title">pool</div>
@@ -748,7 +749,7 @@
                             <div class="experience__placeholder"></div>
 
                             <div id="casino" class="casino__wrapper">
-                                <a href="#casino">
+                                <a>
                                     <div class="casino__image"></div>
                                     <div class="casino__title-wrap">
                                         <div class="casino__title">casino</div>
@@ -759,7 +760,7 @@
                             <div class="experience__placeholder"></div>
 
                             <div id="spa" class="spa__wrapper">
-                                <a href="#spa">
+                                <a>
                                     <div class="spa__image"></div>
                                     <div class="spa__title-wrap">
                                         <div class="spa__title">spa</div>
@@ -866,8 +867,8 @@
 
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- swiper -->
     <script src="scripts/swiper.min.js"></script>
     <script src="scripts/jquery-ui.min.js"></script>

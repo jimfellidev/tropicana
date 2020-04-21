@@ -1,322 +1,317 @@
 .experience__container {
-    width: 100%;
-    border-bottom: solid 4px #de1f26;
-    max-width: 1365px;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .experience__container {
-      width: 90%;
-      margin: 0 auto;
-      border-bottom: none;
-      overflow: hidden;
-      
-      margin-bottom: -180px;
-    }
-  }
-  
-  .experience__image {
-    width: 100%;
-    background-image: url("../images/suite2.jpg");
-    height: 220px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    overflow: visible;
-    height: 100%;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .experience__image {
-      width: 90%;
-      float: right;
-      height: 100%; 
-    }
-  }
-  
-  .experience__image-wrap {
-    width: 100%;
-    height: 220px;
-    height: 100%;
-  }
-  
-  .experience__image-wrap:after {
-    position: absolute;
-    content: '';
-    height: 40px;
-    right: 0;
-    width: 100%;
-    z-index: -1;
-    background: #53cdeb;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .experience__image-wrap:after {
-      left: 0;
-      width: 80%;
-      z-index: 2;
-      margin-top: 110px;
-      opacity: .7;
-    }
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .experience__image-wrap {
-      overflow: auto;
-      height: 400px;
-    }
-  }
-  
-  .experience__wrapper {
+  width: 100%;
+  border-bottom: solid 4px #de1f26;
+  max-width: 1365px;
+}
+
+@media only screen and (min-width: 768px) {
+  .experience__container {
     width: 90%;
-    position: relative;
-    bottom: 68px;
     margin: 0 auto;
-    z-index: 3;
+    border-bottom: none;
+    overflow: hidden;
+    margin-bottom: -180px;
   }
-  
-  @media only screen and (min-width: 768px) {
-    .experience__wrapper {
-      margin: 0;
-      width: 100%;
-    }
-  }
-  
-  .experience__rooms {
-    background-color: white;
-    border: solid 1.5px #d0e3e6;
-    width: 100%;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .experience__rooms {
-      position: relative;
-      top: -290px;
-      width: 280px;
-    }
-  }
-  
-  .experience__room-wrap {
-    width: 85%;
+}
+
+.experience__image {
+  width: 100%;
+  background-image: url("../images/suite2.jpg");
+  height: 220px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  overflow: visible;
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .experience__image {
+    width: 90%;
+    float: right;
     height: 100%;
-    margin: 0 auto;
   }
-  
-  .experience__room-title {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bolder;
-    padding: 16px 0px;
+}
+
+.experience__image-wrap {
+  width: 100%;
+  height: 220px;
+  height: 100%;
+}
+
+.experience__image-wrap:after {
+  position: absolute;
+  content: '';
+  height: 40px;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+  background: #53cdeb;
+}
+
+@media only screen and (min-width: 768px) {
+  .experience__image-wrap:after {
+    left: 0;
+    width: 80%;
+    z-index: 2;
+    margin-top: 110px;
+    opacity: .7;
   }
-  
-  .experience__room-description {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 600;
-    word-spacing: 1px;
-    letter-spacing: .5px;
-    line-height: 23px;
+}
+
+@media only screen and (min-width: 768px) {
+  .experience__image-wrap {
+    overflow: auto;
+    height: 400px;
   }
-  
-  .experience__room-link {
-    text-transform: uppercase;
-    padding: 16px 0px;
+}
+
+.experience__wrapper {
+  width: 90%;
+  position: relative;
+  bottom: 68px;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+@media only screen and (min-width: 768px) {
+  .experience__wrapper {
+    margin: 0;
+    width: 100%;
   }
-  
-  .experience__room-link a {
-    text-decoration: none;
-    color: red;
-    font-weight: 600;
+}
+
+.experience__rooms {
+  background-color: white;
+  border: solid 1.5px #d0e3e6;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .experience__rooms {
+    position: relative;
+    top: -290px;
+    width: 280px;
   }
-  
-  .experience__room-link a:hover {
-    cursor: pointer;
-    color: #e75c62;
-  }
-  
-  .experience__room-link a:active {
-    color: #d71f27;
-  }
-  
+}
+
+.experience__room-wrap {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.experience__room-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 16px 0px;
+}
+
+.experience__room-description {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  word-spacing: 1px;
+  letter-spacing: .5px;
+  line-height: 23px;
+}
+
+.experience__room-link {
+  text-transform: uppercase;
+  padding: 16px 0px;
+}
+
+.experience__room-link a {
+  text-decoration: none;
+  color: red;
+  font-weight: 600;
+}
+
+.experience__room-link a:hover {
+  cursor: pointer;
+  color: #e75c62;
+}
+
+.experience__room-link a:active {
+  color: #d71f27;
+}
+
+.pool__wrapper {
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
   .pool__wrapper {
-    margin-top: 20px;
-    width: 100%;
+    margin-top: 0;
   }
-  
-  @media only screen and (min-width: 768px) {
-    .pool__wrapper {
-      margin-top: 0;
-    }
-  }
-  
+}
+
+.pool__wrapper:hover {
+  opacity: .9;
+}
+
+@media only screen and (min-width: 768px) {
   .pool__wrapper:hover {
-    opacity: .9;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .pool__wrapper:hover {
-      opacity: 1;
-    }
-  }
-  
-  .pool__wrapper:active {
     opacity: 1;
   }
-  
-  .pool__wrapper a {
-    text-decoration: none;
-  }
-  
-  .pool__image {
-    background-image: url("../images/pool.jpg");
-    padding-top: calc(9 / 16 * 100%);
-    background-repeat: no-repeat;
-    min-height: 120px;
-    background-size: cover;
-  }
-  
-  .pool__title {
-    background-color: #272a2b;
-    text-transform: uppercase;
-    color: white;
-    height: 40px;
-    padding-top: 9px;
-    padding-left: 20px;
-    font-weight: 500;
-    font-family: 'Lato', sans-serif;
-  }
-  
-  .pool__title-wrap {
-    position: relative;
-    display: block;
-    width: 100%;
-    top: -4px;
-  }
-  
-  .casino__wrapper {
-    width: 100%;
-  }
-  
+}
+
+.pool__wrapper:active {
+  opacity: 1;
+}
+
+.pool__wrapper a {
+  text-decoration: none;
+}
+
+.pool__image {
+  background-image: url("../images/pool.jpg");
+  padding-top: calc(9 / 16 * 100%);
+  background-repeat: no-repeat;
+  min-height: 120px;
+  background-size: cover;
+}
+
+.pool__title {
+  background-color: #272a2b;
+  text-transform: uppercase;
+  color: white;
+  height: 40px;
+  padding-top: 9px;
+  padding-left: 20px;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+}
+
+.pool__title-wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  top: -4px;
+}
+
+.casino__wrapper {
+  width: 100%;
+}
+
+.casino__wrapper:hover {
+  opacity: .9;
+}
+
+@media only screen and (min-width: 768px) {
   .casino__wrapper:hover {
-    opacity: .9;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .casino__wrapper:hover {
-      opacity: 1;
-    }
-  }
-  
-  .casino__wrapper:active {
     opacity: 1;
   }
-  
-  .casino__wrapper a {
-    text-decoration: none;
-  }
+}
 
-  .casino__image {
-    background-image: url("../images/casino2.jpg");
-    padding-top: calc(9 / 16 * 100%);
-    background-repeat: no-repeat;
-    min-height: 120px;
-    background-size: cover;
-  }
-  
-  .casino__title {
-    background-color: #272a2b;
-    text-transform: uppercase;
-    color: white;
-    height: 40px;
-    padding-top: 9px;
-    padding-left: 20px;
-    font-weight: 500;
-    font-family: 'Lato', sans-serif;
-  }
-  
-  .casino__title-wrap {
-    position: relative;
-    display: block;
-    width: 100%;
-    top: -4px;
-  }
-  
-  .spa__wrapper {
-    width: 100%;
-    margin-bottom: -30px;
-  }
-  
+.casino__wrapper:active {
+  opacity: 1;
+}
+
+.casino__wrapper a {
+  text-decoration: none;
+}
+
+.casino__image {
+  background-image: url("../images/casino2.jpg");
+  padding-top: calc(9 / 16 * 100%);
+  background-repeat: no-repeat;
+  min-height: 120px;
+  background-size: cover;
+}
+
+.casino__title {
+  background-color: #272a2b;
+  text-transform: uppercase;
+  color: white;
+  height: 40px;
+  padding-top: 9px;
+  padding-left: 20px;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+}
+
+.casino__title-wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  top: -4px;
+}
+
+.spa__wrapper {
+  width: 100%;
+  margin-bottom: -30px;
+}
+
+.spa__wrapper:hover {
+  opacity: .9;
+}
+
+@media only screen and (min-width: 768px) {
   .spa__wrapper:hover {
-    opacity: .9;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .spa__wrapper:hover {
-      opacity: 1;
-    }
-  }
-  
-  .spa__wrapper:active {
     opacity: 1;
   }
-  
-  .spa__wrapper a {
-    text-decoration: none;
-  }
-  
-  .spa__image {
-    background-image: url("../images/spa.jpg");
-    padding-top: calc(9 / 16 * 100%);
-    background-repeat: no-repeat;
-    min-height: 120px;
-    background-size: cover;
-  }
+}
 
-  
-  .spa__title {
-    background-color: #272a2b;
-    text-transform: uppercase;
-    color: white;
-    height: 40px;
-    padding-top: 9px;
-    padding-left: 20px;
-    font-weight: 500;
-    font-family: 'Lato', sans-serif;
-  }
-  
-  .spa__title-wrap {
+.spa__wrapper:active {
+  opacity: 1;
+}
+
+.spa__wrapper a {
+  text-decoration: none;
+}
+
+.spa__image {
+  background-image: url("../images/spa.jpg");
+  padding-top: calc(9 / 16 * 100%);
+  background-repeat: no-repeat;
+  min-height: 120px;
+  background-size: cover;
+}
+
+.spa__title {
+  background-color: #272a2b;
+  text-transform: uppercase;
+  color: white;
+  height: 40px;
+  padding-top: 9px;
+  padding-left: 20px;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+}
+
+.spa__title-wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  top: -4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .experience__images-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 80%;
+    float: right;
     position: relative;
-    display: block;
-    width: 100%;
-    top: -4px;
+    top: -160px;
+    margin-right: 10px;
   }
-  
-  @media only screen and (min-width: 768px) {
-    .experience__images-container {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      width: 80%;
-      float: right;
-      position: relative;
-      top: -160px;
-      margin-right: 10px;
-    }
+}
+
+@media only screen and (min-width: 897px) {
+  .experience__images-container {
+    top: -160px;
   }
+}
 
-  
-  @media only screen and (min-width: 897px) {
-    .experience__images-container {
-      top: -160px;
-    }
+@media only screen and (min-width: 768px) {
+  .experience__placeholder {
+    width: 6%;
   }
-
-
-
-  @media only screen and (min-width: 768px) {
-    .experience__placeholder {
-      width: 6%;
-    }
-  }
+}

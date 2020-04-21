@@ -54,22 +54,65 @@ $(".hamburger").click(function () {
     $("#myDropdown").addClass("toggle-active");
   }
 });
-// dropdown close on offclick
-$("body").click(function () {
-  target = $(".navbar")[0];
-  flag = event.path.some(function (el, i, arr) {
-    return (el == target)
-  });
-  if (!flag) {
-    $("#hamburger").removeClass("is-active");
-    $("#myDropdown").removeClass("toggle-active");
-  }
-});
+
+
+
+
+
+
+// dropdown close on offclick (works this way for safari and mobile)
+// function isDescendant(parent, child) {
+//   var node = child.parentNode;
+//   while (node != null) {
+//     if (node == parent) {
+//       return true;
+//     }
+//     node = node.parentNode;
+//   }
+//   return false;
+// }
+
+
+// document.addEventListener("click", function(event){
+//   console.log('event.target', event.target);    
+//   let parent = document.querySelector(".navbar__links");
+//   let selector = document.querySelector(".dropdown");
+//   let descendant = isDescendant(parent, event.target);
+//   console.log('descendant', descendant);
+//   let hamburger = document.querySelector(".hamburger");
+//   if (selector.classList.contains('toggle-active') && descendant) {
+//     console.log('true')           
+//   } else {
+//     console.log('false')
+//     selector.classList.remove("toggle-active");
+//     hamburger.classList.remove("is-active");
+
+//   }
+// })    
+
+
+
+
+
+
+// $("body").click(function () {
+//   target = $(".navbar")[0];
+//   flag = event.path.some(function (el, i, arr) {
+//     return (el == target)
+//   });
+//   if (!flag) {
+//     $("#hamburger").removeClass("is-active");
+//     $("#myDropdown").removeClass("toggle-active");
+//   }
+// });
+
+
 // close dropbox when link is closed
 $("#myDropdown").click(function () {
   $("#hamburger").removeClass("is-active");
   $("#myDropdown").removeClass("toggle-active");
 });
+
 // book now close dropdown
 $(".book_now").click(function () {
   if ($("#hamburger").hasClass("is-active")) {
@@ -205,54 +248,3 @@ $(document).ready(function () {
 $(".do-nothing").click(function (e) {
   e.preventDefault();
 });
-
-
-
-
-// Compare these 2 layouts and adjust dining
-
-
-// $(".booking__btn--booking").click(function () {
-//   $(".booking__app-wrap--booking").addClass("active-app");
-//   $(".booking__app-wrap--dining").removeClass("active-app");
-//   $(".booking__app-wrap--show").removeClass("active-app");
-// });
-// $(".booking__btn--dining").click(function () {
-//   $(".booking__app-wrap--booking").removeClass("active-app");
-//   $(".booking__app-wrap--dining").addClass("active-app");
-//   $(".booking__app-wrap--show").removeClass("active-app");
-// });
-// $(".booking__btn--show").click(function () {
-//   $(".booking__app-wrap--booking").removeClass("active-app");
-//   $(".booking__app-wrap--dining").removeClass("active-app");
-//   $(".booking__app-wrap--show").addClass("active-app");
-// });
-
-// vs
-
-// $(".dining__cafe--click").click(function () {
-//   $(".cafe").addClass("dining__container--active");
-//   $(".irvine").removeClass("dining__container--active");
-//   $(".foodcourt").removeClass("dining__container--active");
-//   $(".dining__cafe--click").addClass("dining__button--active");
-//   $(".dining__irvine--click").removeClass("dining__button--active");
-//   $(".dining__food-court--click").removeClass("dining__button--active");
-// });
-
-// $(".dining__irvine--click").click(function () {
-//   $(".irvine").addClass("dining__container--active");
-//   $(".cafe").removeClass("dining__container--active");
-//   $(".foodcourt").removeClass("dining__container--active");
-//   $(".dining__cafe--click").removeClass("dining__button--active");
-//   $(".dining__irvine--click").addClass("dining__button--active");
-//   $(".dining__food-court--click").removeClass("dining__button--active");
-// });
-
-// $(".dining__food-court--click").click(function () {
-//   $(".foodcourt").addClass("dining__container--active");
-//   $(".irvine").removeClass("dining__container--active");
-//   $(".cafe").removeClass("dining__container--active");
-//   $(".dining__cafe--click").removeClass("dining__button--active");
-//   $(".dining__irvine--click").removeClass("dining__button--active");
-//   $(".dining__food-court--click").addClass("dining__button--active");
-// });
