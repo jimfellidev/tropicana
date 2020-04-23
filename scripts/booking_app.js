@@ -36,7 +36,7 @@ $(".selector__li-guest--4").click(function () {
 });
 
 
-
+// TIME
 $(".selector__li-time--1").click(function () {
   $(".datepicker__time--answer").text("8:00");
 
